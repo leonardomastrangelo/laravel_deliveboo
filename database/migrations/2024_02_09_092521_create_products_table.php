@@ -19,6 +19,7 @@ return new class extends Migration {
             $table->boolean('availability');
             $table->unsignedBigInteger('restaurant_id');
             $table->foreign('restaurant_id')->references('id')->on('restaurants')->cascadeOnDelete();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
@@ -28,6 +29,9 @@ return new class extends Migration {
      */
     public function down(): void
     {
+        Schema::table('products', function (Blueprint $table) {
+            $table->dropSoftDeletes();
+        });
         Schema::dropIfExists('products');
     }
 };
