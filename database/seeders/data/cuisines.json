@@ -1,24 +1,29 @@
 {
-  "cuisines": [
-    {
-      "id": 1,
-      "name": "Cucina italiana"
-    },
-    {
-      "id": 2,
-      "name": "Cucina giapponese"
-    },
-    {
-      "id": 3,
-      "name": "Cucina messicana"
-    },
-    {
-      "id": 4,
-      "name": "Cucina americana"
-    },
-    {
-      "id": 5,
-      "name": "Cucina thailandese"
-    }
-  ]
-}
+    "cuisines": [
+      {
+        "id": 1,
+        "name": "Cucina italiana",
+        "image": "https://example.com/images/cuisine_italian.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Cucina giapponese",
+        "image": "https://example.com/images/cuisine_japanese.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Cucina messicana",
+        "image": "https://example.com/images/cuisine_mexican.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Cucina americana",
+        "image": "https://example.com/images/cuisine_american.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Cucina thailandese",
+        "image": "https://example.com/images/cuisine_thai.jpg"
+      }
+    ]
+  }
