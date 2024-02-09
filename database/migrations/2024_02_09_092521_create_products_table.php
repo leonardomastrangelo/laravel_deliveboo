@@ -13,12 +13,12 @@ return new class extends Migration {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('name', 200);
-            $table->decimal(6, 2);
+            $table->decimal('price', 6, 2);
             $table->string('image', 255)->nullable();
             $table->string('ingredients', 255);
             $table->boolean('availability');
             $table->unsignedBigInteger('restaurant_id');
-            $table->foreign('restaurant_id')->references('id')->on('restaurant')->nullOnDelete();
+            $table->foreign('restaurant_id')->references('id')->on('restaurants')->nullOnDelete();
             $table->timestamps();
         });
     }
