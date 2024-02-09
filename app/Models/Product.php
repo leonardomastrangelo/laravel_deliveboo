@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Models\Restaurant;
+use App\Models\Order;
 
 class Product extends Model
 {
@@ -23,6 +24,10 @@ class Product extends Model
     public function restaurant()
     {
         return $this->belongsTo(Restaurant::class);
+    }
+    public function orders()
+    {
+        return $this->belongsToMany(Order::class);
     }
 }
 
