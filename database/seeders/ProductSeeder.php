@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Storage;
 use App\Models\Product;
 
 class ProductSeeder extends Seeder
@@ -24,5 +25,11 @@ class ProductSeeder extends Seeder
             $newProduct->availability = $product['availability'];
             $newProduct->save();
         }
+    }
+    public static function storeimage($img)
+    {
+        $contents = file_get_contents(resource_path('img/products/' . $img));
+        $path = 'products/' . $img;
+        Storage::put($path, $contents);
     }
 }
