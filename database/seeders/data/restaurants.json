@@ -1,0 +1,81 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Ristorante da Mario",
+      "address": "Via Roma 123, 00100, Roma, Italia",
+      "phone_number": "+39 06 1234567",
+      "email": "info@ristorantedamario.com",
+      "image": "https://example.com/images/ristorante_da_mario.jpg",
+      "pick-up": true,
+      "description": "Un'accogliente trattoria italiana con specialità di pasta fresca e pizze cotte nel forno a legna.",
+      "vat": "IT12345678901"
+    },
+    {
+      "id": 2,
+      "name": "Sushi Fusion",
+      "address": "Via del Corso 234, 00100, Roma, Italia",
+      "phone_number": "+39 06 7654321",
+      "email": "info@sushifusionroma.com",
+      "image": "https://example.com/images/sushi_fusion.jpg",
+      "pick-up": true,
+      "description": "Un ristorante fusion che offre una varietà di sushi creativi e piatti giapponesi moderni.",
+      "vat": "IT23456789012"
+    },
+    {
+      "id": 3,
+      "name": "Taqueria El Dorado",
+      "address": "Via Nazionale 56, 00100, Roma, Italia",
+      "phone_number": "+39 06 9876543",
+      "email": "info@taqueriaeldorado.com",
+      "image": "https://example.com/images/taqueria_el_dorado.jpg",
+      "pick-up": true,
+      "description": "Un'autentica taqueria messicana con tacos, burritos e altre specialità messicane.",
+      "vat": "IT34567890123"
+    },
+    {
+      "id": 4,
+      "name": "Pizzeria Bella Napoli",
+      "address": "Piazza Navona 45, 00186, Roma, Italia",
+      "phone_number": "+39 06 5432109",
+      "email": "info@pizzeriabellanapoli.com",
+      "image": "https://example.com/images/pizzeria_bella_napoli.jpg",
+      "pick-up": true,
+      "description": "Un'autentica pizzeria napoletana con una vasta selezione di pizze cotte nel forno a legna.",
+      "vat": "IT45678901234"
+    },
+    {
+      "id": 5,
+      "name": "Thai Spice",
+      "address": "Via Veneto 78, 00100, Roma, Italia",
+      "phone_number": "+39 06 2345678",
+      "email": "info@thaispiceroma.com",
+      "image": "https://example.com/images/thai_spice.jpg",
+      "pick-up": true,
+      "description": "Un ristorante thailandese che offre una varietà di piatti piccanti e aromatizzati.",
+      "vat": "IT56789012345"
+    },
+    {
+      "id": 6,
+      "name": "McDonald's",
+      "address": "Piazza di Spagna 10, 00187, Roma, Italia",
+      "phone_number": "+39 06 8765432",
+      "email": "info@mcdonalds.it",
+      "image": "https://example.com/images/mcdonalds.jpg",
+      "pick-up": true,
+      "description": "Catena di fast food famosa per hamburger, patatine fritte, bevande e dessert.",
+      "vat": "IT67890123456"
+    },
+    {
+      "id": 7,
+      "name": "Burger King",
+      "address": "Via del Corso 145, 00186, Roma, Italia",
+      "phone_number": "+39 06 6543210",
+      "email": "info@burgerking.it",
+      "image": "https://example.com/images/burgerking.jpg",
+      "pick-up": true,
+      "description": "Catena di fast food famosa per hamburger, patatine fritte, bevande e dessert.",
+      "vat": "IT78901234567"
+    }
+  ]
+}

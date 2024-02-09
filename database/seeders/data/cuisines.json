@@ -1,0 +1,24 @@
+{
+  "cuisines": [
+    {
+      "id": 1,
+      "name": "Cucina italiana"
+    },
+    {
+      "id": 2,
+      "name": "Cucina giapponese"
+    },
+    {
+      "id": 3,
+      "name": "Cucina messicana"
+    },
+    {
+      "id": 4,
+      "name": "Cucina americana"
+    },
+    {
+      "id": 5,
+      "name": "Cucina thailandese"
+    }
+  ]
+}

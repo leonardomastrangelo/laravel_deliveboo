@@ -1,0 +1,188 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Pizza Margherita",
+      "price": 8.99,
+      "image": "https://example.com/images/pizza_margherita.jpg",
+      "ingredients": "pomodoro, mozzarella, basilico fresco",
+      "availability": true
+    },
+    {
+      "id": 2,
+      "name": "Sushi Misto",
+      "price": 19.99,
+      "image": "https://example.com/images/sushi_misto.jpg",
+      "ingredients": "nigiri, maki, sashimi",
+      "availability": true
+    },
+    {
+      "id": 3,
+      "name": "Tacos al Pastor",
+      "price": 10.99,
+      "image": "https://example.com/images/tacos_al_pastor.jpg",
+      "ingredients": "maiale marinato, ananas, cipolla, coriandolo",
+      "availability": true
+    },
+    {
+      "id": 4,
+      "name": "Spaghetti alla Carbonara",
+      "price": 12.99,
+      "image": "https://example.com/images/spaghetti_carbonara.jpg",
+      "ingredients": "uova, pancetta, pecorino romano, pepe nero",
+      "availability": true
+    },
+    {
+      "id": 5,
+      "name": "Pad Thai",
+      "price": 14.99,
+      "image": "https://example.com/images/pad_thai.jpg",
+      "ingredients": "tagliolini di riso, gamberi, uova, arachidi, lime",
+      "availability": true
+    },
+    {
+      "id": 6,
+      "name": "Tiramisù",
+      "price": 6.99,
+      "image": "https://example.com/images/tiramisu.jpg",
+      "ingredients": "savoiardi, mascarpone, caffè, cacao",
+      "availability": true
+    },
+    {
+      "id": 7,
+      "name": "Burrito al Pollo",
+      "price": 11.99,
+      "image": "https://example.com/images/burrito_al_pollo.jpg",
+      "ingredients": "pollo marinato, riso, fagioli, formaggio, salsa",
+      "availability": true
+    },
+    {
+      "id": 8,
+      "name": "Sashimi Misti",
+      "price": 22.99,
+      "image": "https://example.com/images/sashimi_misti.jpg",
+      "ingredients": "tonno, salmone, branzino",
+      "availability": true
+    },
+    {
+      "id": 9,
+      "name": "Margherita Gelato",
+      "price": 4.99,
+      "image": "https://example.com/images/margherita_gelato.jpg",
+      "ingredients": "vaniglia, crema al limone, foglie di menta",
+      "availability": true
+    },
+    {
+      "id": 10,
+      "name": "Massaman Curry di Manzo",
+      "price": 16.99,
+      "image": "https://example.com/images/massaman_curry.jpg",
+      "ingredients": "manzo, patate, arachidi, spezie",
+      "availability": true
+    },
+    {
+      "id": 11,
+      "name": "Lasagna al Forno",
+      "price": 11.99,
+      "image": "https://example.com/images/lasagna_al_forno.jpg",
+      "ingredients": "pasta all'uovo, ragù di carne, besciamella, formaggio",
+      "availability": true
+    },
+    {
+      "id": 12,
+      "name": "Sashimi di Salmone",
+      "price": 18.99,
+      "image": "https://example.com/images/sashimi_salmone.jpg",
+      "ingredients": "salmone, salsa di soia, wasabi",
+      "availability": true
+    },
+    {
+      "id": 13,
+      "name": "Enchiladas Verdes",
+      "price": 13.99,
+      "image": "https://example.com/images/enchiladas_verdes.jpg",
+      "ingredients": "pollo, salsa verde, formaggio",
+      "availability": true
+    },
+    {
+      "id": 14,
+      "name": "Risotto ai Funghi Porcini",
+      "price": 15.99,
+      "image": "https://example.com/images/risotto_funghi_porcini.jpg",
+      "ingredients": "funghi porcini, cipolla, vino bianco, parmigiano",
+      "availability": true
+    },
+    {
+      "id": 15,
+      "name": "Chirashi Sushi",
+      "price": 21.99,
+      "image": "https://example.com/images/chirashi_sushi.jpg",
+      "ingredients": "riso sushi, sashimi, verdure",
+      "availability": true
+    },
+    {
+      "id": 16,
+      "name": "Tacos Vegetariani",
+      "price": 9.99,
+      "image": "https://example.com/images/tacos_vegetariani.jpg",
+      "ingredients": "fagioli, mais, avocado, pomodoro, formaggio",
+      "availability": true
+    },
+    {
+      "id": 17,
+      "name": "Cannoli Siciliani",
+      "price": 5.99,
+      "image": "https://example.com/images/cannoli_siciliani.jpg",
+      "ingredients": "ricotta, cioccolato",
+      "availability": true
+    },
+    {
+      "id": 18,
+      "name": "Pho Vietnamita",
+      "price": 10.99,
+      "image": "https://example.com/images/pho_vietnamita.jpg",
+      "ingredients": "noodles di riso, manzo, erbe, germogli di soia",
+      "availability": true
+    },
+    {
+      "id": 19,
+      "name": "Gnocchi al Gorgonzola",
+      "price": 12.99,
+      "image": "https://example.com/images/gnocchi_gorgonzola.jpg",
+      "ingredients": "gnocchi di patate, salsa al gorgonzola, noci tostate",
+      "availability": true
+    },
+    {
+      "id": 20,
+      "name": "Mousse al Cioccolato",
+      "price": 7.99,
+      "image": "https://example.com/images/mousse_cioccolato.jpg",
+      "ingredients": "cioccolato",
+      "availability": true
+    },
+    {
+      "id": 21,
+      "name": "Big Mac",
+      "price": 4.99,
+      "image": "https://example.com/images/big_mac.jpg",
+      "ingredients": "due hamburger di manzo, formaggio, insalata, cetrioli, cipolla, salsa speciale",
+      "availability": true
+    },
+    {
+      "id": 22,
+      "name": "Chicken McNuggets (6 pezzi)",
+      "price": 3.99,
+      "image": "https://example.com/images/chicken_mcnuggets.jpg",
+      "ingredients": "pollo",
+      "availability": true
+    },
+    {
+      "id": 23,
+      "name": "McFlurry Oreo",
+      "price": 2.49,
+      "image": "https://example.com/images/mcflurry_oreo.jpg",
+      "ingredients": "gelato alla vaniglia, biscotto Oreo, salsa di cioccolato",
+      "availability": true
+    }
+  ]
+}
