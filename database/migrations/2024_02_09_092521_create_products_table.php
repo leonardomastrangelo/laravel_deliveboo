@@ -18,7 +18,7 @@ return new class extends Migration {
             $table->string('ingredients', 255);
             $table->boolean('availability');
             $table->unsignedBigInteger('restaurant_id');
-            $table->foreign('restaurant_id')->references('id')->on('restaurants')->nullOnDelete();
+            $table->foreign('restaurant_id')->references('id')->on('restaurants')->cascadeOnDelete();
             $table->timestamps();
         });
     }
