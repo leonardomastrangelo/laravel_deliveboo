@@ -20,7 +20,6 @@ class UserSeeder extends Seeder
             $newUser->surname = $user['surname'];
             $newUser->email =$user['email'];
             $newUser->password = $user['password'];
-            $newUser->is_owner = $user['is_owner'];
             $newUser->save();
         }
     }
