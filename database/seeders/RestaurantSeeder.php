@@ -42,8 +42,8 @@ class RestaurantSeeder extends Seeder
     {
         $low_case = strtolower(str_replace(" ", "", $img));
 
-        $contents = file_get_contents(resource_path('img/restaurants/' . $low_case));
-        $path = 'restaurants/' . $low_case;
+        $contents = file_get_contents(resource_path('img/restaurants/' . $low_case . '.jpg'));
+        $path = 'restaurants/' . $low_case . '.jpg';
         Storage::put($path, $contents);
         return $path;
     }
