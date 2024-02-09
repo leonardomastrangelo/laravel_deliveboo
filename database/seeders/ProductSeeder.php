@@ -33,8 +33,8 @@ class ProductSeeder extends Seeder
     public static function storeImage($img)
     {
         $low_case = strtolower(str_replace('', '', $img));
-        $contents = file_get_contents(resource_path('img/products/' . $low_case));
-        $path = 'products/' . $low_case;
+        $contents = file_get_contents(resource_path('img/products/' . $low_case . '.jpg'));
+        $path = 'products/' . $low_case . '.jpg';
         Storage::put($path, $contents);
         return $path;
     }
