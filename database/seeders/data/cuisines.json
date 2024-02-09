@@ -7,23 +7,53 @@
       },
       {
         "id": 2,
-        "name": "Cucina giapponese",
+        "name": "Giapponese",
         "image": "https://example.com/images/cuisine_japanese.jpg"
       },
       {
         "id": 3,
-        "name": "Cucina messicana",
+        "name": "Messicano",
         "image": "https://example.com/images/cuisine_mexican.jpg"
       },
       {
         "id": 4,
-        "name": "Cucina americana",
+        "name": "Americano",
         "image": "https://example.com/images/cuisine_american.jpg"
       },
       {
         "id": 5,
-        "name": "Cucina thailandese",
+        "name": "Thailandese",
         "image": "https://example.com/images/cuisine_thai.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Pasta",
+        "image": "https://example.com/images/cuisine_pasta.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Burger",
+        "image": "https://example.com/images/cuisine_burger.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Pizza",
+        "image": "https://example.com/images/cuisine_pizza.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Dolci",
+        "image": "https://example.com/images/cuisine_dolci.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Vegetariano",
+        "image": "https://example.com/images/cuisine_vegetariano.jpg"
+      },
+      {
+        "id": 11,
+        "name": "Gourmet",
+        "image": "https://example.com/images/cuisine_gourmet.jpg"
       }
     ]
   }
