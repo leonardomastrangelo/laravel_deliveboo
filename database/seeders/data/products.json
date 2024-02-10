@@ -1,5 +1,5 @@
-{
-  "products": [
+
+[
     {
       "id": 1,
       "name": "Pizza Margherita",
@@ -238,4 +238,4 @@
 
 
   ]
-}
+

@@ -1,5 +1,5 @@
-{
-    "cuisines": [
+
+[
       {
         "id": 1,
         "name": "Cucina italiana",
@@ -56,4 +56,3 @@
         "image": "https://example.com/images/cuisine_gourmet.jpg"
       }
     ]
-  }

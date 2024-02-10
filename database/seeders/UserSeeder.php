@@ -13,8 +13,9 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        $json = file_get_contents(__DIR__ . '/data/users.json');
-        $users = json_decode($json, true);
+        $users = file_get_contents(__DIR__ . '/data/users.json');
+        $users = json_decode($users, true);
+
         foreach ($users as $user) {
             $newUser = new User();
             $newUser->name = $user['name'];
