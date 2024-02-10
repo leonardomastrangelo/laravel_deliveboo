@@ -8,7 +8,7 @@
       </div>
       <div class="modal-body">
         <p>
-            The Project <span id="modal-item-title"></span> will be deleted.
+            The Product <span id="modal-item-title"></span> will be deleted.
         </p>
       </div>
       <div class="modal-footer">

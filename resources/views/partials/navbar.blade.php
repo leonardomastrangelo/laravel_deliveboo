@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md text-light">
             <div class="container-fluid">
-                {{-- <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
+                <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
                     <div class="logo_laravel">
                         <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 150px">
                             <g clip-path="url(#clip0)" fill="#EF3B2D">
@@ -8,7 +8,7 @@
                             </g>
                         </svg>
                     </div>
-                </a> --}}
+                </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
