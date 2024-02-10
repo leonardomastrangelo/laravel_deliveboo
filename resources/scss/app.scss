@@ -1,4 +1,8 @@
 @use './partials/variables' as *;
+@use './partials/dash' as *;
+@use './partials/home' as *;
+@use './partials/products' as *;
+@use './partials/orders' as *;
 
 $fa-font-path: "../fonts/webfonts" !default;
 
