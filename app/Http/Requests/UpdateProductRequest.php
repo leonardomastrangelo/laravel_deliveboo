@@ -34,19 +34,19 @@ class UpdateProductRequest extends FormRequest
     public function messages()
     {
         return [
-            'name.required' => 'The name field is required.',
-            'name.string' => 'The name must be a string.',
-            'name.min' => 'The name must be at least :min characters.',
-            'name.max' => 'The name may not be greater than :max characters.',
-            'price.required' => 'The price field is required.',
-            'price.numeric' => 'The price must be a number.',
-            'image.image' => 'The image must be an image.',
-            'ingredients.required' => 'The ingredients field is required.',
-            'ingredients.min' => 'The ingredients must be at least :min characters.',
-            'ingredients.max' => 'The ingredients may not be greater than :max characters.',
-            'ingredients.string' => 'The ingredients must be a string.',
-            'availability.required' => 'The availability field is required.',
-            'restaurant_id.exists' => 'The restaurant field is required.',
+            'name.required' => 'Il campo nome è obbligatorio.',
+            'name.string' => 'Il nome deve essere una stringa.',
+            'name.min' => 'Il nome deve essere di almeno :min caratteri.',
+            'name.max' => 'Il nome non può superare :max caratteri.',
+            'price.required' => 'Il campo prezzo è obbligatorio.',
+            'price.numeric' => 'Il prezzo deve essere un numero.',
+            'image.image' => "L'immagine deve essere un'immagine.",
+            'ingredients.required' => 'Il campo ingredienti è obbligatorio.',
+            'ingredients.min' => 'Gli ingredienti devono essere di almeno :min caratteri.',
+            'ingredients.max' => 'Gli ingredienti non possono superare :max caratteri.',
+            'ingredients.string' => 'Gli ingredienti devono essere una stringa.',
+            'availability.required' => 'Il campo disponibilità è obbligatorio.',
+            'restaurant_id.exists' => 'Il campo ristorante è obbligatorio.',
         ];
     }
 }
