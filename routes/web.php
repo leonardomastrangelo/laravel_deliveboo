@@ -25,7 +25,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::middleware(['auth', 'verified'])->name('admin.')->prefix('admin')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
     Route::resource('restaurants', RestaurantController::class);
-    Route::resource('orders', OrderController::class);
+    Route::get('/orders', [OrderController::class, 'index'])->name('orders');
     Route::resource('products', ProductController::class);
 
 });
