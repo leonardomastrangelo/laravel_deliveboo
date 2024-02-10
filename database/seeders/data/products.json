@@ -6,7 +6,8 @@
       "price": 8.99,
       "image": "https://example.com/images/pizza_margherita.jpg",
       "ingredients": "pomodoro, mozzarella, basilico fresco",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 4
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "price": 19.99,
       "image": "https://example.com/images/sushi_misto.jpg",
       "ingredients": "nigiri, maki, sashimi",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 2
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "price": 10.99,
       "image": "https://example.com/images/tacos_al_pastor.jpg",
       "ingredients": "maiale marinato, ananas, cipolla, coriandolo",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 3
     },
     {
       "id": 4,
@@ -30,7 +33,8 @@
       "price": 12.99,
       "image": "https://example.com/images/spaghetti_carbonara.jpg",
       "ingredients": "uova, pancetta, pecorino romano, pepe nero",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 1
     },
     {
       "id": 5,
@@ -38,7 +42,8 @@
       "price": 14.99,
       "image": "https://example.com/images/pad_thai.jpg",
       "ingredients": "tagliolini di riso, gamberi, uova, arachidi, lime",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 5
     },
     {
       "id": 6,
@@ -46,7 +51,8 @@
       "price": 6.99,
       "image": "https://example.com/images/tiramisu.jpg",
       "ingredients": "savoiardi, mascarpone, caffè, cacao",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 1
     },
     {
       "id": 7,
@@ -54,7 +60,8 @@
       "price": 11.99,
       "image": "https://example.com/images/burrito_al_pollo.jpg",
       "ingredients": "pollo marinato, riso, fagioli, formaggio, salsa",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 5
     },
     {
       "id": 8,
@@ -62,7 +69,8 @@
       "price": 22.99,
       "image": "https://example.com/images/sashimi_misti.jpg",
       "ingredients": "tonno, salmone, branzino",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 2
     },
     {
       "id": 9,
@@ -70,7 +78,8 @@
       "price": 4.99,
       "image": "https://example.com/images/margherita_gelato.jpg",
       "ingredients": "vaniglia, crema al limone, foglie di menta",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 4
     },
     {
       "id": 10,
@@ -78,7 +87,8 @@
       "price": 16.99,
       "image": "https://example.com/images/massaman_curry.jpg",
       "ingredients": "manzo, patate, arachidi, spezie",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 5
     },
     {
       "id": 11,
@@ -86,7 +96,8 @@
       "price": 11.99,
       "image": "https://example.com/images/lasagna_al_forno.jpg",
       "ingredients": "pasta all'uovo, ragù di carne, besciamella, formaggio",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 1
     },
     {
       "id": 12,
@@ -94,7 +105,8 @@
       "price": 18.99,
       "image": "https://example.com/images/sashimi_salmone.jpg",
       "ingredients": "salmone, salsa di soia, wasabi",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 2
     },
     {
       "id": 13,
@@ -102,7 +114,8 @@
       "price": 13.99,
       "image": "https://example.com/images/enchiladas_verdes.jpg",
       "ingredients": "pollo, salsa verde, formaggio",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 5
     },
     {
       "id": 14,
@@ -110,7 +123,8 @@
       "price": 15.99,
       "image": "https://example.com/images/risotto_funghi_porcini.jpg",
       "ingredients": "funghi porcini, cipolla, vino bianco, parmigiano",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 1
     },
     {
       "id": 15,
@@ -118,7 +132,8 @@
       "price": 21.99,
       "image": "https://example.com/images/chirashi_sushi.jpg",
       "ingredients": "riso sushi, sashimi, verdure",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 2
     },
     {
       "id": 16,
@@ -126,7 +141,8 @@
       "price": 9.99,
       "image": "https://example.com/images/tacos_vegetariani.jpg",
       "ingredients": "fagioli, mais, avocado, pomodoro, formaggio",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 3
     },
     {
       "id": 17,
@@ -134,7 +150,8 @@
       "price": 5.99,
       "image": "https://example.com/images/cannoli_siciliani.jpg",
       "ingredients": "ricotta, cioccolato",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 1
     },
     {
       "id": 18,
@@ -142,7 +159,8 @@
       "price": 10.99,
       "image": "https://example.com/images/pho_vietnamita.jpg",
       "ingredients": "noodles di riso, manzo, erbe, germogli di soia",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 5
     },
     {
       "id": 19,
@@ -150,7 +168,8 @@
       "price": 12.99,
       "image": "https://example.com/images/gnocchi_gorgonzola.jpg",
       "ingredients": "gnocchi di patate, salsa al gorgonzola, noci tostate",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 1
     },
     {
       "id": 20,
@@ -158,7 +177,8 @@
       "price": 7.99,
       "image": "https://example.com/images/mousse_cioccolato.jpg",
       "ingredients": "cioccolato",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 1
     },
     {
       "id": 21,
@@ -166,7 +186,8 @@
       "price": 4.99,
       "image": "https://example.com/images/big_mac.jpg",
       "ingredients": "due hamburger di manzo, formaggio, insalata, cetrioli, cipolla, salsa speciale",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 6
     },
     {
       "id": 22,
@@ -174,7 +195,8 @@
       "price": 3.99,
       "image": "https://example.com/images/chicken_mcnuggets.jpg",
       "ingredients": "pollo",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 6
     },
     {
       "id": 23,
@@ -182,7 +204,38 @@
       "price": 2.49,
       "image": "https://example.com/images/mcflurry_oreo.jpg",
       "ingredients": "gelato alla vaniglia, biscotto Oreo, salsa di cioccolato",
-      "availability": true
+      "availability": true,
+      "restaurant_id": 6
+    },
+    {
+      "id": 24,
+      "name": "Whopper",
+      "price": 4.99,
+      "image": "https://example.com/images/whopper.jpg",
+      "ingredients": "pane, hamburger di manzo alla griglia, insalata, pomodoro, cipolla, ketchup, maionese",
+      "availability": true,
+      "restaurant_id": 7
+    },
+    {
+      "id": 25,
+      "name": "Chicken Royale",
+      "price": 3.99,
+      "image": "https://example.com/images/chicken_royale.jpg",
+      "ingredients": "pane, filetto di pollo impanato, lattuga, maionese",
+      "availability": true,
+      "restaurant_id": 7
+    },
+    {
+      "id": 26,
+      "name": "King Fusion Sundae",
+      "price": 2.99,
+      "image": "https://example.com/images/king_fusion_sundae.jpg",
+      "ingredients": "gelato alla vaniglia, salsa di fragola, pezzi di banana, panna montata",
+      "availability": true,
+      "restaurant_id": 7
     }
+
+
+
   ]
 }

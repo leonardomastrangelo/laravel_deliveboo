@@ -26,13 +26,13 @@ class ProductSeeder extends Seeder
             $newProduct->image = ProductSeeder::storeImage($product['name']);
             $newProduct->ingredients = $product['description'];
             $newProduct->availability = $product['availability'];
+            $newProduct->restaurant_id = $product['restaurant_id'];
             $newProduct->save();
-            $newProduct->restaurant()->sync($restaurants->random(1));
         }
     }
     public static function storeImage($img)
     {
-        $low_case = strtolower(str_replace('', '', $img));
+        $low_case = strtolower(str_replace(' ', '', $img));
         $contents = file_get_contents(resource_path('img/products/' . $low_case . '.jpg'));
         $path = 'products/' . $low_case . '.jpg';
         Storage::put($path, $contents);
