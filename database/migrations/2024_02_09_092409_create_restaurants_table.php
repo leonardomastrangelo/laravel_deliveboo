@@ -20,11 +20,11 @@ return new class extends Migration {
             $table->string('image', 255)->nullable();
             $table->boolean('pick_up');
             $table->text('description')->nullable();
-            $table->string('vat', 20)->nullable();
-            $table->unsignedBigInteger('user_id')->nullable();
+            $table->string('vat', 20);
+            $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')
                 ->references('id')
-                ->on('users')->nullOnDelete();
+                ->on('users')->cascadeOnDelete();
             $table->timestamps();
         });
     }
