@@ -1,5 +1,5 @@
-{
-  "restaurants": [
+
+[
     {
       "id": 1,
       "name": "Ristorante da Mario",
@@ -7,7 +7,7 @@
       "phone_number": "+39 06 1234567",
       "email": "info@ristorantedamario.com",
       "image": "https://example.com/images/ristorante_da_mario.jpg",
-      "pick-up": true,
+      "pick_up": true,
       "description": "Un'accogliente trattoria italiana con specialità di pasta fresca e pizze cotte nel forno a legna.",
       "vat": "IT12345678901",
       "user_id": 1,
@@ -25,7 +25,7 @@
       "phone_number": "+39 06 7654321",
       "email": "info@sushifusionroma.com",
       "image": "https://example.com/images/sushi_fusion.jpg",
-      "pick-up": true,
+      "pick_up": true,
       "description": "Un ristorante fusion che offre una varietà di sushi creativi e piatti giapponesi moderni.",
       "vat": "IT23456789012",
       "user_id": 2,
@@ -41,7 +41,7 @@
       "phone_number": "+39 06 9876543",
       "email": "info@taqueriaeldorado.com",
       "image": "https://example.com/images/taqueria_el_dorado.jpg",
-      "pick-up": true,
+      "pick_up": true,
       "description": "Un'autentica taqueria messicana con tacos, burritos e altre specialità messicane.",
       "vat": "IT34567890123",
       "user_id": 3,
@@ -57,7 +57,7 @@
       "phone_number": "+39 06 5432109",
       "email": "info@pizzeriabellanapoli.com",
       "image": "https://example.com/images/pizzeria_bella_napoli.jpg",
-      "pick-up": true,
+      "pick_up": true,
       "description": "Un'autentica pizzeria napoletana con una vasta selezione di pizze cotte nel forno a legna.",
       "vat": "IT45678901234",
       "user_id": 4,
@@ -74,7 +74,7 @@
       "phone_number": "+39 06 2345678",
       "email": "info@thaispiceroma.com",
       "image": "https://example.com/images/thai_spice.jpg",
-      "pick-up": true,
+      "pick_up": true,
       "description": "Un ristorante thailandese che offre una varietà di piatti piccanti e aromatizzati.",
       "vat": "IT56789012345",
       "user_id": 5,
@@ -91,7 +91,7 @@
       "phone_number": "+39 06 8765432",
       "email": "info@mcdonalds.it",
       "image": "https://example.com/images/mcdonalds.jpg",
-      "pick-up": true,
+      "pick_up": true,
       "description": "Catena di fast food famosa per hamburger, patatine fritte, bevande e dessert.",
       "vat": "IT67890123456",
       "user_id": 6,
@@ -109,7 +109,7 @@
       "phone_number": "+39 06 6543210",
       "email": "info@burgerking.it",
       "image": "https://example.com/images/burgerking.jpg",
-      "pick-up": true,
+      "pick_up": true,
       "description": "Catena di fast food famosa per hamburger, patatine fritte, bevande e dessert.",
       "vat": "IT78901234567",
       "user_id": 7,
@@ -121,4 +121,3 @@
       ]
     }
   ]
-}

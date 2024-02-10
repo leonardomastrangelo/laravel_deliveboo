@@ -17,7 +17,6 @@ class ProductSeeder extends Seeder
     {
         $products = file_get_contents(__DIR__ . '/data/products.json');
         $products = json_decode($products, true);
-        $restaurants = Restaurant::all();
 
         foreach ($products as $product) {
             $newProduct = new Product();
