@@ -17,7 +17,7 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::all();
-        return view ('admin.products.index', compact('products'));
+        return view('admin.products.index', compact('products'));
     }
 
     /**
@@ -41,7 +41,7 @@ class ProductController extends Controller
             $formData['image'] = $path;
         }
         $product = Product::create($formData);
-        if ($request->has('restaurants')){
+        if ($request->has('restaurants')) {
             $product->restaurants()->attach($request->restaurants);
         }
         return redirect()->route('admin.products.show', $product->id);
@@ -52,7 +52,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        return view ('admin.products.show', compact('product'));
+        return view('admin.products.show', compact('product'));
     }
 
     /**
@@ -61,7 +61,7 @@ class ProductController extends Controller
     public function edit(Product $product)
     {
         $restaurants = Restaurant::all();
-        return view('admin.products.edit', compact('product', 'restaurant'));
+        return view('admin.products.edit', compact('product', 'restaurants'));
     }
 
     /**
@@ -76,7 +76,7 @@ class ProductController extends Controller
             $formData['image'] = $path;
         }
         $product->update($formData);
-        if ($request->has('restaurants')){
+        if ($request->has('restaurants')) {
             $product->restaurants()->sync($request->restaurants);
         }
         return redirect()->route('admin.products.show', $product->id);
@@ -87,7 +87,7 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        if ($product->image){
+        if ($product->image) {
             Storage::delete($product->image);
         }
         $product->delete();

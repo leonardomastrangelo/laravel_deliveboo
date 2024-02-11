@@ -15,13 +15,6 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="navbar-nav me-auto left">
-                        <i class="fa-solid fa-circle-chevron-left fs-3"></i>
-                    </div>
-                    <div class="navbar-nav me-auto right d-none">
-                        <i class="fa-solid fa-circle-chevron-right fs-3"></i>
-                    </div>
-
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
