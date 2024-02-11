@@ -36,7 +36,7 @@
           </a>
         </li>
         <li class="px-3">
-          <a href="{{route('admin.products.delete', $product->id)}}" class="btn btn-danger">
+          <a href="{{route('admin.products.destroy', $product->id)}}" class="btn btn-danger">
             <i class="fa-solid fa-trash"></i>
           </a>
         </li>

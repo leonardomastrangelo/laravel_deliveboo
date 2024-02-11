@@ -5,7 +5,7 @@
     <h1>Index</h1>
 
     <div class="row">
-      @foreach($products as $product) {
+      @foreach($products as $product)
         <div class="col-3">
           <div class="card">
             <img src="{{asset('storage/' . $product->image)}}" class="card-img-top" alt="{{$product->name}}">
@@ -28,13 +28,13 @@
               <a href="{{route('admin.products.edit', $product->id)}}" class="btn btn-warning">
                 <i class="fa-solid fa-pen-to-square"></i>
               </a>
-              <a href="{{route('admin.products.delete', $product->id)}}" class="btn btn-danger">
+              <a href="{{route('admin.products.destroy', $product->id)}}" class="btn btn-danger">
                 <i class="fa-solid fa-trash"></i>
               </a>
             </div>
           </div>
         </div>
-      }
+      @endforeach
     </div>
 
   </section>
