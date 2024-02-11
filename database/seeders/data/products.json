@@ -191,7 +191,7 @@
     },
     {
       "id": 22,
-      "name": "Chicken McNuggets (6 pezzi)",
+      "name": "Chicken McNuggets",
       "price": 3.99,
       "image": "https://example.com/images/chicken_mcnuggets.jpg",
       "ingredients": "pollo",

@@ -19,15 +19,17 @@ class CuisineSeeder extends Seeder
         foreach ($cuisines as $cuisine) {
             $newCuisine = new Cuisine();
             $newCuisine->name = $cuisine['name'];
-            $newCuisine->image = $cuisine['image'];
+            $newCuisine->image = CuisineSeeder::storeimage($cuisine['name']);
             $newCuisine->save();
         }
     }
 
     public static function storeimage($img)
     {
-        $contents = file_get_contents(resource_path('img/cuisines/' . $img));
-        $path = 'cuisines/' . $img;
+        $low_case = strtolower(str_replace(' ', '', $img));
+        $contents = file_get_contents(resource_path('img/cuisines/' . $low_case . '.jpg'));
+        $path = 'cuisines/' . $low_case . '.jpg';
         Storage::put($path, $contents);
+        return $path;
     }
 }

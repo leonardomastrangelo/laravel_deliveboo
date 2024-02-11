@@ -23,7 +23,7 @@ class ProductSeeder extends Seeder
             $newProduct->name = $product['name'];
             $newProduct->price = $product['price'];
             $newProduct->image = ProductSeeder::storeImage($product['name']);
-            $newProduct->ingredients = $product['description'];
+            $newProduct->ingredients = $product['ingredients'];
             $newProduct->availability = $product['availability'];
             $newProduct->restaurant_id = $product['restaurant_id'];
             $newProduct->save();

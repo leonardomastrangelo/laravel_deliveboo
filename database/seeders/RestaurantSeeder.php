@@ -34,7 +34,7 @@ class RestaurantSeeder extends Seeder
             $newRestaurant->vat = $restaurant['vat'];
             $newRestaurant->user_id = $restaurant['user_id'];
             $newRestaurant->save();
-            $newRestaurant->cuisines()->sync($newRestaurant);
+            $newRestaurant->cuisines()->sync($newRestaurant['cuisine_id']);
         }
     }
 
