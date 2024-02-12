@@ -54,7 +54,7 @@ class ProductController extends Controller
      */
     public function show(Product $product, Restaurant $restaurant)
     {
-        return view('admin.products.show', compact('product'));
+        return view('admin.products.show', compact('product', 'restaurant'));
     }
 
     /**

@@ -10,9 +10,12 @@
       <div class="w-25 my-4">
         <img src="{{asset('storage/'. $restaurant->image)}}" class="w-100 d-block" alt="{{$restaurant->name}}">
       </div>
+      @if (auth()->user()->id === $restaurant->user_id)
       <a href="{{route('admin.products.create', ['restaurant_id' => $restaurant->id])}}" class="btn btn-primary">
         Crea
       </a>
+      @endif
+      
       <h2>Prodotti</h2>
       <ul>
         <div class="row px-3">
@@ -36,20 +39,19 @@
                   </li>
                 </ul>
                 <div class="card-body">
-                  <a href="{{route('admin.products.show', $product->id)}}" class="btn btn-primary">
+                  <a href="{{route('admin.products.show', [$product->id, $restaurant->id])}}" class="btn btn-primary">
                     <i class="fa-solid fa-eye"></i>
                   </a>
+                  @if (auth()->user()->id === $restaurant->user_id)
                   <a href="{{route('admin.products.edit', $product->id)}}" class="btn btn-warning">
                     <i class="fa-solid fa-pen-to-square"></i>
                   </a>
-                  <form action="{{route('admin.products.destroy', $product->id,[
-                    'product_id' => $product->id,
-                    'restaurant_id' => $restaurant->id
-                    ])}}" method="POST">
+                  <form action="{{route('admin.products.destroy', $product->id)}}" method="POST">
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn cancel-button btn-danger fa-solid fa-trash" data-item-title="{{$product->name}}"></button>
                   </form>
+                  @endif
                 </div>
               </div>
             </div>

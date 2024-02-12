@@ -6,21 +6,22 @@
         {{ __('Dashboard') }}
     </h2>
     <div class="row justify-content-center">
-        <div class="col">
+        
+            <a class="btn btn-primary" href="{{route('admin.restaurants.create')}}">
+                Crea
+            </a>
+        
+        @foreach ($restaurants as $restaurant)
+        <div class="col-12 col-md-4 col-lg-3">
             <div class="card">
-                <div class="card-header">{{ __('User Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                    <div class="alert alert-success" role="alert">
-                        {{ session('status') }}
-                    </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
+                <a href="{{route('admin.restaurants.show', $restaurant->id)}}">
+                    <h1>{{$restaurant->name}}</h1>
+                </a>
+                
                 </div>
             </div>
         </div>
+        @endforeach
     </div>
 </div>
 @endsection
