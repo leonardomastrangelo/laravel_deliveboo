@@ -1,0 +1,47 @@
+@use './variables' as *;
+
+#navbar {
+  background-color: $nav-side;
+  color: $light;
+  #logo {
+    width: 150px;
+  }
+  ul {
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+  }
+}
+
+#sidebar {
+  background-color: $nav-side;
+  h5 {
+    color: $contrast;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    li {
+      padding: 20px 0;
+      width: 100%;
+      i {
+        font-size: 1.5em;
+        color: $contrast;
+      }
+    }
+  }
+  a {
+    color: $light;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+  button {
+    border: none !important;
+    margin: 0;
+    padding: 0;
+    color: $light;
+    font-size: 1.1em;
+  }
+}

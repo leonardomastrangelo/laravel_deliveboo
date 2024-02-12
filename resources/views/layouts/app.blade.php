@@ -20,10 +20,13 @@
 </head>
 
 <body>
-    <div id="app">
+    <div id="app" class="w-100 overflow-hidden">
         @include('partials.navbar')
-        <main id="main-content">
-            @yield('content')
+        <main id="main-content" class="row flex-nowrap">
+            @include('partials/sidebar')
+            
+            <div class="col overflow-y-auto">@yield('content')</div>
+            
         </main>
     </div>
 </body>

@@ -1,3 +1,5 @@
+
+
 @extends('layouts.app')
 
 @section('content')
@@ -19,6 +21,7 @@
     {{-- form --}}
     <form action="{{route('admin.products.store')}}" method="POST" enctype="multipart/form-data">
       @csrf
+      <input type="hidden" name="restaurant_id" value="{{$restaurant_id->id}}">
       <div class="mb-3">
         <label for="name" class="form-label">Nome</label>
         <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{old('name')}}">

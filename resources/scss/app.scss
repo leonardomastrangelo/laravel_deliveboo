@@ -3,6 +3,7 @@
 @use './partials/home' as *;
 @use './partials/products' as *;
 @use './partials/orders' as *;
+@use './partials/nav' as *;
 
 $fa-font-path: "../fonts/webfonts" !default;
 
@@ -15,4 +16,7 @@ $fa-font-path: "../fonts/webfonts" !default;
 
 body {
   font-family: 'Nunito', sans-serif;
+}
+#main-content {
+  height: calc(100vh - 48px);
 }
