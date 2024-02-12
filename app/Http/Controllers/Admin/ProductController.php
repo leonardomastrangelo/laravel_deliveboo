@@ -34,15 +34,18 @@ class ProductController extends Controller
      */
     public function store(StoreProductRequest $request)
     {
+
         $formData = $request->validated();
 
         if ($request->hasFile('image')) {
             $path = Storage::put('images', $formData['image']);
             $formData['image'] = $path;
         }
+
         $product = Product::create($formData);
-        if ($request->has('restaurants')) {
-            $product->restaurants()->attach($request->restaurants);
+        $formData['restaurant_id'] = $product->restaurant()->id;
+        if ($request->has('restaurant')) {
+            $product->restaurant()->attach($request->restaurant);
         }
         return redirect()->route('admin.products.show', $product->id);
     }
