@@ -43,7 +43,7 @@
       </div>
       <div class="mb-3">
         <label for="price" class="form-label">Prezzo</label>
-        <input type="number" class="form-control @error('price') is-invalid @enderror" id="price" name="price" value="{{old('price', $product->price)}}" required>
+        <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" name="price" value="{{old('price', $product->price)}}" required>
         @error('price')
           <div class="invalid-feedback">{{ $message }}</div>
         @enderror
