@@ -20,7 +20,7 @@
       @csrf
       <div class="mb-3">
         <label for="name" class="form-label">Nome</label>
-        <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{old('name', $product->name)}}">
+        <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" required minlength="3" maxlength="200" name="name" value="{{old('name', $product->name)}}">
         @error('name')
           <div class="invalid-feedback">{{ $message }}</div>
         @enderror
@@ -34,7 +34,7 @@
       </div>
       <div class="mb-3">
         <label for="ingredients" class="form-label">Ingredienti</label>
-        <input type="text" class="form-control @error('ingredients') is-invalid @enderror" id="ingredients" name="ingredients" value="{{old('ingredients', $product->ingredients)}}">
+        <input type="text" required minlength="3" maxlength="255" class="form-control @error('ingredients') is-invalid @enderror" id="ingredients" name="ingredients" value="{{old('ingredients', $product->ingredients)}}">
         @error('ingredients')
           <div class="invalid-feedback">{{ $message }}</div>
         @enderror
@@ -47,8 +47,11 @@
         @enderror
       </div>
       <div class="mb-3">
-        <label for="availability" class="form-label">Disponibilità</label>
-        <input type="text" class="form-control @error('availability') is-invalid @enderror" id="availability" name="availability" value="{{old('availability', $product->availability)}}">
+        <h3 class="mb-3">Disponibilità</h3>
+        <label for="availability" class="form-label">Disponibile</label>
+        <input type="radio" checked class="form-control @error('availability') is-invalid @enderror" id="availability" name="availability" value="1">
+        <label for="availability" class="form-label">Non Disponibile</label>
+        <input type="radio" class="form-control @error('availability') is-invalid @enderror" id="availability" name="availability" value="0">
         @error('availability')
           <div class="invalid-feedback">{{ $message }}</div>
         @enderror
