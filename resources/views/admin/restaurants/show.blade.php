@@ -42,12 +42,17 @@
                   <a href="{{route('admin.products.edit', $product->id)}}" class="btn btn-warning">
                     <i class="fa-solid fa-pen-to-square"></i>
                   </a>
-                  <a href="{{route('admin.products.destroy', $product->id)}}" class="btn btn-danger">
-                    <i class="fa-solid fa-trash"></i>
-                  </a>
                 </div>
               </div>
             </div>
+            <form action="{{route('admin.products.destroy', $product->id,[
+              'product_id' => $product->id,
+              'restaurant_id' => $restaurant->id
+              ])}}" method="POST">
+              @csrf
+              @method('DELETE')
+              <button type="submit" class="btn cancel-button btn-danger fa-solid fa-trash" data-item-title="{{$product->name}}"></button>
+            </form>
           @endforeach
         </div>
 
