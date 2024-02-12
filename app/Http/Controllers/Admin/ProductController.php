@@ -17,8 +17,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::all();
-        return view('admin.products.index', compact('products'));
+
     }
 
     /**
@@ -55,8 +54,7 @@ class ProductController extends Controller
      */
     public function show(Product $product, Restaurant $restaurant)
     {
-        $restaurant_found = Restaurant::findOrFail($product->restaurant_id);
-        return view('admin.products.show', compact('product'), ['restaurant_id' => $restaurant_found]);
+        return view('admin.products.show', compact('product'));
     }
 
     /**
@@ -91,11 +89,11 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-
+        $restaurant_id = $product->restaurant_id;
         if ($product->image) {
             Storage::disk('public')->delete($product->image);
         }
         $product->delete();
-        return to_route('admin.products.index');
+        return redirect()->route('admin.restaurants.show', $restaurant_id);
     }
 }
