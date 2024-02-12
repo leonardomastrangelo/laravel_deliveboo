@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\RestaurantController;
 use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\DashboardController;
 
@@ -27,6 +28,7 @@ Route::middleware(['auth', 'verified'])->name('admin.')->prefix('admin')->group(
     Route::resource('restaurants', RestaurantController::class);
     Route::get('/orders', [OrderController::class, 'index'])->name('orders');
     Route::resource('products', ProductController::class);
+    Route::resource('users', UserController::class);
 
 });
 
