@@ -39,7 +39,7 @@
                   </li>
                 </ul>
                 <div class="card-body">
-                  <a href="{{route('admin.products.show', [$product->id, $restaurant->id])}}" class="btn btn-primary">
+                  <a href="{{route('admin.products.show', $product->id)}}" class="btn btn-primary">
                     <i class="fa-solid fa-eye"></i>
                   </a>
                   @if (auth()->user()->id === $restaurant->user_id)

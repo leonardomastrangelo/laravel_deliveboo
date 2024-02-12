@@ -19,7 +19,7 @@
     {{-- form --}}
     <form action="{{route('admin.restaurants.store')}}" method="POST" enctype="multipart/form-data">
       @csrf
-
+      <input type="hidden" name="user_id" value="{{auth()->user()->id}}">
       <div class="mb-3">
         <label for="name" class="form-label">Nome</label>
         <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{old('name')}}" required minlength="3" maxlength="200">
@@ -69,16 +69,16 @@
       </div>
 
       <div class="mb-3">
-        <label for="pick_up" class="form-label">Asporto</label>
+        <label class="form-label">Asporto</label>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked required>
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="pick_up" id="pick_up1" value='1'>
+            <label class="form-check-label" for="pick_up1">
               Si
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" required>
-            <label class="form-check-label" for="flexRadioDefault2">
+            <input class="form-check-input" type="radio" name="pick_up" id="pick_up2" value='0'>
+            <label class="form-check-label" for="pick_up2">
               No
             </label>
           </div>
