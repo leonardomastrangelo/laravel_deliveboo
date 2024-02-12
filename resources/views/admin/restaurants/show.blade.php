@@ -12,7 +12,10 @@
       </div>
       <h2>Prodotti</h2>
       <ul>
-        <li>prodotti</li>
+        @foreach ($products as $product)
+          <li>{{$product->name}}</li>
+        @endforeach
+
       </ul>
     </div>
 
