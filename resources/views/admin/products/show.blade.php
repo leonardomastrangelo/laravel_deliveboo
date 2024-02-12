@@ -1,3 +1,5 @@
+
+
 @extends('layouts.app')
 
 @section('content')
@@ -30,6 +32,7 @@
         </li>
       </ul>
       {{-- operations --}}
+      @if (auth()->user()->id === $restaurant->user_id)
       <ul class="d-flex justify-content-center align-items-center">
         <li class="px-3">
           <a href="{{route('admin.products.edit', $product->id)}}" class="btn btn-warning">
@@ -44,6 +47,7 @@
             </form>
         </li>
       </ul>
+      @endif
       </div>
 
     </div>
