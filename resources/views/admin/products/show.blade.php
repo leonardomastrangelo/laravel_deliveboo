@@ -37,9 +37,11 @@
           </a>
         </li>
         <li class="px-3">
-          <a href="{{route('admin.products.destroy', $product->id)}}" class="btn btn-danger">
-            <i class="fa-solid fa-trash"></i>
-          </a>
+          <form action="{{route('admin.products.destroy', $product->id, ['restaurant_id' => $restaurant_id->id])}}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button class="btn btn-danger fa-solid fa-trash" type="submit"></button>
+            </form>
         </li>
       </ul>
       </div>
