@@ -6,6 +6,11 @@
         {{ __('Dashboard') }}
     </h2>
     <div class="row justify-content-center">
+        
+            <a class="btn btn-primary" href="{{route('admin.restaurants.create')}}">
+                Crea
+            </a>
+        
         @foreach ($restaurants as $restaurant)
         <div class="col-12 col-md-4 col-lg-3">
             <div class="card">
