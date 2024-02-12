@@ -93,6 +93,24 @@
             <div class="invalid-feedback">{{ $message }}</div>
         @enderror
       </div>
+      
+      <div>
+        <label for="cuisines[]" class="pb-2">
+          Seleziona cucine
+        </label>
+                @foreach ($cuisines as $cuisine)
+                    <div class="col-md-3 mx-3 form-check @error('cuisines') is-invalid @enderror">
+                        <input type="checkbox" class="form-check-input" name="cuisines[]" value="{{ $cuisine->id }}" {{ in_array($cuisine->id, old('cuisines', [])) ? 'checked' : '' }}>
+                        <label class="form-check-label">
+                            {{ $cuisine->name }}
+                        </label>
+                    </div>
+                @endforeach
+
+            @error('cuisines')
+            <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+
 
       <button type="submit" class="btn btn-primary">Crea</button>
       <button type="reset" class="btn btn-info">Reset</button>

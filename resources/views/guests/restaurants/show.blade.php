@@ -2,12 +2,10 @@
 
 @section('content')
 
-  <section id="restaurants-show" class="container-fluid py-5">
-    @if (session()->has('message'))
-      <div class="alert alert-success">
-        {{session()->get('message')}}
-      </div>
-    @endif
+  <section id="restaurants-show" class="container-fluid">
+    <h1>{{$restaurant->name}}</h1>
+
+    <div>
       <div class="card mb-3">
         <div class="row g-0">
           <div class="col-md-4">
@@ -50,19 +48,6 @@
           </div>
         </div>
       </div>
-      @if (auth()->user()->id === $restaurant->user_id)
-      <a href="{{route('admin.products.create', ['restaurant_id' => $restaurant->id])}}" class="btn btn-primary">
-        Crea Prodotto
-      </a>
-      <form action="{{route('admin.restaurants.destroy', $restaurant->id)}}" method="POST">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn cancel-button btn-danger" data-item-title="{{$restaurant->name}}">
-                      Elimina Ristorante
-                    </button>
-                  </form>
-      @endif
-      
       <h2>Prodotti</h2>
       <ul>
         <div class="row px-3">
@@ -93,16 +78,6 @@
                   <a href="{{route('admin.products.show', $product->id)}}" class="btn btn-primary">
                     <i class="fa-solid fa-eye"></i>
                   </a>
-                  @if (auth()->user()->id === $restaurant->user_id)
-                  <a href="{{route('admin.products.edit', $product->id)}}" class="btn btn-warning">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                  </a>
-                  <form action="{{route('admin.products.destroy', $product->id)}}" method="POST">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn cancel-button btn-danger fa-solid fa-trash" data-item-title="{{$product->name}}"></button>
-                  </form>
-                  @endif
                 </div>
               </div>
             </div>
@@ -111,7 +86,7 @@
         </div>
 
       </ul>
-    
+    </div>
 
   </section>
 

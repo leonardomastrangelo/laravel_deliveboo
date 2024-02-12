@@ -13,14 +13,6 @@ use App\Models\Restaurant;
 class ProductController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-
-    }
-
-    /**
      * Show the form for creating a new resource.
      */
     public function create(Request $request, Restaurant $restaurant)
@@ -95,6 +87,6 @@ class ProductController extends Controller
             Storage::disk('public')->delete($product->image);
         }
         $product->delete();
-        return redirect()->route('admin.restaurants.show', $restaurant_id);
+        return redirect()->route('admin.restaurants.show', $restaurant_id)->with('message', "Il prodotto '$product->name' è stato eliminato con successo");
     }
 }

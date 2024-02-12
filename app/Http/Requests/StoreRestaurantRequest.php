@@ -31,6 +31,7 @@ class StoreRestaurantRequest extends FormRequest
             'description' => 'nullable',
             'vat' => 'required|max:20',
             'user_id' => ['required', 'exists:users,id'],
+            'cuisines' => ['exists:cuisines,id'],
         ];
     }
 
@@ -53,6 +54,7 @@ class StoreRestaurantRequest extends FormRequest
             'pick_up.required' => 'Il campo asporto e\' obbligatorio',
             'vat.required' => 'La partita IVA e\' obbligatoria',
             'vat.max' => 'La partita IVA deve avere al massimo :max caratteri',
+            'cuisines.exists' => 'Il campo cucina e\' obbligatorio',
         ];
 
     }

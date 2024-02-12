@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Guest\GuestRestaurantController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,12 +23,14 @@ use App\Http\Controllers\Admin\DashboardController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
+Route::get('/restaurants', [GuestRestaurantController::class, 'index'])->name('guests.restaurants.index');
+Route::get('/restaurants/{id}', [GuestRestaurantController::class, 'show'])->name('guests.restaurants.show');
 
 Route::middleware(['auth', 'verified'])->name('admin.')->prefix('admin')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
     Route::resource('restaurants', RestaurantController::class);
     Route::get('/orders', [OrderController::class, 'index'])->name('orders');
-    Route::resource('products', ProductController::class);
+    Route::resource('products', ProductController::class)->except(['index']);
     Route::resource('users', UserController::class);
 
 });

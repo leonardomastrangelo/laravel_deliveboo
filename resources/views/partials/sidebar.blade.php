@@ -15,10 +15,18 @@
                      <a class="d-none d-md-inline-block" href="{{route('admin.dashboard')}}">Orders</a>
                   </li>
                   @endauth
+                  @auth
                   <li>
                     <i class="fa-solid fa-utensils"></i>
                      <a class="d-none d-md-inline-block" href="{{route('admin.restaurants.index')}}">Ristoranti</a>
                   </li>
+                  @endauth
+                  @guest
+                  <li>
+                     <i class="fa-solid fa-utensils"></i>
+                     <a class="d-none d-md-inline-block" href="{{route('guests.restaurants.index')}}">Ristoranti</a>
+                  </li>
+                  @endguest
                   {{-- <li>
                     <i class="fa-solid fa-bowl-food"></i>
                     <a class="d-none d-md-inline-block" href="{{route('admin.products.index')}}">Prodotti</a>

@@ -5,6 +5,11 @@
     <h2 class="fs-4 text-secondary my-4">
         {{ __('Dashboard') }}
     </h2>
+    @if (session()->has('message'))
+      <div class="alert alert-success">
+        {{session()->get('message')}}
+      </div>
+    @endif
     <div class="row justify-content-center">
         
             <a class="btn btn-primary" href="{{route('admin.restaurants.create')}}">
