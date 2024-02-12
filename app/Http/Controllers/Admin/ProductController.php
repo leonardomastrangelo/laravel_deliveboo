@@ -53,9 +53,10 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Product $product)
+    public function show(Product $product, Restaurant $restaurant)
     {
-        return view('admin.products.show', compact('product'));
+        $restaurant_found = Restaurant::findOrFail($product->restaurant_id);
+        return view('admin.products.show', compact('product'), ['restaurant_id' => $restaurant_found]);
     }
 
     /**
@@ -90,10 +91,11 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
+
         if ($product->image) {
-            Storage::delete($product->image);
+            Storage::disk('public')->delete($product->image);
         }
         $product->delete();
-        return to_route('admin.products.index')->with('message', "$product->title eliminato con successo");
+        return to_route('admin.products.index');
     }
 }
