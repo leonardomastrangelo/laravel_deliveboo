@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Models\Restaurant;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreRestaurantRequest;
+use Illuminate\Support\Str;
 use App\Http\Requests\UpdateRestaurantRequest;
 use App\Models\Cuisine;
 use App\Models\Product;
@@ -37,6 +38,7 @@ class RestaurantController extends Controller
     public function store(StoreRestaurantRequest $request)
     {
         $formData = $request->validated();
+        $formData['slug'] = Str::slug($formData['name'], '-');
         if ($request->hasFile('image')) {
             $path = Storage::put('images', $formData['image']);
             $formData['image'] = $path;
@@ -54,7 +56,7 @@ class RestaurantController extends Controller
      */
     public function show(Restaurant $restaurant)
     {
-        $products = Product::where('restaurant_id', $restaurant->id)->get();
+        $products = $restaurant->products;
         return view('admin.restaurants.show', compact('restaurant', 'products'));
     }
 

@@ -9,18 +9,20 @@
                      <i class="fa-solid fa-chart-line"></i>
                      <a class="d-none d-md-inline-block" href="{{route('admin.dashboard')}}">Dasboard</a>
                   </li>
+                  @auth
                   <li>
                      <i class="fa-brands fa-jedi-order"></i>
                      <a class="d-none d-md-inline-block" href="{{route('admin.dashboard')}}">Orders</a>
                   </li>
+                  @endauth
                   <li>
                     <i class="fa-solid fa-utensils"></i>
                      <a class="d-none d-md-inline-block" href="{{route('admin.restaurants.index')}}">Ristoranti</a>
                   </li>
-                  <li>
+                  {{-- <li>
                     <i class="fa-solid fa-bowl-food"></i>
                     <a class="d-none d-md-inline-block" href="{{route('admin.products.index')}}">Prodotti</a>
-                  </li>
+                  </li> --}}
                </ul>
             </div>
         </div>

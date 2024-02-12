@@ -1,3 +1,5 @@
+
+
 @extends('layouts.app')
 
 @section('content')
@@ -30,6 +32,7 @@
         </li>
       </ul>
       {{-- operations --}}
+      @if (auth()->user()->id === $restaurant->user_id)
       <ul class="d-flex justify-content-center align-items-center">
         <li class="px-3">
           <a href="{{route('admin.products.edit', $product->id)}}" class="btn btn-warning">
@@ -37,11 +40,14 @@
           </a>
         </li>
         <li class="px-3">
-          <a href="{{route('admin.products.destroy', $product->id)}}" class="btn btn-danger">
-            <i class="fa-solid fa-trash"></i>
-          </a>
+          <form action="{{route('admin.products.destroy', $product->id)}}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button class="btn btn-danger fa-solid fa-trash" type="submit"></button>
+            </form>
         </li>
       </ul>
+      @endif
       </div>
 
     </div>

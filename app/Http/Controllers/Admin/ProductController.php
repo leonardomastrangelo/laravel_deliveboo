@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Restaurant;
 
@@ -16,34 +17,32 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::all();
-        return view('admin.products.index', compact('products'));
+
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(Request $request, Restaurant $restaurant)
     {
-        $restaurants = Restaurant::all();
-        return view('admin.products.create', compact('restaurants'));
+        $restaurant_found = Restaurant::findOrFail($request->restaurant_id);
+        return view('admin.products.create', ['restaurant_id' => $restaurant_found]);
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreProductRequest $request)
+    public function store(StoreProductRequest $request, Product $product, Restaurant $restaurant)
     {
 
         $formData = $request->validated();
 
         if ($request->hasFile('image')) {
-            $path = Storage::put('images', $formData['image']);
+            $path = Storage::disk('public')->putFile('products', $formData['image']);
             $formData['image'] = $path;
         }
-
+        $formData['restaurant_id'] = $request->restaurant_id;
         $product = Product::create($formData);
-        $formData['restaurant_id'] = $product->restaurant()->id;
         if ($request->has('restaurant')) {
             $product->restaurant()->attach($request->restaurant);
         }
@@ -53,9 +52,10 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Product $product)
+    public function show(Product $product, Restaurant $restaurant)
     {
-        return view('admin.products.show', compact('product'));
+        $restaurant = $product->restaurant;
+        return view('admin.products.show', compact('product', 'restaurant'));
     }
 
     /**
@@ -63,8 +63,7 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        $restaurants = Restaurant::all();
-        return view('admin.products.edit', compact('product', 'restaurants'));
+        return view('admin.products.edit', compact('product'));
     }
 
     /**
@@ -75,13 +74,14 @@ class ProductController extends Controller
         $formData = $request->validated();
 
         if ($request->hasFile('image')) {
-            $path = Storage::put('images', $formData['image']);
+            if ($product->image) {
+                Storage::disk('public')->delete($product->image);
+            }
+            $path = Storage::disk('public')->putFile('products', $formData['image']);
             $formData['image'] = $path;
         }
-        $product->update($formData);
-        if ($request->has('restaurants')) {
-            $product->restaurants()->sync($request->restaurants);
-        }
+        $product->fill($formData);
+        $product->update();
         return redirect()->route('admin.products.show', $product->id);
     }
 
@@ -90,10 +90,11 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
+        $restaurant_id = $product->restaurant_id;
         if ($product->image) {
-            Storage::delete($product->image);
+            Storage::disk('public')->delete($product->image);
         }
         $product->delete();
-        return to_route('admin.products.index')->with('message', "$product->title eliminato con successo");
+        return redirect()->route('admin.restaurants.show', $restaurant_id);
     }
 }
