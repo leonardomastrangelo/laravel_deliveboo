@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Guest\GuestProductController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\RestaurantController;
@@ -25,6 +26,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/restaurants', [GuestRestaurantController::class, 'index'])->name('guests.restaurants.index');
 Route::get('/restaurants/{id}', [GuestRestaurantController::class, 'show'])->name('guests.restaurants.show');
+Route::get('/products/{id}', [GuestProductController::class, 'show'])->name('guests.products.show');
 
 Route::middleware(['auth', 'verified'])->name('admin.')->prefix('admin')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');

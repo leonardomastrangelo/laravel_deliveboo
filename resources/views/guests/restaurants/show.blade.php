@@ -75,7 +75,7 @@
                   </li>
                 </ul>
                 <div class="card-body">
-                  <a href="{{route('admin.products.show', $product->id)}}" class="btn btn-primary">
+                  <a href="{{route('guests.products.show', $product->id)}}" class="btn btn-primary">
                     <i class="fa-solid fa-eye"></i>
                   </a>
                 </div>
