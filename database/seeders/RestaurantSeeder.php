@@ -44,7 +44,7 @@ class RestaurantSeeder extends Seeder
 
         $contents = file_get_contents(resource_path('img/restaurants/' . $low_case . '.jpg'));
         $path = 'restaurants/' . $low_case . '.jpg';
-        Storage::disk('public')->putFile('restaurants', $contents);
+        Storage::put($path, $contents);
         return $path;
     }
 }
