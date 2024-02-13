@@ -45,6 +45,37 @@ btn.addEventListener("click", (e) => {
     }
 
 });
+const delete_btn = document.querySelector(".btn-danger");
+delete_btn.addEventListener("click", (e) => {
+    // Preventing form submission
+    e.preventDefault();
+
+    // Take title from attribute in modal
+    const dataTitle = delete_btn.getAttribute("data-item-title");
+
+    // Take modal
+    const modal = document.getElementById("deleteModal");
+
+    // Create new bs modal
+    const bootstrapModal = new bootstrap.Modal(modal);
+
+    // Show the modal
+    bootstrapModal.show();
+
+    // Take and set title
+    const title = modal.querySelector("#modal-item-title");
+    title.textContent = dataTitle;
+
+    // Take and bind click event to the final delete btn
+    const btnDelete = document.getElementById("modal_delete_btn");
+    btnDelete.addEventListener("click", (e) => {
+        // Prevent default form submission
+        e.preventDefault();
+
+        // Submit the form
+        delete_btn.parentElement.submit();
+    });
+});
 
 
 
