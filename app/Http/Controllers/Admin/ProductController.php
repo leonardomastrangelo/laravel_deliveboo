@@ -87,6 +87,7 @@ class ProductController extends Controller
             Storage::disk('public')->delete($product->image);
         }
         $product->delete();
-        return redirect()->route('admin.restaurants.show', $restaurant_id)->with('message', "Il prodotto '$product->name' è stato eliminato con successo");
+        $trashed_elements = Product::where('restaurant_id', $restaurant_id)->onlyTrashed()->get();
+        return redirect()->route('admin.restaurants.show', $restaurant_id)->with('message', "Il prodotto '$product->name' è stato eliminato con successo")->with('trashed', compact('trashed_elements'));
     }
 }

@@ -8,6 +8,16 @@
         {{session()->get('message')}}
       </div>
     @endif
+    @if (session()->has('trashed'))
+    <h3>Piatti Eliminati</h3>
+    @foreach (session()->get('trashed') as $element)
+      <ul>
+        @foreach ($element as $item)
+          <li>{{$item->name}}</li>
+        @endforeach  
+      </ul>
+    @endforeach  
+    @endif
       <div class="card mb-3">
         <div class="row g-0">
           <div class="col-md-4">
