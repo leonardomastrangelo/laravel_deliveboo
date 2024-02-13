@@ -61,7 +61,7 @@ class RegisteredUserController extends Controller
             'address' => $request->address,
             'phone_number' => $request->phone_number,
             'email' => $request->email,
-            'image' => $request->image->store('restaurants', 'public'),
+            'image' => RegisteredUserController::getImage($request),
             'pick_up' => $request->pick_up,
             'description' => $request->description,
             'vat' => $request->vat,
@@ -74,6 +74,15 @@ class RegisteredUserController extends Controller
         Auth::login($user);
 
         return redirect(RouteServiceProvider::HOME);
+    }
+
+    public static function getImage($request)
+    {
+        if ($request->hasFile('image')) {
+            return $request->image->store('restaurants', 'public');
+        } else {
+            return null;
+        }
     }
 
 }

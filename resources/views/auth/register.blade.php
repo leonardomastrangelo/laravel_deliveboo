@@ -161,6 +161,7 @@
                                 @error('cuisines')
                                 <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
+                            <div id="luigi"></div>
                         </div>
 
                         
