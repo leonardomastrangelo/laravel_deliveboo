@@ -23,10 +23,11 @@ class UpdateProductRequest extends FormRequest
     {
         return [
             'name' => ['required', 'string', 'min:3', 'max:200'],
-            'price' => ['required', 'numeric'],
+            'price' => ['required', 'numeric', 'gt:0'],
             'image' => ['nullable', 'image'],
             'ingredients' => ['required', 'min:3', 'max:255', 'string'],
-            'availability' => ['required'],
+            'description' => ['nullable'],
+            'availability' => ['required', 'boolean'],
             'restaurant_id' => ['exists:restaurants,id']
         ];
     }
@@ -40,6 +41,7 @@ class UpdateProductRequest extends FormRequest
             'name.max' => 'Il nome non può superare :max caratteri.',
             'price.required' => 'Il campo prezzo è obbligatorio.',
             'price.numeric' => 'Il prezzo deve essere un numero.',
+            'price.gt' => 'Il numero deve essere positivo',
             'image.image' => "L'immagine deve essere un'immagine.",
             'ingredients.required' => 'Il campo ingredienti è obbligatorio.',
             'ingredients.min' => 'Gli ingredienti devono essere di almeno :min caratteri.',

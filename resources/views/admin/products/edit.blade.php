@@ -47,6 +47,7 @@
         @error('price')
           <div class="invalid-feedback">{{ $message }}</div>
         @enderror
+        <div id="wario"></div>
       </div>
       <div class="mb-3">
         <h3 class="mb-3">Disponibilità</h3>
@@ -58,7 +59,7 @@
           <div class="invalid-feedback">{{ $message }}</div>
         @enderror
       </div>
-      <button type="submit" class="btn btn-primary">Modifica</button>
+      <button type="submit" id='product_button' class="btn btn-primary">Modifica</button>
       <button type="reset" class="btn btn-info">Reset</button>
     </form>
   </section>
