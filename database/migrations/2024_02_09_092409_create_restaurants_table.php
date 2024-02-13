@@ -15,10 +15,10 @@ return new class extends Migration {
             $table->string('name', 200);
             $table->string('slug', 255);
             $table->string('address', 255);
-            $table->string('phone_number', 20);
+            $table->string('phone_number', 20)->nullable();
             $table->string('email', 255);
             $table->string('image', 255)->nullable();
-            $table->boolean('pick_up');
+            $table->boolean('pick_up')->nullable();
             $table->text('description')->nullable();
             $table->string('vat', 20);
             $table->unsignedBigInteger('user_id');

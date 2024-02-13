@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\Cuisine;
+use App\Models\Restaurant;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
@@ -12,6 +14,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Illuminate\View\View;
+use Illuminate\Support\Str;
+use Database\Seeders\RestaurantSeeder;
 
 class RegisteredUserController extends Controller
 {
@@ -20,7 +24,8 @@ class RegisteredUserController extends Controller
      */
     public function create(): View
     {
-        return view('auth.register');
+        $cuisines = Cuisine::all();
+        return view('auth.register', compact('cuisines'));
     }
 
     /**
@@ -32,16 +37,36 @@ class RegisteredUserController extends Controller
     {
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
-            'surname' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:' . User::class],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'address' => ['required', 'string', 'min:3', 'max:255'],
+            'phone_number' => ['string', 'min:3', 'max:20'],
+            'vat' => ['required', 'string', 'min:11', 'max:11'],
+            'image' => ['nullable', 'image'],
+            'pick_up' => ['nullable', 'boolean'],
+            'description' => ['nullable', 'string', 'min:3', 'max:255'],
+            'cuisines' => ['required', 'exists:cuisines,id'],
+            'user_id' => ['required', 'numeric']
         ]);
 
         $user = User::create([
             'name' => $request->name,
-            'surname' => $request->surname,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+        ]);
+
+        Restaurant::create([
+            'name' => $request->name,
+            'slug' => Str::slug($request->name),
+            'address' => $request->address,
+            'phone_number' => $request->phone_number,
+            'email' => $request->email,
+            'image' => RestaurantSeeder::storeImage($request->name),
+            'pick_up' => $request->pick_up,
+            'description' => $request->description,
+            'vat' => $request->vat,
+            'cuisines' => $request->cuisines,
+            'user_id' => $user->id,
         ]);
 
         event(new Registered($user));
