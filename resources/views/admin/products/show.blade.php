@@ -24,11 +24,15 @@
       <ul>
         {{-- price --}}
         <li>
-          {{$product->price}}
+          $ {{$product->price}}
         </li>
         {{-- availability --}}
         <li>
-          {{$product->availability}}
+          @if ($product->availability)
+            Disponibile
+          @else
+            Non disponibile
+          @endif
         </li>
       </ul>
       {{-- operations --}}

@@ -34,7 +34,7 @@ class RestaurantSeeder extends Seeder
             $newRestaurant->vat = $restaurant['vat'];
             $newRestaurant->user_id = $restaurant['user_id'];
             $newRestaurant->save();
-            $newRestaurant->cuisines()->sync($newRestaurant['cuisine_id']);
+            $newRestaurant->cuisines()->sync($restaurant['cuisine_id']);
         }
     }
 
@@ -44,7 +44,7 @@ class RestaurantSeeder extends Seeder
 
         $contents = file_get_contents(resource_path('img/restaurants/' . $low_case . '.jpg'));
         $path = 'restaurants/' . $low_case . '.jpg';
-        Storage::put($path, $contents);
+        Storage::disk('public')->putFile('restaurants', $contents);
         return $path;
     }
 }

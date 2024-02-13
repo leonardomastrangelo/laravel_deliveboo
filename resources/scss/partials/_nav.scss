@@ -15,6 +15,12 @@
 
 #sidebar {
   background-color: $nav-side;
+  font-size: 0.8em;
+  .active-link {
+     background-color: rgba(95, 92, 92, 0.314);
+     color: black;
+     border-radius: 50px;
+  }
   h5 {
     color: $contrast;
   }
@@ -24,10 +30,16 @@
     margin: 0;
     text-align: center;
     li {
-      padding: 20px 0;
+      padding: 20px;
       width: 100%;
+      .anchor-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
       i {
-        font-size: 1.5em;
+        font-size: 1.7em;
         color: $contrast;
       }
     }

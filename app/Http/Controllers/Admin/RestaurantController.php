@@ -40,13 +40,12 @@ class RestaurantController extends Controller
         $formData = $request->validated();
         $formData['slug'] = Str::slug($formData['name'], '-');
         if ($request->hasFile('image')) {
-            $path = Storage::put('images', $formData['image']);
+            $path = Storage::disk('public')->putFile('restaurants', $formData['image']);
             $formData['image'] = $path;
         }
         $newRestaurant = Restaurant::create($formData);
-        if ($request->has('cuisines') && $request->has('products')) {
+        if ($request->has('cuisines')) {
             $newRestaurant->cuisines()->attach($request->cuisines);
-            $newRestaurant->products()->attach($request->products);
         }
         return to_route('admin.restaurants.show', $newRestaurant->id);
     }
@@ -77,7 +76,10 @@ class RestaurantController extends Controller
     {
         $formData = $request->validated();
         if ($request->hasFile('image')) {
-            $path = Storage::put('images', $formData['image']);
+            if ($restaurant->image) {
+                Storage::disk('public')->delete($restaurant->image);
+            }
+            $path = Storage::disk('public')->putFile('restaurants', $formData['image']);
             $formData['image'] = $path;
         }
         $restaurant->fill($formData);
@@ -101,6 +103,6 @@ class RestaurantController extends Controller
             Storage::delete($restaurant->image);
         }
         $restaurant->delete();
-        return to_route('admin.restaurants.index')->with('message', "'$restaurant->name' è stato eliminato con successo!");
+        return to_route('admin.dashboard')->with('message', "'$restaurant->name' è stato eliminato con successo!");
     }
 }

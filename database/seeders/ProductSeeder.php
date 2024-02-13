@@ -34,7 +34,7 @@ class ProductSeeder extends Seeder
         $low_case = strtolower(str_replace(' ', '', $img));
         $contents = file_get_contents(resource_path('img/products/' . $low_case . '.jpg'));
         $path = 'products/' . $low_case . '.jpg';
-        Storage::put($path, $contents);
+        Storage::disk('public')->putFile('products', $contents);
         return $path;
     }
 }

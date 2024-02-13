@@ -50,9 +50,12 @@
           <div class="invalid-feedback">{{ $message }}</div>
         @enderror
       </div>
-      <div class="mb-3">
-        <label for="availability" class="form-label">Disponibilità</label>
-        <input type="text" class="form-control @error('availability') is-invalid @enderror" id="availability" name="availability" value="{{old('availability')}}" required>
+     <div class="mb-3">
+        <h3 class="mb-3">Disponibilità</h3>
+        <label for="availability" class="form-check-label">Disponibile</label>
+        <input type="radio" checked class="form-check-input @error('availability') is-invalid @enderror" id="availability" name="availability" value="1">
+        <label for="availability" class="form-check-label">Non Disponibile</label>
+        <input type="radio" class="form-check-input @error('availability') is-invalid @enderror" id="availability" name="availability" value="0">
         @error('availability')
           <div class="invalid-feedback">{{ $message }}</div>
         @enderror
