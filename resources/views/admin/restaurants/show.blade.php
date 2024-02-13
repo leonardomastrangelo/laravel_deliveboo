@@ -40,7 +40,7 @@
                 </li>
                 <li class="list-group-item">
                   @foreach ($restaurant->cuisines as $cuisine)
-                     <span class="badge text-bg-primary">
+                     <span class="badge text-bg-success">
                       {{$cuisine->name}} 
                     </span>
                   @endforeach

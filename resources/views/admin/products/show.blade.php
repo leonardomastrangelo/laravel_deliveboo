@@ -24,7 +24,7 @@
       <ul>
         {{-- price --}}
         <li>
-          {{$product->price}}
+          $ {{$product->price}}
         </li>
         {{-- availability --}}
         <li>
