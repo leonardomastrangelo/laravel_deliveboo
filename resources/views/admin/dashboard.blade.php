@@ -11,11 +11,6 @@
       </div>
     @endif
     <div>
-        <div class="text-center">
-            <a class="btn btn-primary" href="{{route('admin.restaurants.create')}}">
-                Crea nuovo ristorante
-            </a>
-        </div>
         
         <table class="table table-info table-hover my-5">
             <thead class="table-light">
@@ -31,7 +26,7 @@
                     @forelse ($restaurants as $restaurant)
                     <tr>
                         <td>
-                            <a href="{{route('admin.restaurants.show', $restaurant->id)}}">{{$restaurant->name}}</a>
+                            <a href="{{route('admin.restaurants.show', $restaurant->slug)}}">{{$restaurant->name}}</a>
                         </td>
                         <td>{{$restaurant->address}}</td>
                         <td>{{$restaurant->phone_number}}</td>

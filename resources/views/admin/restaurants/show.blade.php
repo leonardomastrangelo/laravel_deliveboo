@@ -64,13 +64,6 @@
       <a href="{{route('admin.products.create', ['restaurant_id' => $restaurant->id])}}" class="btn btn-primary">
         Crea Prodotto
       </a>
-      <form action="{{route('admin.restaurants.destroy', $restaurant->id)}}" method="POST">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn cancel-button btn-danger" data-item-title="{{$restaurant->name}}">
-                      Elimina Ristorante
-                    </button>
-                  </form>
       @endif
       
       <h2>Prodotti</h2>

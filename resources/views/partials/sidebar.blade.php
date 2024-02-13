@@ -20,21 +20,7 @@
                     <span class="d-none d-md-inline-block">Orders</span>
                 </a>
             </li>
-            <li @if(Request::url() == route('admin.restaurants.index')) class="active-link" @endif>
-                <a class="anchor-container" href="{{ route('admin.restaurants.index') }}">
-                    <i class="fa-solid fa-utensils"></i>
-                    <span class="d-none d-md-inline-block">Ristoranti</span>
-                </a>
-            </li>
             @endauth
-            @guest
-            <li @if(Request::url() == route('guests.restaurants.index')) class="active-link" @endif>
-                <a class="anchor-container" href="{{ route('guests.restaurants.index') }}">
-                    <i class="fa-solid fa-utensils"></i>
-                    <span class="d-none d-md-inline-block">Ristoranti</span>
-                </a>
-            </li>
-            @endguest
         </ul>
     </div>
 </div>

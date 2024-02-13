@@ -47,6 +47,9 @@ class ProductController extends Controller
     public function show(Product $product, Restaurant $restaurant)
     {
         $restaurant = $product->restaurant;
+        if (auth()->user()->id !== $restaurant->user_id) {
+            abort(404);
+        }
         return view('admin.products.show', compact('product', 'restaurant'));
     }
 
@@ -55,6 +58,9 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
+        if (auth()->user()->id !== $product->restaurant->user_id) {
+            abort(404);
+        }
         return view('admin.products.edit', compact('product'));
     }
 
@@ -82,12 +88,16 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        $restaurant_id = $product->restaurant_id;
+        if (auth()->user()->id !== $product->restaurant->user_id) {
+            abort(404);
+        }
+        $restaurant_slug = $product->restaurant->slug;
+        $restaurant_id = $product->restaurant->id;
         if ($product->image) {
             Storage::disk('public')->delete($product->image);
         }
         $product->delete();
         $trashed_elements = Product::where('restaurant_id', $restaurant_id)->onlyTrashed()->get();
-        return redirect()->route('admin.restaurants.show', $restaurant_id)->with('message', "Il prodotto '$product->name' è stato eliminato con successo")->with('trashed', compact('trashed_elements'));
+        return redirect()->route('admin.restaurants.show', $restaurant_slug)->with('message', "Il prodotto '$product->name' è stato eliminato con successo")->with('trashed', compact('trashed_elements'));
     }
 }

@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\Guest\GuestProductController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\RestaurantController;
@@ -9,7 +8,7 @@ use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\DashboardController;
-use App\Http\Controllers\Guest\GuestRestaurantController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -24,13 +23,9 @@ use App\Http\Controllers\Guest\GuestRestaurantController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/restaurants', [GuestRestaurantController::class, 'index'])->name('guests.restaurants.index');
-Route::get('/restaurants/{id}', [GuestRestaurantController::class, 'show'])->name('guests.restaurants.show');
-Route::get('/products/{id}', [GuestProductController::class, 'show'])->name('guests.products.show');
-
 Route::middleware(['auth', 'verified'])->name('admin.')->prefix('admin')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
-    Route::resource('restaurants', RestaurantController::class);
+    Route::get('restaurants/{slug}', [RestaurantController::class, 'show'])->name('restaurants.show');
     Route::get('/orders', [OrderController::class, 'index'])->name('orders');
     Route::resource('products', ProductController::class)->except(['index']);
     Route::resource('users', UserController::class);
