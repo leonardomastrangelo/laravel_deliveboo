@@ -115,7 +115,7 @@
 
       </ul>
     
-
+      @include('partials.modal_delete')
   </section>
 
 @endsection

@@ -44,7 +44,6 @@
                             <form action="{{ route('admin.products.destroy', $product->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                @include('partials.modal_delete')
 
                                 <button class="btn btn-danger fa-solid fa-trash" type="submit"
                                     data-item-title='{{ $product->name }}' data-bs-toggle="modal"
@@ -57,6 +56,6 @@
             </div>
 
         </div>
-
+        @include('partials.modal_delete')
     </section>
 @endsection
