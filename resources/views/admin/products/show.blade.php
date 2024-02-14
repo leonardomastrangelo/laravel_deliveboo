@@ -45,7 +45,7 @@
                                 @csrf
                                 @method('DELETE')
 
-                                <button class="btn btn-danger fa-solid fa-trash" type="submit"
+                                <button id='button_deletep' class="btn btn-danger fa-solid fa-trash" type="submit"
                                     data-item-title='{{ $product->name }}' data-bs-toggle="modal"
                                     data-bs-target="#deleteModal"></button>
                             </form>

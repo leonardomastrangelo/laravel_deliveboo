@@ -48,42 +48,40 @@ document.addEventListener('DOMContentLoaded', function () {
             let password_error =
                 "<div class='text-danger'> Le password non corrispondono </div>";
             document.querySelector("#mario").innerHTML = password_error;
+            confirmPassword.value = ''
         }
 
     });
 })
 
 document.addEventListener('DOMContentLoaded', function () {
-    const delete_btn = document.querySelector(".btn-danger");
-    delete_btn.addEventListener("click", (e) => {
+    const deleteBtn = document.querySelector("#button_deletep");
+    const modal = new bootstrap.Modal(document.getElementById("deleteModal"));
+
+    deleteBtn.addEventListener("click", (e) => {
         // Preventing form submission
         e.preventDefault();
 
         // Take title from attribute in modal
-        const dataTitle = delete_btn.getAttribute("data-item-title");
-
-        // Take modal
-        const modal = document.getElementById("deleteModal");
-
-        // Create new bs modal
-        const bootstrapModal = new bootstrap.Modal(modal);
+        const dataTitle = deleteBtn.getAttribute("data-item-title");
 
         // Show the modal
-        bootstrapModal.show();
+        modal.show();
 
         // Take and set title
-        const title = modal.querySelector("#modal-item-title");
+        const title = document.querySelector("#data-item-title");
         title.textContent = dataTitle;
-
-        // Take and bind click event to the final delete btn
-        const btnDelete = document.getElementById("modal_delete_btn");
-        btnDelete.addEventListener("click", (e) => {
-            // Prevent default form submission
-            // Submit the form
-            delete_btn.parentElement.submit();
-        });
     });
-})
+
+    const modalDeleteBtn = document.getElementById("modal_delete_btn");
+    modalDeleteBtn.addEventListener("click", (e) => {
+        // Prevent default form submission
+        e.preventDefault();
+
+        // Submit the form
+        deleteBtn.parentElement.submit();
+    });
+});
 
 
 
