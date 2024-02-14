@@ -14,9 +14,9 @@
       <ul>
         @foreach ($element as $item)
           <li>{{$item->name}}</li>
-        @endforeach  
+        @endforeach
       </ul>
-    @endforeach  
+    @endforeach
     @endif
       <div class="card mb-3">
         <div class="row g-0">
@@ -45,13 +45,13 @@
                   @if ($restaurant->pick_up)
                     Asporto
                   @else
-                    No Asporto 
+                    No Asporto
                   @endif
                 </li>
                 <li class="list-group-item">
                   @foreach ($restaurant->cuisines as $cuisine)
                      <span class="badge text-bg-success">
-                      {{$cuisine->name}} 
+                      {{$cuisine->name}}
                     </span>
                   @endforeach
                 </li>
@@ -60,29 +60,37 @@
           </div>
         </div>
       </div>
-      @if (auth()->user()->id === $restaurant->user_id)
-      <a href="{{route('admin.products.create', ['restaurant_id' => $restaurant->id])}}" class="btn btn-primary">
-        Crea Prodotto
-      </a>
-      @endif
-      
-      <h2>Prodotti</h2>
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+            <h2 class="my-4">Prodotti</h2>
+        </div>
+        <div>
+            @if (auth()->user()->id === $restaurant->user_id)
+            <a href="{{route('admin.products.create', ['restaurant_id' => $restaurant->id])}}" class="btn btn-primary">
+             Crea nuovo prodotto
+            </a>
+             @endif
+        </div>
+      </div>
+
       <ul>
         <div class="row px-3">
           @foreach($products as $product)
             <div class="col-md-6 my-3 col-lg-4">
               <div class="card h-100">
                 <div class="card-image overflow-hidden ">
+                    <a href="{{route('admin.products.show', $product->id)}}">
                       <img src="{{asset('storage/' . $product->image)}}" class="card-img-top" alt="{{$product->name}}">
+                    </a>
                 </div>
-    
+
                 <div class="card-body">
                   <h5 class="card-title">{{$product->name}}</h5>
                   <p class="card-text">{{$product->ingredients}}</p>
                 </div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">
-                    $ {{$product->price}}
+                    {{$product->price}} €
                   </li>
                   <li class="list-group-item">
                     @if ($product->availability)
@@ -92,19 +100,9 @@
                     @endif
                   </li>
                 </ul>
-                <div class="card-body">
-                  <a href="{{route('admin.products.show', $product->id)}}" class="btn btn-primary">
-                    <i class="fa-solid fa-eye"></i>
-                  </a>
-                  
-                  <a href="{{route('admin.products.edit', $product->id)}}" class="btn btn-warning">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                  </a>
-
-                </div>
               </div>
             </div>
-            
+
           @endforeach
         </div>
 

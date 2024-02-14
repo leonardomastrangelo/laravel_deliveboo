@@ -63,6 +63,9 @@
       </div>
       <button type="submit" id='product_button' class="btn btn-primary">Crea</button>
       <button type="reset" class="btn btn-info">Reset</button>
+      <p class="small my-3">
+        Il campo * è obbligatorio
+    </p>
     </form>
   </section>
 @endsection
