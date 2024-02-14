@@ -21,7 +21,7 @@
                 <ul>
                     {{-- price --}}
                     <li>
-                        $ {{ $product->price }}
+                        {{ $product->price }} €
                     </li>
                     {{-- availability --}}
                     <li>
@@ -34,24 +34,21 @@
                 </ul>
                 {{-- operations --}}
                 @if (auth()->user()->id === $restaurant->user_id)
-                    <ul class="d-flex justify-content-center align-items-center">
-                        <li class="px-3">
-                            <a href="{{ route('admin.products.edit', $product->id) }}" class="btn btn-warning">
-                                <i class="fa-solid fa-pen-to-square"></i>
-                            </a>
-                        </li>
-                        <li class="px-3">
-                            <form action="{{ route('admin.products.destroy', $product->id) }}" method="POST">
-                                @csrf
-                                @method('DELETE')
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="{{ route('admin.products.edit', $product->id) }}" class="btn btn-warning mx-3">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
 
-                                <button id='button_deletep' class="btn btn-danger fa-solid fa-trash" type="submit"
-                                    data-item-title='{{ $product->name }}' data-bs-toggle="modal"
-                                    data-bs-target="#deleteModal"></button>
-                            </form>
+                        <form action="{{ route('admin.products.destroy', $product->id) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
 
-                        </li>
-                    </ul>
+                            <a id='button_deletep' class="btn btn-danger" type="submit"
+                                data-item-title='{{ $product->name }}' data-bs-toggle="modal"
+                                data-bs-target="#deleteModal">
+                                <i class="fa-solid fa-trash"></i></a>
+                        </form>
+                    </div>
                 @endif
             </div>
 
@@ -59,3 +56,4 @@
         @include('partials.modal_delete')
     </section>
 @endsection
+
