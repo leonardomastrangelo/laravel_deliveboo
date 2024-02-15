@@ -19,9 +19,16 @@ class RestaurantController extends Controller
         if ($cuisines) {
             $cuisines = is_array($cuisines) ? $cuisines : [$cuisines];
 
+            foreach ($cuisines as $cuisine) {
+                $query->whereHas('cuisines', function ($q) use ($cuisine) {
+                    $q->where('name', $cuisine);
+                });
+            }
+
+            // Controlla che il numero di tipologie di cucina corrisponda a quello specificato
             $query->whereHas('cuisines', function ($q) use ($cuisines) {
                 $q->whereIn('name', $cuisines);
-            });
+            }, '=', count($cuisines));
         }
 
         $restaurants = $query->get();
