@@ -38,7 +38,7 @@ class RestaurantController extends Controller
         $restaurant = Restaurant::with('cuisines')->with('products')->where('slug', $slug)->get();
         return response()->json([
             'success' => true,
-            'results' => $restaurant
+            'results' => $restaurant[0]
         ]);
     }
 }
