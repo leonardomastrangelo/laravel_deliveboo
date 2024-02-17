@@ -60,11 +60,11 @@
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-between align-items-center">
+      <div class="">
         <div>
-            <h2 class="my-4">Prodotti</h2>
+            <h2 class="display-4 fw-bold text-center py-4">Prodotti</h2>
         </div>
-        <div>
+        <div class="text-center">
             @if (auth()->user()->id === $restaurant->user_id)
             <a href="{{route('admin.products.create', ['restaurant_id' => $restaurant->id])}}" class="btn btn-primary">
              Crea nuovo prodotto

@@ -1,7 +1,7 @@
 @use './variables' as *;
 
 #navbar {
-  background-color: $nav-side;
+  background-color: $darkgrey;
   color: $light;
   #logo {
     width: 150px;
@@ -14,15 +14,12 @@
 }
 
 #sidebar {
-  background-color: $nav-side;
+  background-color: $darkgrey;
   font-size: 0.8em;
   .active-link {
      background-color: rgba(95, 92, 92, 0.314);
      color: black;
      border-radius: 50px;
-  }
-  h5 {
-    color: $contrast;
   }
   ul {
     list-style: none;
@@ -40,7 +37,7 @@
       }
       i {
         font-size: 1.7em;
-        color: $contrast;
+        color: $orange;
       }
     }
   }
