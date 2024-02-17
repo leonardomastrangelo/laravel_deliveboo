@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container mt-4">
-{{-- errori --}}
+<div class="container">
+    {{-- errori --}}
     @if ($errors->any())
-      <div class="alert alert-danger">
+      <div class="alert alert-danger py-4">
         <ul>
           @foreach ($errors->all() as $error)
           <li>{{ $error }}</li>
@@ -12,28 +12,20 @@
         </ul>
       </div>
     @endif
-    <div class="row justify-content-center">
+
+    {{-- form --}}
+    <div class="row justify-content-center py-4">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <div class="card-header">{{ __('Registrazione') }}</div>
 
                 <div class="card-body">
                     <form method="POST" enctype="multipart/form-data" action="{{ route('register') }}">
                         @csrf
-                        {{-- name --}}
-                        <div class="mb-4 row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nome Attività *') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                            </div>
-                        </div>
+                        {{-- campi obbligatori --}}
+                        <p class="small text-end py-2">
+                            I campi <span class="fs-5">*</span> sono obbligatori
+                        </p>
 
                         {{-- email --}}
                         <div class="mb-4 row">
@@ -50,7 +42,49 @@
                             </div>
                         </div>
 
-                        {{-- PIVA --}}
+                        {{-- password --}}
+                        <div class="mb-4 row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password *') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+
+                                @error('password')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        {{-- conferma password --}}
+                        <div class="mb-4 row">
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password *') }}</label>
+
+                            <div id="error_pass" class="col-md-6">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                                <div id="mario">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- nome --}}
+                        <div class="mb-4 row">
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nome Attività *') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+                                @error('name')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        {{-- piva --}}
                         <div class="mb-4 row">
                             <label for="vat" class="col-md-4 col-form-label text-md-right">{{ __('Partita IVA *') }}</label>
 
@@ -65,7 +99,7 @@
                             </div>
                         </div>
 
-                        {{-- ADDRESS --}}
+                        {{-- address --}}
                         <div class="mb-4 row">
                             <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('Indirizzo *') }}</label>
 
@@ -80,7 +114,7 @@
                             </div>
                         </div>
 
-                        {{-- PHONE NUMBER --}}
+                        {{-- numero di telefono --}}
                         <div class="mb-4 row">
                             <label for="phone_number" class="col-md-4 col-form-label text-md-right">{{ __('Numero di telefono') }}</label>
 
@@ -95,7 +129,7 @@
                             </div>
                         </div>
 
-                        {{-- IMAGE --}}
+                        {{-- immagine --}}
                         <div class="mb-4 row">
                             <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('Immagine') }}</label>
 
@@ -110,9 +144,10 @@
                             </div>
                         </div>
 
-                        {{-- PICK UP --}}
-                            <div class="mb-4 row">
-                                <label for="pick_up" class="col-md-4 col-form-label text-md-right">{{ __('Asporto') }}</label>
+                        {{-- asporto --}}
+                        <div class="mb-4 row">
+                            <label for="pick_up" class="col-md-4 col-form-label text-md-right">{{ __('Asporto') }}</label>
+                            <div class="col-md-8">
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="pick_up" id="pick_up1" value='1'>
                                     <label class="form-check-label" for="pick_up1">
@@ -126,15 +161,14 @@
                                     </label>
                                 </div>
                             </div>
+                        </div>
 
-                        {{-- Descrizione --}}
+                        {{-- descrizione --}}
                         <div class="mb-4 row">
                             <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('Descrizione') }}</label>
 
                             <div class="col-md-6">
-                                <textarea id="description" class="form-control @error('description') is-invalid @enderror" name="description" cols="30" rows="10">
-                                    {{ old('description') }}
-                                </textarea>
+                                <textarea id="description" class="form-control @error('description') is-invalid @enderror" name="description" cols="30" rows="5">{{ old('description') }}</textarea>
 
                                 @error('description')
                                 <span class="invalid-feedback" role="alert">
@@ -144,7 +178,7 @@
                             </div>
                         </div>
 
-                        {{-- Cuisines --}}
+                        {{-- cucine --}}
                         <div class="mb-4 row">
                             <label for="cuisines[]" class="pb-2">
                             Seleziona cucine *
@@ -161,46 +195,18 @@
                                 @error('cuisines')
                                 <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
+                            {{-- js errore --}}
                             <div id="luigi"></div>
                         </div>
 
-                        
-                        <div class="mb-4 row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password *') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="mb-4 row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password *') }}</label>
-
-                            <div id="error_pass" class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                                <div id="mario">
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mb-4 row">
-                            <div class="col-md-6 offset-md-4">
-                                <button id="register-btn" type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
+                        {{-- bottone submit --}}
+                        <div class="mb-4 row pt-4">
+                            <div class="col-12 d-flex justify-content-center align-items-center">
+                                <button id="register-btn" type="submit" class="btn btn-primary fs-4">
+                                    {{ __('Registrati') }}
                                 </button>
                             </div>
                         </div>
-
-                        <p class="small">
-                            Il campo * è obbligatorio
-                        </p>
                     </form>
                 </div>
             </div>
