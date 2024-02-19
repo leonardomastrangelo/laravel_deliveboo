@@ -2,9 +2,8 @@
 
 @section('content')
     <section id="products-show" class="container-fluid">
-        <h1>{{ $product->name }}</h1>
 
-        <div class="row d-flex flex-wrap px-3">
+        <div class="row d-flex flex-wrap px-3 mt-5">
             {{-- image --}}
             <div class="col-12 col-md-3">
                 <img src="{{ asset('storage/' . $product->image) }}" class="w-100 d-block" alt="{{ $product->name }}">

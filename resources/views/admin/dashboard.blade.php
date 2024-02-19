@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-fluid py-4">
     <h2 class="display-4 fw-bold text-center py-2">
-        {{ __('Il tuo ristorante') }}
+        {{ __('I tuoi ristoranti') }}
     </h2>
     @if (session()->has('message'))
       <div class="alert alert-success">
@@ -16,7 +16,7 @@
     <div class="row g-0">
         <div class="col-md-4">
         <a href="{{route('admin.restaurants.show', $restaurant->slug)}}">
-            <img src="{{"storage/$restaurant->image"}}" class="img-fluid rounded-start" alt="{{$restaurant->name}}">
+            <img src="{{"storage/$restaurant->image"}}" class="img-fluid h-100 rounded-start" alt="{{$restaurant->name}}">
         </a>
         </div>
         <div class="col-md-8 d-flex align-items-center">
