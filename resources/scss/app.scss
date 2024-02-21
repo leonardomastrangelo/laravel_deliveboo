@@ -4,6 +4,8 @@
 @use './partials/products' as *;
 @use './partials/orders' as *;
 @use './partials/nav' as *;
+@use './partials/login' as *;
+@use './partials/register' as *;
 
 $fa-font-path: "../fonts/webfonts" !default;
 
@@ -16,6 +18,10 @@ $fa-font-path: "../fonts/webfonts" !default;
 
 body {
   font-family: 'Nunito', sans-serif;
+  background: rgb(0,101,110);
+  background: linear-gradient(30deg, rgba(0,101,110,1) 50%, rgba(0,138,134,1) 71%, rgba(0,204,176,1) 88%);
+  height: 100%;
+  width: 100%;
 }
 #main-content {
   height: calc(100vh - 48px);
@@ -24,3 +30,54 @@ textarea {
   vertical-align: top !important;
   text-align: left !important;
 }
+.mycenter {
+    position: absolute;
+    top:20%;
+    left:12%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+  }
+  .mycenter2 {
+    position: absolute;
+    top:50%;
+    right:-10%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+  }
+  .mycenter3 {
+    position: absolute;
+    top:80%;
+    left:12%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+  }
+#cloud {
+    background: rgba(255, 255, 255);
+    width: 300px;
+    height: 100px;
+    border-radius: 150px;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    animation: move 3s infinite;
+  }
+
+  #cloud:after {
+    content: '';
+    background: rgba(255, 255, 255);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: -50px;
+    left: 50px;
+  }
+
+  #cloud:before {
+    content: '';
+    background: rgba(255, 255, 255);
+    position: absolute;
+    width: 170px;
+    height: 150px;
+    border-radius: 50%;
+    top: -90px;
+    right: 40px;
+  }

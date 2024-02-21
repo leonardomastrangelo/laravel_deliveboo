@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+<div id="register">
+
 <div class="container">
     {{-- errori --}}
     @if ($errors->any())
@@ -17,7 +19,8 @@
     <div class="row justify-content-center py-4">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Registrazione') }}</div>
+                <div class="card-header text-center py-2">{{ __('Registrazione') }}</div>
+                <div class="inner-card px-3">
 
                 <div class="card-body">
                     <form method="POST" enctype="multipart/form-data" action="{{ route('register') }}">
@@ -145,9 +148,9 @@
                         </div>
 
                         {{-- asporto --}}
-                        <div class="mb-4 row">
+                        <div class="mb-4 row px-5 mx-3">
                             <label for="pick_up" class="col-md-4 col-form-label text-md-right">{{ __('Asporto') }}</label>
-                            <div class="col-md-8">
+                            <div class="col-md-8 px-5">
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="pick_up" id="pick_up1" value='1'>
                                     <label class="form-check-label" for="pick_up1">
@@ -179,7 +182,7 @@
                         </div>
 
                         {{-- cucine --}}
-                        <div class="mb-4 row">
+                        <div class="mb-4 row justify-content-md-start  px-5 mx-3">
                             <label for="cuisines[]" class="pb-2">
                             Seleziona cucine *
                             </label>
@@ -211,7 +214,10 @@
                 </div>
             </div>
         </div>
+        </div>
     </div>
+</div>
+
 </div>
 @endsection
 

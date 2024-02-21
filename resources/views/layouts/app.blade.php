@@ -24,9 +24,24 @@
         @include('partials.navbar')
         <main id="main-content" class="row flex-nowrap">
             @include('partials/sidebar')
-            
-            <div class="col overflow-y-auto">@yield('content')</div>
-            
+
+            <div class="col p-0 position-relative overflow-y-auto">
+
+                @yield('content')
+
+            {{-- nuvolette --}}
+
+            <div class="mycenter">
+                <div id = "cloud"></div>
+            </div>
+            <div class="mycenter2">
+                <div id = "cloud"></div>
+            </div>
+            <div class="mycenter3">
+                <div id = "cloud"></div>
+            </div>
+            </div>
+
         </main>
     </div>
 </body>
