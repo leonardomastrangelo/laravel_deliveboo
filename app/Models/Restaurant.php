@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
 use App\Models\Cuisine;
 use App\Models\Product;
+use App\Models\Order;
 
 class Restaurant extends Model
 {

@@ -15,7 +15,7 @@
             </li>
             @auth
             <li>
-                <a class="anchor-container" href="{{ route('admin.dashboard') }}">
+                <a class="anchor-container" href="{{ route('admin.orders') }}">
                     <i class="fa-brands fa-jedi-order"></i>
                     <span class="d-none d-md-inline-block">Orders</span>
                 </a>
