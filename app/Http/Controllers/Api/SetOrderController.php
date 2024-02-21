@@ -23,7 +23,7 @@ class SetOrderController extends Controller
             'email' => 'required|email|max:255',
             'phone_number' => 'required|min:10|max:20',
             'address' => 'required|min:10|max:255',
-            'restaurant_id' => 'required|exists:restaurant,id',
+            'restaurant_id' => 'required|exists:restaurants,id',
             'amount' => 'numeric|regex:/^\d{1,6}(\.\d{1,2})?$/',
         ]);
 
