@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
@@ -16,7 +15,6 @@ class PaymentController extends Controller
             'publicKey' => 'wp5dnr224gm4wb4t',
             'privateKey' => '0cf2f24a03ec81ad4b745f9ab485f120'
         ]);
-
         $nonce = $request->input('paymentMethodNonce');
         $amount = '1'; // Specifica l'importo del pagamento
         $result = $gateway->transaction()->sale([
@@ -24,7 +22,6 @@ class PaymentController extends Controller
             'paymentMethodNonce' => $nonce,
             'options' => ['submitForSettlement' => true]
         ]);
-
         if ($result->success) {
             return response()->json(['success' => true]);
         } else {
