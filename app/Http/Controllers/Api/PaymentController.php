@@ -18,7 +18,7 @@ class PaymentController extends Controller
         ]);
 
         $nonce = $request->input('paymentMethodNonce');
-        $amount = $request['amount']; // Specifica l'importo del pagamento
+        $amount = '1'; // Specifica l'importo del pagamento
         $result = $gateway->transaction()->sale([
             'amount' => $amount,
             'paymentMethodNonce' => $nonce,

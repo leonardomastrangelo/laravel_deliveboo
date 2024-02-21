@@ -22,8 +22,8 @@ class SetOrderController extends Controller
             'surname' => 'required|min:2|max:255',
             'email' => 'required|email|max:255',
             'phone_number' => 'required|min:10|max:20',
-            'address' => 'required min:10|max:255',
-            'restaurant_id' => 'required|exists:restaurant,id',
+            'address' => 'required|min:10|max:255',
+            'restaurant_id' => 'required|exists:restaurants,id',
             'amount' => 'numeric|regex:/^\d{1,6}(\.\d{1,2})?$/',
         ]);
 
@@ -41,7 +41,7 @@ class SetOrderController extends Controller
         $newOrder->save();
 
         // invio della email di conferma ordine
-        Mail::to(env('MAIL_FROM_ADDRESS'))->send(new Success($newOrder));
+        // Mail::to(env('MAIL_FROM_ADDRESS'))->send(new Success($newOrder));
 
         // risposta affermativa in js con l'ordine appena creato
         return response()->json([
