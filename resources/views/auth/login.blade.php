@@ -77,7 +77,7 @@
                                 </form>
                             </div>
                             <div class=" col-6 image-login">
-                                <img src="{{ Vite::asset('storage/app/public/deliverooLogin.gif') }}" class="w-100 d-block"
+                                <img src="{{ asset('/resources/img/deliverooLogin.gif') }}" class="w-100 d-block"
                                     alt="image">
                             </div>
                         </div>
