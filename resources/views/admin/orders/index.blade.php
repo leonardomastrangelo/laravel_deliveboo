@@ -15,7 +15,7 @@
         @if(count($orders) > 0)
         @foreach($orders as $order)
 
-            <div class="col-3 bg-light mx-4 p-3 rounded-3 px-4 py-3 d-flex flex-column justify-content-between ">
+            <div class="col-3 bg-light mx-4 my-4 p-3 rounded-3 px-4 py-3 d-flex flex-column justify-content-between ">
                 <h1 class="text-center fs-3">Ordine</h1>
             <div>
                 <span>Nome e Cognome:</span>
