@@ -26,7 +26,7 @@
                         </div>
                     </div>
                     @if (auth()->user()->id === $restaurant->user_id)
-                        <div class="card-footer d-flex justify-content-center align-items-center flex-wrap">
+                        <div class="card-footer d-flex justify-content-center align-items-center flex-wrap border-0">
                             <a href="{{ route('admin.products.edit', $product->id) }}" class="btn btn-warning mx-3 my-3">
                                 <i class="fa-solid fa-pen-to-square"></i> Modifica
                             </a>

@@ -24,18 +24,18 @@
 
     span {
       font-style: italic;
+      font-weight:normal;
     }
 
     .btn{
         background-color: $orange;
         color: black;
-        border-color: $darkgrey;
+        border-color: transparent;
         font-weight: bold;
 
     }
     .btn:hover{
         background-color: $darkgrey;
         color: $orange;
-        border-color: $orange;
     }
   }
