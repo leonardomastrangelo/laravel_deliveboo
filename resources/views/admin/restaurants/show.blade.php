@@ -4,7 +4,7 @@
 
     <section id="restaurants-show" class="container-fluid py-5">
         @if (session()->has('message'))
-            <div class="alert alert-success">
+            <div class="alert alert-success w-25 text-center mx-auto">
                 {{ session()->get('message') }}
             </div>
         @endif

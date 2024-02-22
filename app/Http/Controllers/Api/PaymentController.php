@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Braintree\Gateway;
+use Illuminate\Support\Facades\URL;
 
 class PaymentController extends Controller
 {
@@ -23,6 +24,7 @@ class PaymentController extends Controller
             'options' => ['submitForSettlement' => true]
         ]);
         if ($result->success) {
+
             return response()->json(['success' => true]);
         } else {
             return response()->json(['success' => false, 'message' => $result->message]);
