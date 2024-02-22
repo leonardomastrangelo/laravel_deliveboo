@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 .card-image {
     height: 250px;
 
@@ -11,5 +13,43 @@
 @media screen and (max-width: 768px) {
     .container {
         max-width: 100%;
+    }
+}
+
+// SHOW PRODOTTI
+
+#products-show{
+    .card{
+        overflow: hidden;
+        box-shadow: 3px 3px 5px black;
+    }
+    h2{
+        font-weight: bold;
+        text-align: center;
+    }
+    span {
+        font-style: italic;
+      }
+}
+
+// CREATE PRODOTTI
+
+#products-create{
+    form{
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        box-shadow: 3px 3px 5px black;
+
+    }
+}
+
+// EDIT PRODOTTI
+
+#products-edit{
+    form{
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        box-shadow: 3px 3px 5px black;
+
     }
 }
