@@ -26,23 +26,26 @@
                 </div>
                 <div class="col-md-4 col-lg-6">
                     <div class="card-body">
-                        <h5 class="card-title">
+                        <h5 class="card-title fs-2">
                             {{ $restaurant->name }}
                         </h5>
-                        <p class="card-text">
+                        <p class="card-text" style="font-style: italic">
                             {{ $restaurant->description }}
                         </p>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
+                            <li class="list-group-item my-2 border-0">
+                                <i class="fa-solid fa-location-dot me-2" style="color: #000000;"></i>
                                 {{ $restaurant->address }}
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item my-2 border-0">
+                                <i class="fa-solid fa-phone me-2" style="color: #000000;"></i>
                                 {{ $restaurant->phone_number }}
                             </li>
-                            <li class="list-group-item">
-                                {{ $restaurant->email }}
+                            <li class="list-group-item my-2 border-0">
+                                <i class="fa-solid fa-envelope me-2" style="color: #000000;"></i>{{ $restaurant->email }}
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item my-2 border-0">
+                                <i class="fa-solid fa-bicycle me-2" style="color: #000000;"></i>
                                 @if ($restaurant->pick_up)
                                     Asporto
                                 @else
@@ -51,9 +54,9 @@
                             </li>
                             <li class="list-group-item">
                                 @foreach ($restaurant->cuisines as $cuisine)
-                                    <span class="badge text-bg-success">
+                                    <div class="badge text-bg-success">
                                         {{ $cuisine->name }}
-                                    </span>
+                                    </div>
                                 @endforeach
                             </li>
                         </ul>
