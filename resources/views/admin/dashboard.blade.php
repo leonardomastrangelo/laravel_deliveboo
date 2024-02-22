@@ -14,26 +14,29 @@
         @forelse ($restaurants as $restaurant)
             <div class="card mb-3 w-75 m-auto">
                 <div class="row g-0">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <a href="{{ route('admin.restaurants.show', $restaurant->slug) }}">
                             <img src="{{ "storage/$restaurant->image" }}" class="img-fluid h-100 rounded-start"
                                 alt="{{ $restaurant->name }}">
                         </a>
                     </div>
-                    <div class="col-md-8 d-flex align-items-center">
+                    <div class="col-md-6 ">
                         <div class="card-body">
                             <h5 class="card-title fs-4">{{ $restaurant->name }}</h5>
-                            <p class="card-text">
+                            <p class="card-text" style="font-style: italic">
                                 {{ $restaurant->description }}
                             </p>
                             <div>
-                                <small class="card-text d-block">
+                                <small class="card-text d-block mb-2">
+                                    <i class="fa-solid fa-location-dot me-2" style="color: #000000;"></i>
                                     {{ $restaurant->address }}
                                 </small>
-                                <small class="card-text d-block">
+                                <small class="card-text d-block mb-2">
+                                    <i class="fa-solid fa-envelope me-2" style="color: #000000;"></i>
                                     {{ $restaurant->email }}
                                 </small>
-                                <small class="card-text d-block">
+                                <small class="card-text d-block mb-2">
+                                    <i class="fa-solid fa-phone me-2" style="color: #000000;"></i>
                                     {{ $restaurant->phone_number }}
                                 </small>
                             </div>
