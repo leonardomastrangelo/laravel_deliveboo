@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container-fluid py-4" id="dashboard">
-        <h2 class="display-3 fw-bold text-light text-center py-2">
+        <h2 class="display-3 fw-bold text-center py-2">
             {{ __('I tuoi ristoranti') }}
         </h2>
         @if (session()->has('message'))
