@@ -59,7 +59,7 @@
         @endforeach
 
         @if ($orders->isEmpty())
-            <div class="alert alert-danger">
+            <div class="alert alert-danger text-center w-25 mx-auto">
                 Non ci sono ordini
             </div>
         @endif
