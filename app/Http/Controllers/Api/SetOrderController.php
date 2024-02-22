@@ -2,11 +2,12 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Mail\OrderConfirmed;
+use App\Mail\SummaryOrder;
 use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\Success;
 use App\Models\Product;
 
 class SetOrderController extends Controller
@@ -52,8 +53,11 @@ class SetOrderController extends Controller
                 $newOrder->products()->attach($product->id, ['quantity' => $productData['quantity']]);
             }
         }
-        // invio della email di conferma ordine
-        // Mail::to(env('MAIL_FROM_ADDRESS'))->send(new Success($newOrder));
+        // invio della email di conferma ordine al ristoratore
+        Mail::to($newOrder->restaurant->email)->send(new OrderConfirmed($newOrder));
+        // invio della email del riepilogo ordine al cliente
+        Mail::to($newOrder->email)->send(new SummaryOrder($newOrder));
+
         // risposta affermativa in js con l'ordine appena creato
         return response()->json([
             'success' => true,

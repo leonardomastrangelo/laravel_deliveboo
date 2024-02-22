@@ -13,7 +13,7 @@ class Order extends Model
     protected $fillable = ['address', 'email', 'restaurant_id', 'name', 'phone_number', 'surname', 'amount'];
     public function products()
     {
-        return $this->belongsToMany(Product::class);
+        return $this->belongsToMany(Product::class)->withPivot('quantity');
     }
 
     public function restaurant()
