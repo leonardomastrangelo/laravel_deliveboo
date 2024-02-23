@@ -26,20 +26,25 @@
     h2{
         font-weight: bold;
         text-align: center;
+        text-shadow: none;
     }
     span {
         font-style: italic;
+        font-weight:normal;
+      }
+      .card-footer{
+        background: transparent;
       }
 }
 
 // CREATE PRODOTTI
 
 #products-create{
+
     form{
         background-color: rgba(0, 0, 0, 0.4);
         color: white;
         box-shadow: 3px 3px 5px black;
-
     }
 }
 

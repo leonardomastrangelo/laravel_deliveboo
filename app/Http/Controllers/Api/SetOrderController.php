@@ -57,11 +57,12 @@ class SetOrderController extends Controller
         Mail::to($newOrder->restaurant->email)->send(new OrderConfirmed($newOrder));
         // invio della email del riepilogo ordine al cliente
         Mail::to($newOrder->email)->send(new SummaryOrder($newOrder));
-
+        $url = '/thankyou'; // Sostituisci '/thank-you' con il percorso della tua rotta
         // risposta affermativa in js con l'ordine appena creato
         return response()->json([
             'success' => true,
-            'order' => $newOrder
+            'order' => $newOrder,
+            'redirect' => $url
         ]);
     }
 }
