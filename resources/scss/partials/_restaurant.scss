@@ -1,0 +1,41 @@
+@use './variables' as *;
+
+#restaurants-show {
+    .card {
+      border: none;
+      overflow: hidden;
+      box-shadow: 3px 3px 5px black;
+
+    }
+
+    .card-title {
+      font-weight: bold;
+    }
+
+    .card-img-top {
+      transition: filter 0.3s ease, transform 0.5s ease;
+    }
+
+    .card-img-top:hover {
+      filter: brightness(75%);
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+
+    span {
+      font-style: italic;
+    }
+
+    .btn{
+        background-color: $orange;
+        color: black;
+        border-color: $darkgrey;
+        font-weight: bold;
+
+    }
+    .btn:hover{
+        background-color: $darkgrey;
+        color: $orange;
+        border-color: $orange;
+    }
+  }
