@@ -12,14 +12,6 @@
                 </div>
             @endif
 
-            <div class="col-3 bg-light mx-4 my-4 p-3 rounded-3 px-4 py-3 d-flex flex-column justify-content-between ">
-                <h1 class="text-center fs-3">Ordine</h1>
-            <div>
-                <span>Nome e Cognome:</span>
-                <ul>
-                <li> {{$order->name}} {{$order->surname}}</li>
-                </ul>
-
         @foreach ($orders as $month => $ordersByMonth)
             <h3 class="text-light text-center m-4">Ordini di
                 <span class="fs-1 text-decoration-underline">{{ \Carbon\Carbon::createFromFormat('m', $month)->formatLocalized('%B') }}</span>
@@ -33,22 +25,6 @@
                             <ul>
                                 <li> {{ $order->name }} {{ $order->surname }}</li>
                             </ul>
-
-            @foreach ($orders as $month => $ordersByMonth)
-                <h3 class="text-light text-center m-4">Ordini di
-                    <span
-                        class="fs-1 text-decoration-underline">{{ \Carbon\Carbon::createFromFormat('m', $month)->formatLocalized('%B') }}</span>
-                </h3>
-                <div class="row justify-content-center gy-5">
-                    @foreach ($ordersByMonth as $order)
-                        <div
-                            class="col-10 col-sm-6 col-md-4 col-lg-3 bg-light mx-4 p-3 rounded-3 d-flex flex-column justify-content-between ">
-                            <h3 class="text-center fs-3">Ordine</h3>
-                            <div>
-                                <span>Nome e Cognome:</span>
-                                <ul>
-                                    <li> {{ $order->name }} {{ $order->surname }}</li>
-                                </ul>
                             </div>
                             <div>
                                 <span>Contatti:</span>
