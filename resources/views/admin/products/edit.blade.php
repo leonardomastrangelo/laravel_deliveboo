@@ -77,7 +77,7 @@
         @enderror
       </div> --}}
             <button type="submit" id='product_button' class="btn btn-primary">Modifica</button>
-            <button type="reset" class="btn btn-danger">Reset</button>
+            <button type="reset" class="btn btn-danger">Ripristina</button>
             <p class="small my-3">
                 Il campo * è obbligatorio
             </p>

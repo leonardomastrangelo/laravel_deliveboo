@@ -14,12 +14,13 @@
 
     .card-img-top {
       transition: filter 0.3s ease, transform 0.5s ease;
-    }
 
-    .card-img-top:hover {
-      filter: brightness(75%);
-      transform: scale(1.2);
-      cursor: pointer;
+
+        &:hover {
+        filter: brightness(75%);
+        transform: scale(1.2);
+        cursor: pointer;
+        }
     }
 
     span {
@@ -28,14 +29,15 @@
     }
 
     .btn{
-        background-color: $orange;
-        color: black;
-        border-color: transparent;
+        background-color: #00CCBC;
+        color: #244956;
+        border-color: #244956;
         font-weight: bold;
 
-    }
-    .btn:hover{
-        background-color: $darkgrey;
-        color: $orange;
+        &:hover{
+            background-color: #244956;
+            color: #00CCBC;
+            border-color: #00CCBC;
+        }
     }
   }
