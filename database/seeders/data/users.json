@@ -1,52 +1,170 @@
 [
     {
-      "id": 1,
-      "name": "Orazio",
-      "surname": "Grinzosi",
-      "email": "orazio.grinzosi@example.com",
-      "password": "password1"
+        "id": 1,
+        "name": "Orazio",
+        "surname": "Grinzosi",
+        "email": "info@ristorantedamario.com",
+        "password": "password"
     },
     {
-      "id": 2,
-      "name": "Ronaldo",
-      "surname": "da Fiano Romano",
-      "email": "ronaldo.dafianoromano@example.com",
-      "password": "password2"
+        "id": 2,
+        "name": "Ronaldo",
+        "surname": "da Fiano Romano",
+        "email": "info@sushifusion.com",
+        "password": "password"
     },
     {
-      "id": 3,
-      "name": "Lamberto",
-      "surname": "Lasagna",
-      "email": "lamberto.lasagna@example.com",
-      "password": "password3"
+        "id": 3,
+        "name": "Lamberto",
+        "surname": "Lasagna",
+        "email": "info@taqueriaeldorado.com",
+        "password": "password"
     },
     {
-      "id": 4,
-      "name": "Pietro",
-      "surname": "Smusi",
-      "email": "pietro.smusi@example.com",
-      "password": "password4"
+        "id": 4,
+        "name": "Pietro",
+        "surname": "Smusi",
+        "email": "info@pizzeriabellanapoli.com",
+        "password": "password"
     },
     {
-      "id": 5,
-      "name": "Luciano",
-      "surname": "Spalletti",
-      "email": "luciano.spalletti@example.com",
-      "password": "password5"
+        "id": 5,
+        "name": "Luciano",
+        "surname": "Spalletti",
+        "email": "info@thaispice.com",
+        "password": "password"
     },
     {
-      "id": 6,
-      "name": "Sabrina",
-      "surname": "Malavita",
-      "email": "sabrina.malavita@example.com",
-      "password": "password6"
+        "id": 6,
+        "name": "Sabrina",
+        "surname": "Malavita",
+        "email": "info@mcdonalds.com",
+        "password": "password"
     },
     {
-      "id": 7,
-      "name": "Alfonso",
-      "surname": "Torrone",
-      "email": "alfonso.torrone@example.com",
-      "password": "password7"
+        "id": 7,
+        "name": "Alfonso",
+        "surname": "Torrone",
+        "email": "info@burgerking.com",
+        "password": "password"
+    },
+    {
+        "id": 8,
+        "name": "Ubaldo",
+        "surname": "Sterchi",
+        "email": "info@vinerialadolcevita.com",
+        "password": "password"
+    },
+    {
+        "id": 9,
+        "name": "Gianfranco",
+        "surname": "Lezzini",
+        "email": "info@brewdogpub.com",
+        "password": "password"
+    },
+    {
+        "id": 10,
+        "name": "Rocco",
+        "surname": "Sfracellozzi",
+        "email": "info@dolcetentazione.com",
+        "password": "password"
+    },
+    {
+        "id": 11,
+        "name": "Amanda",
+        "surname": "Pannocchia",
+        "email": "info@zenzerobistrot.com",
+        "password": "password"
+    },
+    {
+        "id": 12,
+        "name": "Paolo",
+        "surname": "Buonanima",
+        "email": "info@lapiadineria.com",
+        "password": "password"
+    },
+    {
+        "id": 13,
+        "name": "Beppe",
+        "surname": "Grulli",
+        "email": "info@pizzahut.com",
+        "password": "password"
+    },
+    {
+        "id": 14,
+        "name": "Orlando",
+        "surname": "Angurioni",
+        "email": "info@oldwildwest.com",
+        "password": "password"
+    },
+    {
+        "id": 15,
+        "name": "Bruno",
+        "surname": "Strati",
+        "email": "info@tajmahalristoranteindiano.com",
+        "password": "password"
+    },
+    {
+        "id": 16,
+        "name": "Renzo",
+        "surname": "Raschioni",
+        "email": "info@kebhouze.com",
+        "password": "password"
+    },
+    {
+        "id": 17,
+        "name": "Cristoforo",
+        "surname": "Sedermosci",
+        "email": "info@tacobell.com",
+        "password": "password"
+    },
+    {
+        "id": 18,
+        "name": "Priscilla",
+        "surname": "Insidiosa",
+        "email": "info@zensushi.com",
+        "password": "password"
+    },
+    {
+        "id": 19,
+        "name": "Kevin",
+        "surname": "Costa",
+        "email": "info@kfc.com",
+        "password": "password"
+    },
+    {
+        "id": 20,
+        "name": "Maya",
+        "surname": "Bastanza",
+        "email": "info@mayasbakery.com",
+        "password": "password"
+    },
+    {
+        "id": 21,
+        "name": "Elio",
+        "surname": "Sterconi",
+        "email": "info@orientalthai.com",
+        "password": "password"
+    },
+    {
+        "id": 22,
+        "name": "Mirta",
+        "surname": "Scaramuccia",
+        "email": "info@theburgerlab.com",
+        "password": "password"
+    },
+    {
+        "id": 23,
+        "name": "Eraldo",
+        "surname": "Sognidori",
+        "email": "info@alibaba.com",
+        "password": "password"
+    },
+    {
+        "id": 24,
+        "name": "Alfredo",
+        "surname": "Spifferi",
+        "email": "info@starbucks.com",
+        "password": "password"
     }
-  ]
-
+]
