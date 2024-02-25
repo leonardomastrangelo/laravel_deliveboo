@@ -1,241 +1,1982 @@
-
 [
     {
-      "id": 1,
-      "name": "Pizza Margherita",
-      "price": 8.99,
-      "image": "https://example.com/images/pizza_margherita.jpg",
-      "ingredients": "pomodoro, mozzarella, basilico fresco",
-      "availability": true,
-      "restaurant_id": 4
+        "id": 1,
+        "name": "Pizza Margherita",
+        "price": 8.99,
+        "image": "https://example.com/images/pizza_margherita.jpg",
+        "ingredients": "pomodoro, mozzarella, basilico fresco",
+        "availability": true,
+        "restaurant_id": 4
     },
     {
-      "id": 2,
-      "name": "Sushi Misto",
-      "price": 19.99,
-      "image": "https://example.com/images/sushi_misto.jpg",
-      "ingredients": "nigiri, maki, sashimi",
-      "availability": true,
-      "restaurant_id": 2
+        "id": 2,
+        "name": "Sushi Misto",
+        "price": 19.99,
+        "image": "https://example.com/images/sushi_misto.jpg",
+        "ingredients": "nigiri, maki, sashimi",
+        "availability": true,
+        "restaurant_id": 2
     },
     {
-      "id": 3,
-      "name": "Tacos al Pastor",
-      "price": 10.99,
-      "image": "https://example.com/images/tacos_al_pastor.jpg",
-      "ingredients": "maiale marinato, ananas, cipolla, coriandolo",
-      "availability": true,
-      "restaurant_id": 3
+        "id": 3,
+        "name": "Tacos al Pastor",
+        "price": 10.99,
+        "image": "https://example.com/images/tacos_al_pastor.jpg",
+        "ingredients": "maiale marinato, ananas, cipolla, coriandolo",
+        "availability": true,
+        "restaurant_id": 3
     },
     {
-      "id": 4,
-      "name": "Spaghetti alla Carbonara",
-      "price": 12.99,
-      "image": "https://example.com/images/spaghetti_carbonara.jpg",
-      "ingredients": "uova, pancetta, pecorino romano, pepe nero",
-      "availability": true,
-      "restaurant_id": 1
+        "id": 4,
+        "name": "Spaghetti alla Carbonara",
+        "price": 12.99,
+        "image": "https://example.com/images/spaghetti_carbonara.jpg",
+        "ingredients": "spaghetti, uova, guanciale, pecorino romano, pepe nero",
+        "availability": true,
+        "restaurant_id": 1
     },
     {
-      "id": 5,
-      "name": "Pad Thai",
-      "price": 14.99,
-      "image": "https://example.com/images/pad_thai.jpg",
-      "ingredients": "tagliolini di riso, gamberi, uova, arachidi, lime",
-      "availability": true,
-      "restaurant_id": 5
+        "id": 5,
+        "name": "Pad Thai",
+        "price": 14.99,
+        "image": "https://example.com/images/pad_thai.jpg",
+        "ingredients": "tagliolini di riso, gamberi, uova, arachidi, lime",
+        "availability": true,
+        "restaurant_id": 5
     },
     {
-      "id": 6,
-      "name": "Tiramisù",
-      "price": 6.99,
-      "image": "https://example.com/images/tiramisu.jpg",
-      "ingredients": "savoiardi, mascarpone, caffè, cacao",
-      "availability": true,
-      "restaurant_id": 1
+        "id": 6,
+        "name": "Tiramisù",
+        "price": 6.99,
+        "image": "https://example.com/images/tiramisu.jpg",
+        "ingredients": "savoiardi, mascarpone, caffè, cacao",
+        "availability": true,
+        "restaurant_id": 1
     },
     {
-      "id": 7,
-      "name": "Burrito al Pollo",
-      "price": 11.99,
-      "image": "https://example.com/images/burrito_al_pollo.jpg",
-      "ingredients": "pollo marinato, riso, fagioli, formaggio, salsa",
-      "availability": true,
-      "restaurant_id": 5
+        "id": 7,
+        "name": "Burrito al Pollo",
+        "price": 11.99,
+        "image": "https://example.com/images/burrito_al_pollo.jpg",
+        "ingredients": "pollo marinato, riso, fagioli, formaggio, salsa",
+        "availability": true,
+        "restaurant_id": 5
     },
     {
-      "id": 8,
-      "name": "Sashimi Misti",
-      "price": 22.99,
-      "image": "https://example.com/images/sashimi_misti.jpg",
-      "ingredients": "tonno, salmone, branzino",
-      "availability": true,
-      "restaurant_id": 2
+        "id": 8,
+        "name": "Sashimi Misti",
+        "price": 22.99,
+        "image": "https://example.com/images/sashimi_misti.jpg",
+        "ingredients": "tonno, salmone, branzino",
+        "availability": true,
+        "restaurant_id": 2
     },
     {
-      "id": 9,
-      "name": "Margherita Gelato",
-      "price": 4.99,
-      "image": "https://example.com/images/margherita_gelato.jpg",
-      "ingredients": "vaniglia, crema al limone, foglie di menta",
-      "availability": true,
-      "restaurant_id": 4
+        "id": 9,
+        "name": "Margherita Gelato",
+        "price": 4.99,
+        "image": "https://example.com/images/margherita_gelato.jpg",
+        "ingredients": "vaniglia, crema al limone, foglie di menta",
+        "availability": true,
+        "restaurant_id": 4
     },
     {
-      "id": 10,
-      "name": "Massaman Curry di Manzo",
-      "price": 16.99,
-      "image": "https://example.com/images/massaman_curry.jpg",
-      "ingredients": "manzo, patate, arachidi, spezie",
-      "availability": true,
-      "restaurant_id": 5
+        "id": 10,
+        "name": "Massaman Curry di Manzo",
+        "price": 16.99,
+        "image": "https://example.com/images/massaman_curry.jpg",
+        "ingredients": "manzo, patate, arachidi, spezie",
+        "availability": true,
+        "restaurant_id": 5
     },
     {
-      "id": 11,
-      "name": "Lasagna al Forno",
-      "price": 11.99,
-      "image": "https://example.com/images/lasagna_al_forno.jpg",
-      "ingredients": "pasta all'uovo, ragù di carne, besciamella, formaggio",
-      "availability": true,
-      "restaurant_id": 1
+        "id": 11,
+        "name": "Lasagna al Forno",
+        "price": 11.99,
+        "image": "https://example.com/images/lasagna_al_forno.jpg",
+        "ingredients": "pasta all'uovo, ragù di carne, besciamella, formaggio",
+        "availability": true,
+        "restaurant_id": 1
     },
     {
-      "id": 12,
-      "name": "Sashimi di Salmone",
-      "price": 18.99,
-      "image": "https://example.com/images/sashimi_salmone.jpg",
-      "ingredients": "salmone, salsa di soia, wasabi",
-      "availability": true,
-      "restaurant_id": 2
+        "id": 12,
+        "name": "Sashimi di Salmone",
+        "price": 18.99,
+        "image": "https://example.com/images/sashimi_salmone.jpg",
+        "ingredients": "salmone, salsa di soia, wasabi",
+        "availability": true,
+        "restaurant_id": 2
     },
     {
-      "id": 13,
-      "name": "Enchiladas Verdes",
-      "price": 13.99,
-      "image": "https://example.com/images/enchiladas_verdes.jpg",
-      "ingredients": "pollo, salsa verde, formaggio",
-      "availability": true,
-      "restaurant_id": 5
+        "id": 13,
+        "name": "Enchiladas Verdes",
+        "price": 13.99,
+        "image": "https://example.com/images/enchiladas_verdes.jpg",
+        "ingredients": "pollo, salsa verde, formaggio",
+        "availability": true,
+        "restaurant_id": 5
     },
     {
-      "id": 14,
-      "name": "Risotto ai Funghi Porcini",
-      "price": 15.99,
-      "image": "https://example.com/images/risotto_funghi_porcini.jpg",
-      "ingredients": "funghi porcini, cipolla, vino bianco, parmigiano",
-      "availability": true,
-      "restaurant_id": 1
+        "id": 14,
+        "name": "Risotto ai Funghi Porcini",
+        "price": 15.99,
+        "image": "https://example.com/images/risotto_funghi_porcini.jpg",
+        "ingredients": "riso, funghi porcini, cipolla, vino bianco, parmigiano",
+        "availability": true,
+        "restaurant_id": 1
     },
     {
-      "id": 15,
-      "name": "Chirashi Sushi",
-      "price": 21.99,
-      "image": "https://example.com/images/chirashi_sushi.jpg",
-      "ingredients": "riso sushi, sashimi, verdure",
-      "availability": true,
-      "restaurant_id": 2
+        "id": 15,
+        "name": "Chirashi Sushi",
+        "price": 21.99,
+        "image": "https://example.com/images/chirashi_sushi.jpg",
+        "ingredients": "riso, sashimi, verdure",
+        "availability": true,
+        "restaurant_id": 2
     },
     {
-      "id": 16,
-      "name": "Tacos Vegetariani",
-      "price": 9.99,
-      "image": "https://example.com/images/tacos_vegetariani.jpg",
-      "ingredients": "fagioli, mais, avocado, pomodoro, formaggio",
-      "availability": true,
-      "restaurant_id": 3
+        "id": 16,
+        "name": "Tacos Vegetariani",
+        "price": 9.99,
+        "image": "https://example.com/images/tacos_vegetariani.jpg",
+        "ingredients": "fagioli, mais, avocado, pomodoro, formaggio",
+        "availability": true,
+        "restaurant_id": 3
     },
     {
-      "id": 17,
-      "name": "Cannoli Siciliani",
-      "price": 5.99,
-      "image": "https://example.com/images/cannoli_siciliani.jpg",
-      "ingredients": "ricotta, cioccolato",
-      "availability": true,
-      "restaurant_id": 1
+        "id": 17,
+        "name": "Cannoli Siciliani",
+        "price": 5.99,
+        "image": "https://example.com/images/cannoli_siciliani.jpg",
+        "ingredients": "cannoli,ricotta, cioccolato",
+        "availability": true,
+        "restaurant_id": 1
     },
     {
-      "id": 18,
-      "name": "Pho Vietnamita",
-      "price": 10.99,
-      "image": "https://example.com/images/pho_vietnamita.jpg",
-      "ingredients": "noodles di riso, manzo, erbe, germogli di soia",
-      "availability": true,
-      "restaurant_id": 5
+        "id": 18,
+        "name": "Pho Vietnamita",
+        "price": 10.99,
+        "image": "https://example.com/images/pho_vietnamita.jpg",
+        "ingredients": "noodles di riso, manzo, erbe, germogli di soia",
+        "availability": true,
+        "restaurant_id": 5
     },
     {
-      "id": 19,
-      "name": "Gnocchi al Gorgonzola",
-      "price": 12.99,
-      "image": "https://example.com/images/gnocchi_gorgonzola.jpg",
-      "ingredients": "gnocchi di patate, salsa al gorgonzola, noci tostate",
-      "availability": true,
-      "restaurant_id": 1
+        "id": 19,
+        "name": "Gnocchi al Gorgonzola",
+        "price": 12.99,
+        "image": "https://example.com/images/gnocchi_gorgonzola.jpg",
+        "ingredients": "gnocchi di patate, salsa al gorgonzola, noci tostate",
+        "availability": true,
+        "restaurant_id": 1
     },
     {
-      "id": 20,
-      "name": "Mousse al Cioccolato",
-      "price": 7.99,
-      "image": "https://example.com/images/mousse_cioccolato.jpg",
-      "ingredients": "cioccolato",
-      "availability": true,
-      "restaurant_id": 1
+        "id": 20,
+        "name": "Mousse al Cioccolato",
+        "price": 7.99,
+        "image": "https://example.com/images/mousse_cioccolato.jpg",
+        "ingredients": "cioccolato fondente",
+        "availability": true,
+        "restaurant_id": 1
     },
     {
-      "id": 21,
-      "name": "Big Mac",
-      "price": 4.99,
-      "image": "https://example.com/images/big_mac.jpg",
-      "ingredients": "due hamburger di manzo, formaggio, insalata, cetrioli, cipolla, salsa speciale",
-      "availability": true,
-      "restaurant_id": 6
+        "id": 21,
+        "name": "Big Mac",
+        "price": 4.99,
+        "image": "https://example.com/images/big_mac.jpg",
+        "ingredients": "due hamburger di manzo, formaggio, insalata, cetrioli, cipolla, salsa speciale",
+        "availability": true,
+        "restaurant_id": 6
     },
     {
-      "id": 22,
-      "name": "Chicken McNuggets",
-      "price": 3.99,
-      "image": "https://example.com/images/chicken_mcnuggets.jpg",
-      "ingredients": "pollo",
-      "availability": true,
-      "restaurant_id": 6
+        "id": 22,
+        "name": "Chicken McNuggets",
+        "price": 3.99,
+        "image": "https://example.com/images/chicken_mcnuggets.jpg",
+        "ingredients": "bocconcini di pollo croccanti",
+        "availability": true,
+        "restaurant_id": 6
     },
     {
-      "id": 23,
-      "name": "McFlurry Oreo",
-      "price": 2.49,
-      "image": "https://example.com/images/mcflurry_oreo.jpg",
-      "ingredients": "gelato alla vaniglia, biscotto Oreo, salsa di cioccolato",
-      "availability": true,
-      "restaurant_id": 6
+        "id": 23,
+        "name": "McFlurry Oreo",
+        "price": 2.49,
+        "image": "https://example.com/images/mcflurry_oreo.jpg",
+        "ingredients": "gelato alla vaniglia, biscotto Oreo, salsa di cioccolato",
+        "availability": true,
+        "restaurant_id": 6
     },
     {
-      "id": 24,
-      "name": "Whopper",
-      "price": 4.99,
-      "image": "https://example.com/images/whopper.jpg",
-      "ingredients": "pane, hamburger di manzo alla griglia, insalata, pomodoro, cipolla, ketchup, maionese",
-      "availability": true,
-      "restaurant_id": 7
+        "id": 24,
+        "name": "Whopper",
+        "price": 4.99,
+        "image": "https://example.com/images/whopper.jpg",
+        "ingredients": "pane, hamburger di manzo alla griglia, insalata, pomodoro, cipolla, ketchup, maionese",
+        "availability": true,
+        "restaurant_id": 7
     },
     {
-      "id": 25,
-      "name": "Chicken Royale",
-      "price": 3.99,
-      "image": "https://example.com/images/chicken_royale.jpg",
-      "ingredients": "pane, filetto di pollo impanato, lattuga, maionese",
-      "availability": true,
-      "restaurant_id": 7
+        "id": 25,
+        "name": "Chicken Royale",
+        "price": 3.99,
+        "image": "https://example.com/images/chicken_royale.jpg",
+        "ingredients": "pane, filetto di pollo impanato, lattuga, maionese",
+        "availability": true,
+        "restaurant_id": 7
     },
     {
-      "id": 26,
-      "name": "King Fusion Sundae",
-      "price": 2.99,
-      "image": "https://example.com/images/king_fusion_sundae.jpg",
-      "ingredients": "gelato alla vaniglia, salsa di fragola, pezzi di banana, panna montata",
-      "availability": true,
-      "restaurant_id": 7
+        "id": 26,
+        "name": "King Fusion Sundae",
+        "price": 2.99,
+        "image": "https://example.com/images/king_fusion_sundae.jpg",
+        "ingredients": "gelato alla vaniglia, salsa di fragola, pezzi di banana, panna montata",
+        "availability": true,
+        "restaurant_id": 7
+    },
+    {
+        "id": 27,
+        "name": "Bistecca alla Fiorentina",
+        "price": 24.99,
+        "image": "https://example.com/images/bistecca_fiorentina.jpg",
+        "ingredients": "bistecca di manzo alla griglia servita con contorno di patate arrosto e verdure di stagione.",
+        "availability": true,
+        "restaurant_id": 1
+    },
+    {
+        "id": 28,
+        "name": "Pizza Quattro Stagioni",
+        "price": 11.99,
+        "image": "https://example.com/images/pizza_quattro_stagioni.jpg",
+        "ingredients": "pomodoro, mozzarella, funghi champignon, prosciutto cotto, olive nere, carciofini e origano fresco.",
+        "availability": true,
+        "restaurant_id": 1
+    },
+    {
+        "id": 29,
+        "name": "Pizza Da Mario",
+        "price": 12.99,
+        "image": "https://example.com/images/pizza_da_mario_speciale.jpg",
+        "ingredients": "pomodorini, mozzarella, prosciutto crudo, rucola, parmigiano e olive nere.",
+        "availability": true,
+        "restaurant_id": 1
+    },
+    {
+        "id": 30,
+        "name": "Tempura Roll",
+        "price": 16.99,
+        "image": "https://example.com/images/tempura_roll.jpg",
+        "ingredients": "gamberi tempura, avocado, riso, alga nori",
+        "availability": true,
+        "restaurant_id": 2
+    },
+    {
+        "id": 31,
+        "name": "Unagi Nigiri",
+        "price": 8.99,
+        "image": "https://example.com/images/unagi_nigiri.jpg",
+        "ingredients": "anguilla alla griglia, riso, salsa teriyaki",
+        "availability": true,
+        "restaurant_id": 2
+    },
+    {
+        "id": 32,
+        "name": "California Roll",
+        "price": 14.99,
+        "image": "https://example.com/images/california_roll.jpg",
+        "ingredients": "granchio grattugiato, avocado, cetriolo, riso, alga nori",
+        "availability": true,
+        "restaurant_id": 2
+    },
+    {
+        "id": 33,
+        "name": "Dragon Roll",
+        "price": 18.99,
+        "image": "https://example.com/images/dragon_roll.jpg",
+        "ingredients": "gamberi tempura, avocado, anguilla alla griglia, riso, alga nori",
+        "availability": true,
+        "restaurant_id": 2
+    },
+    {
+        "id": 34,
+        "name": "Spicy Tuna Roll",
+        "price": 15.99,
+        "image": "https://example.com/images/spicy_tuna_roll.jpg",
+        "ingredients": "tonno piccante, cetriolo, riso, alga nori",
+        "availability": true,
+        "restaurant_id": 2
+    },
+    {
+        "id": 35,
+        "name": "Quesadilla con Pollo",
+        "price": 8.99,
+        "image": "https://example.com/images/quesadilla_pollo.jpg",
+        "ingredients": "pollo grigliato, formaggio, tortilla di mais",
+        "availability": true,
+        "restaurant_id": 3
+    },
+    {
+        "id": 36,
+        "name": "Burrito di Carne",
+        "price": 11.99,
+        "image": "https://example.com/images/burrito_carne.jpg",
+        "ingredients": "manzo marinato, fagioli, riso, formaggio, salsa",
+        "availability": true,
+        "restaurant_id": 3
+    },
+    {
+        "id": 37,
+        "name": "Enchiladas di Pollo",
+        "price": 12.99,
+        "image": "https://example.com/images/enchiladas_pollo.jpg",
+        "ingredients": "pollo, tortillas di mais, salsa rossa, formaggio",
+        "availability": true,
+        "restaurant_id": 3
+    },
+    {
+        "id": 38,
+        "name": "Nachos con Guacamole",
+        "price": 7.99,
+        "image": "https://example.com/images/nachos_guacamole.jpg",
+        "ingredients": "tortillas di mais croccanti, guacamole, formaggio fuso, peperoncini",
+        "availability": true,
+        "restaurant_id": 3
+    },
+    {
+        "id": 39,
+        "name": "Torta Messicana",
+        "price": 9.99,
+        "image": "https://example.com/images/torta_messicana.jpg",
+        "ingredients": "carne di manzo, avocado, fagioli neri, formaggio, jalapenos",
+        "availability": true,
+        "restaurant_id": 3
+    },
+    {
+        "id": 40,
+        "name": "Sopes con Barbacoa",
+        "price": 10.99,
+        "image": "https://example.com/images/sopes_barbacoa.jpg",
+        "ingredients": "sopes fatti in casa, carne di barbacoa, cipolla, coriandolo",
+        "availability": true,
+        "restaurant_id": 3
+    },
+    {
+        "id": 41,
+        "name": "Capricciosa",
+        "price": 10.99,
+        "image": "https://example.com/images/pizza_capricciosa.jpg",
+        "ingredients": "pomodoro, mozzarella, prosciutto cotto, funghi, carciofi, olive",
+        "availability": true,
+        "restaurant_id": 4
+    },
+    {
+        "id": 42,
+        "name": "Quattro Stagioni",
+        "price": 11.99,
+        "image": "https://example.com/images/pizza_quattro_stagioni.jpg",
+        "ingredients": "pomodoro, mozzarella, prosciutto cotto, funghi, carciofi, olive",
+        "availability": true,
+        "restaurant_id": 4
+    },
+    {
+        "id": 43,
+        "name": "Diavola",
+        "price": 10.99,
+        "image": "https://example.com/images/pizza_diavola.jpg",
+        "ingredients": "pomodoro, mozzarella, salame piccante, peperoncini",
+        "availability": true,
+        "restaurant_id": 4
+    },
+    {
+        "id": 44,
+        "name": "Marinara",
+        "price": 7.99,
+        "image": "https://example.com/images/pizza_marinara.jpg",
+        "ingredients": "pomodoro, aglio, origano, acciughe",
+        "availability": true,
+        "restaurant_id": 4
+    },
+    {
+        "id": 45,
+        "name": "Prosciutto e Funghi",
+        "price": 10.99,
+        "image": "https://example.com/images/pizza_prosciutto_funghi.jpg",
+        "ingredients": "pomodoro, mozzarella, prosciutto cotto, funghi",
+        "availability": true,
+        "restaurant_id": 4
+    },
+    {
+        "id": 46,
+        "name": "Bufalina",
+        "price": 12.99,
+        "image": "https://example.com/images/pizza_bufalina.jpg",
+        "ingredients": "pomodoro, mozzarella di bufala, basilico fresco",
+        "availability": true,
+        "restaurant_id": 4
+    },
+    {
+        "id": 47,
+        "name": "Quattro Formaggi",
+        "price": 12.99,
+        "image": "https://example.com/images/pizza_quattro_formaggi.jpg",
+        "ingredients": "pomodoro, mozzarella, gorgonzola, pecorino romano, parmiggiano",
+        "availability": true,
+        "restaurant_id": 4
+    },
+    {
+        "id": 48,
+        "name": "Vegetariana",
+        "price": 11.99,
+        "image": "https://example.com/images/pizza_vegetariana.jpg",
+        "ingredients": "pomodoro, mozzarella, melanzane grigliate, peperoni, funghi, olive nere, basilico fresco",
+        "availability": true,
+        "restaurant_id": 4
+    },
+    {
+        "id": 49,
+        "name": "Tom Yum Soup",
+        "price": 9.99,
+        "image": "https://example.com/images/tom_yum_soup.jpg",
+        "ingredients": "brodo di gamberi, funghi, limone, erbe aromatiche",
+        "availability": true,
+        "restaurant_id": 5
+    },
+    {
+        "id": 50,
+        "name": "Mango Sticky Rice",
+        "price": 7.99,
+        "image": "https://example.com/images/mango_sticky_rice.jpg",
+        "ingredients": "riso glutinoso, mango maturo, latte di cocco",
+        "availability": true,
+        "restaurant_id": 5
+    },
+    {
+        "id": 51,
+        "name": "Pad See Ew",
+        "price": 12.99,
+        "image": "https://example.com/images/pad_see_ew.jpg",
+        "ingredients": "tagliolini di riso, carne di maiale, broccoli, salsa di soia",
+        "availability": true,
+        "restaurant_id": 5
+    },
+    {
+        "id": 52,
+        "name": "Som Tum",
+        "price": 8.99,
+        "image": "https://example.com/images/som_tum.jpg",
+        "ingredients": "papaya verde, pomodoro ciliegino, fagioli verdi, arachidi, lime",
+        "availability": true,
+        "restaurant_id": 5
+    },
+    {
+        "id": 53,
+        "name": "Big Tasty",
+        "price": 5.99,
+        "image": "https://example.com/images/big_tasty.jpg",
+        "ingredients": "hamburger di manzo, formaggio, bacon, cipolla, lattuga, salsa big tasty",
+        "availability": true,
+        "restaurant_id": 6
+    },
+    {
+        "id": 54,
+        "name": "Filet-O-Fish",
+        "price": 4.49,
+        "image": "https://example.com/images/filet_o_fish.jpg",
+        "ingredients": "filetto di merluzzo impanato, formaggio, salsa tartara",
+        "availability": true,
+        "restaurant_id": 6
+    },
+    {
+        "id": 55,
+        "name": "McChicken",
+        "price": 3.49,
+        "image": "https://example.com/images/mcchicken.jpg",
+        "ingredients": "pollo impanato, lattuga, maionese",
+        "availability": true,
+        "restaurant_id": 6
+    },
+    {
+        "id": 56,
+        "name": "Quarter Pounder with Cheese",
+        "price": 5.49,
+        "image": "https://example.com/images/quarter_pounder_cheese.jpg",
+        "ingredients": "hamburger di manzo, formaggio, lattuga, cetrioli, cipolla, ketchup, senape",
+        "availability": true,
+        "restaurant_id": 6
+    },
+    {
+        "id": 57,
+        "name": "McRib",
+        "price": 4.99,
+        "image": "https://example.com/images/mcrib.jpg",
+        "ingredients": "panino con costolette di maiale, salsa barbecue, cipolla, cetrioli",
+        "availability": true,
+        "restaurant_id": 6
+    },
+    {
+        "id": 58,
+        "name": "Happy Meal",
+        "price": 4.99,
+        "image": "https://example.com/images/happy_meal.jpg",
+        "ingredients": "hamburger, nuggets di pollo, patatine fritte, bevanda, gioco",
+        "availability": true,
+        "restaurant_id": 6
+    },
+    {
+        "id": 59,
+        "name": "McWrap",
+        "price": 4.29,
+        "image": "https://example.com/images/mcwrap.jpg",
+        "ingredients": "pollo grigliato, lattuga, pomodori, formaggio, salsa",
+        "availability": true,
+        "restaurant_id": 6
+    },
+    {
+        "id": 60,
+        "name": "Bacon King",
+        "price": 6.99,
+        "image": "https://example.com/images/bacon_king.jpg",
+        "ingredients": "pane, due hamburger di manzo alla griglia, formaggio, bacon, maionese, ketchup",
+        "availability": true,
+        "restaurant_id": 7
+    },
+    {
+        "id": 61,
+        "name": "Double Cheeseburger",
+        "price": 3.49,
+        "image": "https://example.com/images/double_cheeseburger.jpg",
+        "ingredients": "pane, due hamburger di manzo alla griglia, formaggio, ketchup, senape",
+        "availability": true,
+        "restaurant_id": 7
+    },
+    {
+        "id": 62,
+        "name": "Veggie Burger",
+        "price": 4.49,
+        "image": "https://example.com/images/veggie_burger.jpg",
+        "ingredients": "pane, burger vegetariano, lattuga, pomodoro, cetrioli, cipolla, ketchup, maionese",
+        "availability": true,
+        "restaurant_id": 7
+    },
+    {
+        "id": 63,
+        "name": "Spicy Chicken Nuggets",
+        "price": 2.99,
+        "image": "https://example.com/images/spicy_chicken_nuggets.jpg",
+        "ingredients": "bocconcini di pollo piccanti",
+        "availability": true,
+        "restaurant_id": 7
+    },
+    {
+        "id": 64,
+        "name": "Whopper Jr.",
+        "price": 3.99,
+        "image": "https://example.com/images/whopper_jr.jpg",
+        "ingredients": "pane, hamburger di manzo alla griglia, insalata, pomodoro, cipolla, ketchup, maionese",
+        "availability": true,
+        "restaurant_id": 7
+    },
+    {
+        "id": 65,
+        "name": "Crispy Chicken Sandwich",
+        "price": 4.29,
+        "image": "https://example.com/images/crispy_chicken_sandwich.jpg",
+        "ingredients": "pane, filetto di pollo croccante, lattuga, pomodoro, maionese",
+        "availability": true,
+        "restaurant_id": 7
+    },
+    {
+        "id": 66,
+        "name": "BBQ Bacon Double Cheeseburger",
+        "price": 5.99,
+        "image": "https://example.com/images/bbq_bacon_double_cheeseburger.jpg",
+        "ingredients": "pane, due hamburger di manzo alla griglia, formaggio, bacon, salsa barbecue",
+        "availability": true,
+        "restaurant_id": 7
+    },
+    {
+        "id": 67,
+        "name": "Chianti Classico Riserva",
+        "price": 29.99,
+        "image": "https://example.com/images/chianti_classico_riserva.jpg",
+        "ingredients": "uva Sangiovese",
+        "availability": true,
+        "restaurant_id": 8
+    },
+    {
+        "id": 68,
+        "name": "Barolo DOCG",
+        "price": 49.99,
+        "image": "https://example.com/images/barolo_docg.jpg",
+        "ingredients": "uva Nebbiolo",
+        "availability": true,
+        "restaurant_id": 8
+    },
+    {
+        "id": 69,
+        "name": "Bordeaux Grand Cru",
+        "price": 89.99,
+        "image": "https://example.com/images/bordeaux_grand_cru.jpg",
+        "ingredients": "uva Cabernet Sauvignon, Merlot",
+        "availability": true,
+        "restaurant_id": 8
+    },
+    {
+        "id": 70,
+        "name": "Brunello di Montalcino",
+        "price": 59.99,
+        "image": "https://example.com/images/brunello_di_montalcino.jpg",
+        "ingredients": "uva Sangiovese Grosso",
+        "availability": true,
+        "restaurant_id": 8
+    },
+    {
+        "id": 71,
+        "name": "Rioja Reserva",
+        "price": 34.99,
+        "image": "https://example.com/images/rioja_reserva.jpg",
+        "ingredients": "uva Tempranillo",
+        "availability": true,
+        "restaurant_id": 8
+    },
+    {
+        "id": 72,
+        "name": "Prosecco Superiore",
+        "price": 19.99,
+        "image": "https://example.com/images/prosecco_superiore.jpg",
+        "ingredients": "uva Glera",
+        "availability": true,
+        "restaurant_id": 8
+    },
+    {
+        "id": 73,
+        "name": "Sauvignon Blanc",
+        "price": 22.99,
+        "image": "https://example.com/images/sauvignon_blanc.jpg",
+        "ingredients": "uva Sauvignon Blanc",
+        "availability": true,
+        "restaurant_id": 8
+    },
+    {
+        "id": 74,
+        "name": "Napa Valley Cabernet Sauvignon",
+        "price": 79.99,
+        "image": "https://example.com/images/napa_valley_cabernet_sauvignon.jpg",
+        "ingredients": "uva Cabernet Sauvignon",
+        "availability": true,
+        "restaurant_id": 8
+    },
+    {
+        "id": 75,
+        "name": "Champagne Brut",
+        "price": 69.99,
+        "image": "https://example.com/images/champagne_brut.jpg",
+        "ingredients": "uva Pinot Noir, Chardonnay, Pinot Meunier",
+        "availability": true,
+        "restaurant_id": 8
+    },
+    {
+        "id": 76,
+        "name": "Punk IPA",
+        "price": 6.99,
+        "image": "https://example.com/images/punk_ipa.jpg",
+        "ingredients": "malto, luppolo, lievito",
+        "availability": true,
+        "restaurant_id": 9
+    },
+    {
+        "id": 77,
+        "name": "Dead Pony Club",
+        "price": 5.99,
+        "image": "https://example.com/images/dead_pony_club.jpg",
+        "ingredients": "malto, luppolo, lievito",
+        "availability": true,
+        "restaurant_id": 9
+    },
+    {
+        "id": 78,
+        "name": "Elvis Juice",
+        "price": 7.49,
+        "image": "https://example.com/images/elvis_juice.jpg",
+        "ingredients": "malto, luppolo, lievito, scorza d'arancia, pompelmo",
+        "availability": true,
+        "restaurant_id": 9
+    },
+    {
+        "id": 79,
+        "name": "Hazy Jane",
+        "price": 8.99,
+        "image": "https://example.com/images/hazy_jane.jpg",
+        "ingredients": "malto, luppolo, lievito",
+        "availability": true,
+        "restaurant_id": 9
+    },
+    {
+        "id": 80,
+        "name": "Jack Hammer",
+        "price": 7.99,
+        "image": "https://example.com/images/jack_hammer.jpg",
+        "ingredients": "malto, luppolo, lievito",
+        "availability": true,
+        "restaurant_id": 9
+    },
+    {
+        "id": 81,
+        "name": "Jet Black Heart",
+        "price": 6.49,
+        "image": "https://example.com/images/jet_black_heart.jpg",
+        "ingredients": "malto, luppolo, lievito, vaniglia, cacao",
+        "availability": true,
+        "restaurant_id": 9
+    },
+    {
+        "id": 82,
+        "name": "Lost Lager",
+        "price": 5.49,
+        "image": "https://example.com/images/lost_lager.jpg",
+        "ingredients": "malto, luppolo, lievito",
+        "availability": true,
+        "restaurant_id": 9
+    },
+    {
+        "id": 83,
+        "name": "Pulp Patriot",
+        "price": 7.99,
+        "image": "https://example.com/images/pulp_patriot.jpg",
+        "ingredients": "malto, luppolo, lievito",
+        "availability": true,
+        "restaurant_id": 9
+    },
+    {
+        "id": 84,
+        "name": "Punk AF",
+        "price": 6.49,
+        "image": "https://example.com/images/punk_af.jpg",
+        "ingredients": "malto, luppolo, lievito",
+        "availability": true,
+        "restaurant_id": 9
+    },
+    {
+        "id": 85,
+        "name": "Tiramisù",
+        "price": 4.99,
+        "image": "https://example.com/images/tiramisu_classico.jpg",
+        "ingredients": "savoiardi, mascarpone, caffè, cacao",
+        "availability": true,
+        "restaurant_id": 10
+    },
+    {
+        "id": 86,
+        "name": "Cannoli Siciliani",
+        "price": 3.49,
+        "image": "https://example.com/images/cannoli_siciliani.jpg",
+        "ingredients": "cannoli shell, ricotta, cioccolato, canditi",
+        "availability": true,
+        "restaurant_id": 10
+    },
+    {
+        "id": 87,
+        "name": "Sacher Torte",
+        "price": 5.99,
+        "image": "https://example.com/images/sacher_torte.jpg",
+        "ingredients": "cioccolato, marmellata di albicocche, ganache",
+        "availability": true,
+        "restaurant_id": 10
+    },
+    {
+        "id": 88,
+        "name": "Profiteroles",
+        "price": 4.49,
+        "image": "https://example.com/images/profiteroles.jpg",
+        "ingredients": "pasta choux, crema pasticcera, cioccolato fondente",
+        "availability": true,
+        "restaurant_id": 10
+    },
+    {
+        "id": 89,
+        "name": "Crostate alla Frutta",
+        "price": 4.99,
+        "image": "https://example.com/images/crostate_frutta.jpg",
+        "ingredients": "frolla, crema pasticcera, frutta fresca di stagione",
+        "availability": true,
+        "restaurant_id": 10
+    },
+    {
+        "id": 90,
+        "name": "Millefoglie",
+        "price": 5.49,
+        "image": "https://example.com/images/millefoglie.jpg",
+        "ingredients": "pasta sfoglia, crema pasticcera, zucchero a velo",
+        "availability": true,
+        "restaurant_id": 10
+    },
+    {
+        "id": 91,
+        "name": "Baba al Rum",
+        "price": 4.99,
+        "image": "https://example.com/images/baba_al_rum.jpg",
+        "ingredients": "pan di Spagna, rum, crema pasticcera",
+        "availability": true,
+        "restaurant_id": 10
+    },
+    {
+        "id": 92,
+        "name": "Cheesecake ai Frutti di Bosco",
+        "price": 5.99,
+        "image": "https://example.com/images/cheesecake_frutti_di_bosco.jpg",
+        "ingredients": "biscotto, formaggio cremoso, frutti di bosco",
+        "availability": true,
+        "restaurant_id": 10
+    },
+    {
+        "id": 93,
+        "name": "Crostata di Nutella",
+        "price": 4.49,
+        "image": "https://example.com/images/crostata_nutella.jpg",
+        "ingredients": "frolla, nutella, nocciole",
+        "availability": true,
+        "restaurant_id": 10
+    },
+    {
+        "id": 94,
+        "name": "Torta alle Mandorle",
+        "price": 5.49,
+        "image": "https://example.com/images/torta_mandorle.jpg",
+        "ingredients": "mandorle, zucchero, uova",
+        "availability": true,
+        "restaurant_id": 10
+    },
+    {
+        "id": 95,
+        "name": "Zuppa di Zucca allo zenzero",
+        "price": 6.99,
+        "image": "https://example.com/images/zuppa_di_zucca_zenzero.jpg",
+        "ingredients": "zucca, zenzero, brodo vegetale, panna",
+        "availability": true,
+        "restaurant_id": 11
+    },
+    {
+        "id": 96,
+        "name": "Insalata di Quinoa",
+        "price": 8.49,
+        "image": "https://example.com/images/insalata_quinoa_zenzero.jpg",
+        "ingredients": "quinoa, verdure miste, zenzero, limone, olio d'oliva",
+        "availability": true,
+        "restaurant_id": 11
+    },
+    {
+        "id": 97,
+        "name": "Zen Burger",
+        "price": 9.99,
+        "image": "https://example.com/images/zen_burger.jpg",
+        "ingredients": "hamburger vegetariano, pane integrale, zenzero, lattuga, pomodoro",
+        "availability": true,
+        "restaurant_id": 11
+    },
+    {
+        "id": 98,
+        "name": "Pad Thai di Verdure",
+        "price": 10.99,
+        "image": "https://example.com/images/pad_thai_verdure.jpg",
+        "ingredients": "noodles di riso, verdure miste, zenzero, salsa di soia",
+        "availability": true,
+        "restaurant_id": 11
+    },
+    {
+        "id": 99,
+        "name": "Tempura di Verdure",
+        "price": 11.49,
+        "image": "https://example.com/images/tempura_verdure_zenzero.jpg",
+        "ingredients": "verdure miste, farina di riso, zenzero, salsa teriyaki",
+        "availability": true,
+        "restaurant_id": 11
+    },
+    {
+        "id": 100,
+        "name": "Risotto al Limone e Zenzero",
+        "price": 12.49,
+        "image": "https://example.com/images/risotto_limone_zenzero.jpg",
+        "ingredients": "riso Arborio, zenzero, limone, brodo vegetale, parmigiano",
+        "availability": true,
+        "restaurant_id": 11
+    },
+    {
+        "id": 101,
+        "name": "Couscous con Verdure e Zenzero",
+        "price": 11.99,
+        "image": "https://example.com/images/couscous_verdure_zenzero.jpg",
+        "ingredients": "couscous, verdure miste, zenzero, spezie",
+        "availability": true,
+        "restaurant_id": 11
+    },
+    {
+        "id": 102,
+        "name": "Tofu Stir-Fry",
+        "price": 12.99,
+        "image": "https://example.com/images/tofu_stir_fry_zenzero.jpg",
+        "ingredients": "tofu, verdure miste, zenzero, salsa di soia",
+        "availability": true,
+        "restaurant_id": 11
+    },
+    {
+        "id": 103,
+        "name": "Curry di Verdure",
+        "price": 13.49,
+        "image": "https://example.com/images/curry_verdure_zenzero.jpg",
+        "ingredients": "verdure miste, latte di cocco, zenzero, curry",
+        "availability": true,
+        "restaurant_id": 11
+    },
+    {
+        "id": 104,
+        "name": "Zenzero Cheesecake",
+        "price": 9.99,
+        "image": "https://example.com/images/cheesecake_zenzero.jpg",
+        "ingredients": "biscotto, formaggio cremoso, zenzero, zucchero",
+        "availability": true,
+        "restaurant_id": 11
+    },
+    {
+        "id": 105,
+        "name": "Piadina Classica",
+        "price": 5.99,
+        "image": "https://example.com/images/piadina_classica.jpg",
+        "ingredients": "piadina, prosciutto crudo, mozzarella, rucola",
+        "availability": true,
+        "restaurant_id": 12
+    },
+    {
+        "id": 106,
+        "name": "Piadina Vegetariana",
+        "price": 6.49,
+        "image": "https://example.com/images/piadina_vegetariana.jpg",
+        "ingredients": "piadina, verdure grigliate, formaggio di capra, pesto",
+        "availability": true,
+        "restaurant_id": 12
+    },
+    {
+        "id": 107,
+        "name": "Piadina al Salame",
+        "price": 5.99,
+        "image": "https://example.com/images/piadina_salame.jpg",
+        "ingredients": "piadina, salame, formaggio, pomodoro, insalata",
+        "availability": true,
+        "restaurant_id": 12
+    },
+    {
+        "id": 108,
+        "name": "Piadina al Tonno",
+        "price": 6.99,
+        "image": "https://example.com/images/piadina_tonno.jpg",
+        "ingredients": "piadina, tonno, maionese, pomodoro, lattuga",
+        "availability": true,
+        "restaurant_id": 12
+    },
+    {
+        "id": 109,
+        "name": "Piadina con Crudo e Stracchino",
+        "price": 7.49,
+        "image": "https://example.com/images/piadina_crudo_stracchino.jpg",
+        "ingredients": "piadina, prosciutto crudo, stracchino, rucola",
+        "availability": true,
+        "restaurant_id": 12
+    },
+    {
+        "id": 110,
+        "name": "Piadina al Formaggio",
+        "price": 6.99,
+        "image": "https://example.com/images/piadina_formaggio.jpg",
+        "ingredients": "piadina, formaggio fuso, gorgonzola, noci",
+        "availability": true,
+        "restaurant_id": 12
+    },
+    {
+        "id": 111,
+        "name": "Piadina con Mortadella e Pistacchi",
+        "price": 7.49,
+        "image": "https://example.com/images/piadina_mortadella_pistacchi.jpg",
+        "ingredients": "piadina, mortadella, pistacchi, rucola",
+        "availability": true,
+        "restaurant_id": 12
+    },
+    {
+        "id": 112,
+        "name": "Piadina con Salsiccia e Friarielli",
+        "price": 7.99,
+        "image": "https://example.com/images/piadina_salsiccia_friarielli.jpg",
+        "ingredients": "piadina, salsiccia, friarielli, provola affumicata",
+        "availability": true,
+        "restaurant_id": 12
+    },
+    {
+        "id": 113,
+        "name": "Piadina con Porchetta e Radicchio",
+        "price": 8.49,
+        "image": "https://example.com/images/piadina_porchetta_radicchio.jpg",
+        "ingredients": "piadina, porchetta, radicchio, salsa ai lamponi",
+        "availability": true,
+        "restaurant_id": 12
+    },
+    {
+        "id": 114,
+        "name": "Piadina con Verdure Marinate",
+        "price": 7.49,
+        "image": "https://example.com/images/piadina_verdure_marinate.jpg",
+        "ingredients": "piadina, verdure marinate, formaggio fresco, rucola",
+        "availability": true,
+        "restaurant_id": 12
+    },
+    {
+        "id": 115,
+        "name": "Margherita",
+        "price": 9.99,
+        "image": "https://example.com/images/margherita.jpg",
+        "ingredients": "pomodoro, mozzarella, basilico",
+        "availability": true,
+        "restaurant_id": 13
+    },
+    {
+        "id": 116,
+        "name": "Pepperoni Lover's",
+        "price": 12.99,
+        "image": "https://example.com/images/pepperoni_lovers.jpg",
+        "ingredients": "pomodoro, mozzarella, pepperoni",
+        "availability": true,
+        "restaurant_id": 13
+    },
+    {
+        "id": 117,
+        "name": "Supreme",
+        "price": 13.99,
+        "image": "https://example.com/images/supreme.jpg",
+        "ingredients": "pomodoro, mozzarella, salsiccia, peperoni, funghi, olive nere, cipolla",
+        "availability": true,
+        "restaurant_id": 13
+    },
+    {
+        "id": 118,
+        "name": "Hawaiian",
+        "price": 11.99,
+        "image": "https://example.com/images/hawaiian.jpg",
+        "ingredients": "pomodoro, mozzarella, prosciutto cotto, ananas",
+        "availability": true,
+        "restaurant_id": 13
+    },
+    {
+        "id": 119,
+        "name": "Vegetariana",
+        "price": 12.99,
+        "image": "https://example.com/images/vegetariana.jpg",
+        "ingredients": "pomodoro, mozzarella, peperoni, funghi, cipolla, olive nere",
+        "availability": true,
+        "restaurant_id": 13
+    },
+    {
+        "id": 120,
+        "name": "Quattro Formaggi",
+        "price": 12.99,
+        "image": "https://example.com/images/quattro_formaggi.jpg",
+        "ingredients": "pomodoro, mozzarella, gorgonzola, fontina, parmigiano",
+        "availability": true,
+        "restaurant_id": 13
+    },
+    {
+        "id": 121,
+        "name": "Bufalina",
+        "price": 11.99,
+        "image": "https://example.com/images/bufalina.jpg",
+        "ingredients": "pomodoro, mozzarella di bufala, pomodorini, basilico",
+        "availability": true,
+        "restaurant_id": 13
+    },
+    {
+        "id": 122,
+        "name": "Capricciosa",
+        "price": 12.99,
+        "image": "https://example.com/images/capricciosa.jpg",
+        "ingredients": "pomodoro, mozzarella, prosciutto cotto, funghi, carciofi, olive nere",
+        "availability": true,
+        "restaurant_id": 13
+    },
+    {
+        "id": 123,
+        "name": "Calzone prosciutto cotto e funghi",
+        "price": 11.99,
+        "image": "https://example.com/images/calzone.jpg",
+        "ingredients": "pomodoro, mozzarella, prosciutto cotto, funghi, ricotta",
+        "availability": true,
+        "restaurant_id": 13
+    },
+    {
+        "id": 124,
+        "name": "Buffalo Wings",
+        "price": 8.99,
+        "image": "https://example.com/images/buffalo_wings.jpg",
+        "ingredients": "ali di pollo, salsa piccante",
+        "availability": true,
+        "restaurant_id": 14
+    },
+    {
+        "id": 125,
+        "name": "Texas Burger",
+        "price": 12.99,
+        "image": "https://example.com/images/texas_burger.jpg",
+        "ingredients": "hamburger di manzo, formaggio cheddar, bacon, cipolla fritta",
+        "availability": true,
+        "restaurant_id": 14
+    },
+    {
+        "id": 126,
+        "name": "Ribs",
+        "price": 19.99,
+        "image": "https://example.com/images/ribs.jpg",
+        "ingredients": "costine di maiale, salsa barbecue, patatine fritte",
+        "availability": true,
+        "restaurant_id": 14
+    },
+    {
+        "id": 127,
+        "name": "Fajitas",
+        "price": 16.99,
+        "image": "https://example.com/images/fajitas.jpg",
+        "ingredients": "strisce di pollo o manzo, peperoni, cipolle, tortillas",
+        "availability": true,
+        "restaurant_id": 14
+    },
+    {
+        "id": 128,
+        "name": "Chili con Carne",
+        "price": 10.99,
+        "image": "https://example.com/images/chili_con_carne.jpg",
+        "ingredients": "carne macinata, fagioli, peperoncini, pomodori",
+        "availability": true,
+        "restaurant_id": 14
+    },
+    {
+        "id": 129,
+        "name": "Nachos",
+        "price": 9.99,
+        "image": "https://example.com/images/nachos.jpg",
+        "ingredients": "tortillas chips, formaggio fuso, salsa, jalapenos",
+        "availability": true,
+        "restaurant_id": 14
+    },
+    {
+        "id": 130,
+        "name": "Cowboy Steak",
+        "price": 24.99,
+        "image": "https://example.com/images/cowboy_steak.jpg",
+        "ingredients": "bistecca di manzo, patate, verdure grigliate",
+        "availability": true,
+        "restaurant_id": 14
+    },
+    {
+        "id": 131,
+        "name": "Onion Rings",
+        "price": 6.99,
+        "image": "https://example.com/images/onion_rings.jpg",
+        "ingredients": "anelli di cipolla fritti",
+        "availability": true,
+        "restaurant_id": 14
+    },
+    {
+        "id": 132,
+        "name": "Cobb Salad",
+        "price": 14.99,
+        "image": "https://example.com/images/cobb_salad.jpg",
+        "ingredients": "insalata mista, pollo grigliato, avocado, uova sode",
+        "availability": true,
+        "restaurant_id": 14
+    },
+    {
+        "id": 133,
+        "name": "Apple Pie",
+        "price": 7.99,
+        "image": "https://example.com/images/apple_pie.jpg",
+        "ingredients": "mela, cannella, pasta frolla",
+        "availability": true,
+        "restaurant_id": 14
+    },
+    {
+        "id": 134,
+        "name": "Chicken Tikka Masala",
+        "price": 14.99,
+        "image": "https://example.com/images/chicken_tikka_masala.jpg",
+        "ingredients": "pollo marinato, salsa di pomodoro, panna, spezie",
+        "availability": true,
+        "restaurant_id": 15
+    },
+    {
+        "id": 135,
+        "name": "Vegetable Biryani",
+        "price": 12.99,
+        "image": "https://example.com/images/vegetable_biryani.jpg",
+        "ingredients": "riso basmati, verdure miste, spezie",
+        "availability": true,
+        "restaurant_id": 15
+    },
+    {
+        "id": 136,
+        "name": "Paneer Tikka",
+        "price": 11.99,
+        "image": "https://example.com/images/paneer_tikka.jpg",
+        "ingredients": "paneer, peperoni, cipolle, spezie",
+        "availability": true,
+        "restaurant_id": 15
+    },
+    {
+        "id": 137,
+        "name": "Butter Chicken",
+        "price": 15.99,
+        "image": "https://example.com/images/butter_chicken.jpg",
+        "ingredients": "pollo, salsa di pomodoro, panna, burro",
+        "availability": true,
+        "restaurant_id": 15
+    },
+    {
+        "id": 138,
+        "name": "Garlic Naan",
+        "price": 3.99,
+        "image": "https://example.com/images/garlic_naan.jpg",
+        "ingredients": "pane indiano, aglio, burro",
+        "availability": true,
+        "restaurant_id": 15
+    },
+    {
+        "id": 139,
+        "name": "Rogan Josh",
+        "price": 13.99,
+        "image": "https://example.com/images/rogan_josh.jpg",
+        "ingredients": "agnello, salsa di pomodoro, yogurt, spezie",
+        "availability": true,
+        "restaurant_id": 15
+    },
+    {
+        "id": 140,
+        "name": "Palak Paneer",
+        "price": 12.99,
+        "image": "https://example.com/images/palak_paneer.jpg",
+        "ingredients": "paneer, spinaci, pomodori, spezie",
+        "availability": true,
+        "restaurant_id": 15
+    },
+    {
+        "id": 141,
+        "name": "Gulab Jamun",
+        "price": 6.99,
+        "image": "https://example.com/images/gulab_jamun.jpg",
+        "ingredients": "latte in polvere, farina di grano, zucchero, cardamomo",
+        "availability": true,
+        "restaurant_id": 15
+    },
+    {
+        "id": 142,
+        "name": "Kebab di Agnello",
+        "price": 9.99,
+        "image": "https://example.com/images/kebab_agnello.jpg",
+        "ingredients": "carne di agnello, pane pita, insalata, pomodoro, salsa tahini",
+        "availability": true,
+        "restaurant_id": 16
+    },
+    {
+        "id": 143,
+        "name": "Falafel Wrap",
+        "price": 8.99,
+        "image": "https://example.com/images/falafel_wrap.jpg",
+        "ingredients": "falafel, pane pita, insalata, pomodoro, salsa tahini",
+        "availability": true,
+        "restaurant_id": 16
+    },
+    {
+        "id": 144,
+        "name": "Shawarma di Pollo",
+        "price": 10.99,
+        "image": "https://example.com/images/shawarma_pollo.jpg",
+        "ingredients": "pollo marinato, pane pita, insalata, cipolla, salsa allo yogurt",
+        "availability": true,
+        "restaurant_id": 16
+    },
+    {
+        "id": 145,
+        "name": "Hummus",
+        "price": 6.99,
+        "image": "https://example.com/images/hummus.jpg",
+        "ingredients": "ceci, tahini, olio d'oliva, limone, aglio",
+        "availability": true,
+        "restaurant_id": 16
+    },
+    {
+        "id": 146,
+        "name": "Kofta Kebab",
+        "price": 9.49,
+        "image": "https://example.com/images/kofta_kebab.jpg",
+        "ingredients": "polpette di carne, pane pita, insalata, salsa tahini",
+        "availability": true,
+        "restaurant_id": 16
+    },
+    {
+        "id": 147,
+        "name": "Tabbouleh",
+        "price": 7.99,
+        "image": "https://example.com/images/tabbouleh.jpg",
+        "ingredients": "prezzemolo, pomodori, menta, bulgur, cipolla",
+        "availability": true,
+        "restaurant_id": 16
+    },
+    {
+        "id": 148,
+        "name": "Baklava",
+        "price": 5.99,
+        "image": "https://example.com/images/baklava.jpg",
+        "ingredients": "noci, miele, pasta fillo",
+        "availability": true,
+        "restaurant_id": 16
+    },
+    {
+        "id": 149,
+        "name": "Kebab di Pollo",
+        "price": 8.99,
+        "image": "https://example.com/images/kebab_pollo.jpg",
+        "ingredients": "pollo marinato, pane pita, insalata, pomodoro, salsa allo yogurt",
+        "availability": true,
+        "restaurant_id": 16
+    },
+    {
+        "id": 150,
+        "name": "Fattoush",
+        "price": 7.49,
+        "image": "https://example.com/images/fattoush.jpg",
+        "ingredients": "insalata, pomodori, cetrioli, cipolla, pane pita croccante",
+        "availability": true,
+        "restaurant_id": 16
+    },
+    {
+        "id": 151,
+        "name": "Taco al Pastor",
+        "price": 3.99,
+        "image": "https://example.com/images/taco_al_pastor.jpg",
+        "ingredients": "maiale marinato, cipolla, coriandolo, ananas",
+        "availability": true,
+        "restaurant_id": 17
+    },
+    {
+        "id": 152,
+        "name": "Burrito di Pollo",
+        "price": 5.49,
+        "image": "https://example.com/images/burrito_pollo.jpg",
+        "ingredients": "pollo marinato, riso, fagioli, formaggio, salsa",
+        "availability": true,
+        "restaurant_id": 17
+    },
+    {
+        "id": 153,
+        "name": "Quesadilla al Formaggio",
+        "price": 4.99,
+        "image": "https://example.com/images/quesadilla_formaggio.jpg",
+        "ingredients": "tortilla, formaggio fuso",
+        "availability": true,
+        "restaurant_id": 17
+    },
+    {
+        "id": 154,
+        "name": "Taco di Bistecca",
+        "price": 4.99,
+        "image": "https://example.com/images/taco_bistecca.jpg",
+        "ingredients": "bistecca, lattuga, pomodoro, formaggio",
+        "availability": true,
+        "restaurant_id": 17
+    },
+    {
+        "id": 155,
+        "name": "Nachos Supreme",
+        "price": 6.99,
+        "image": "https://example.com/images/nachos_supreme.jpg",
+        "ingredients": "tortilla chips, carne macinata, formaggio fuso, panna acida, salsa",
+        "availability": true,
+        "restaurant_id": 17
+    },
+    {
+        "id": 156,
+        "name": "Taco Vegetariano",
+        "price": 3.99,
+        "image": "https://example.com/images/taco_vegetariano.jpg",
+        "ingredients": "fagioli, mais, avocado, pomodoro, formaggio",
+        "availability": true,
+        "restaurant_id": 17
+    },
+    {
+        "id": 157,
+        "name": "Crunchwrap Supreme",
+        "price": 5.99,
+        "image": "https://example.com/images/crunchwrap_supreme.jpg",
+        "ingredients": "tortilla, carne macinata, nacho cheese, lattuga, pomodoro",
+        "availability": true,
+        "restaurant_id": 17
+    },
+    {
+        "id": 158,
+        "name": "Cheesy Gordita Crunch",
+        "price": 4.49,
+        "image": "https://example.com/images/cheesy_gordita_crunch.jpg",
+        "ingredients": "tortilla, formaggio fuso, carne macinata, lattuga, salsa",
+        "availability": true,
+        "restaurant_id": 17
+    },
+    {
+        "id": 159,
+        "name": "Chalupa Supreme",
+        "price": 5.49,
+        "image": "https://example.com/images/chalupa_supreme.jpg",
+        "ingredients": "chalupa, carne macinata, formaggio fuso, lattuga, pomodoro",
+        "availability": true,
+        "restaurant_id": 17
+    },
+    {
+        "id": 160,
+        "name": "Sashimi Misto",
+        "price": 22.99,
+        "image": "https://example.com/images/sashimi_misto.jpg",
+        "ingredients": "assortimento di pesce crudo fresco",
+        "availability": true,
+        "restaurant_id": 18
+    },
+    {
+        "id": 161,
+        "name": "Nigiri Sushi",
+        "price": 18.99,
+        "image": "https://example.com/images/nigiri_sushi.jpg",
+        "ingredients": "riso, fettina di pesce crudo",
+        "availability": true,
+        "restaurant_id": 18
+    },
+    {
+        "id": 162,
+        "name": "Maki Rolls",
+        "price": 16.99,
+        "image": "https://example.com/images/maki_rolls.jpg",
+        "ingredients": "riso, alga nori, pesce o verdure",
+        "availability": true,
+        "restaurant_id": 18
+    },
+    {
+        "id": 163,
+        "name": "Sushi Tempura",
+        "price": 19.99,
+        "image": "https://example.com/images/sushi_tempura.jpg",
+        "ingredients": "riso, pesce o verdure fritte",
+        "availability": true,
+        "restaurant_id": 18
+    },
+    {
+        "id": 164,
+        "name": "Rainbow Roll",
+        "price": 21.99,
+        "image": "https://example.com/images/rainbow_roll.jpg",
+        "ingredients": "riso, avocado, salmone, tonno, gamberetti",
+        "availability": true,
+        "restaurant_id": 18
+    },
+    {
+        "id": 165,
+        "name": "Dragon Roll",
+        "price": 23.99,
+        "image": "https://example.com/images/dragon_roll.jpg",
+        "ingredients": "riso, salmone, avocado, gamberetti, maionese",
+        "availability": true,
+        "restaurant_id": 18
+    },
+    {
+        "id": 166,
+        "name": "California Roll",
+        "price": 17.99,
+        "image": "https://example.com/images/california_roll.jpg",
+        "ingredients": "riso, granchio, avocado, cetriolo",
+        "availability": true,
+        "restaurant_id": 18
+    },
+    {
+        "id": 167,
+        "name": "Spicy Tuna Roll",
+        "price": 20.99,
+        "image": "https://example.com/images/spicy_tuna_roll.jpg",
+        "ingredients": "riso, tonno piccante, avocado, maionese piccante",
+        "availability": true,
+        "restaurant_id": 18
+    },
+    {
+        "id": 168,
+        "name": "Salmon Nigiri",
+        "price": 18.99,
+        "image": "https://example.com/images/salmon_nigiri.jpg",
+        "ingredients": "riso, fettina di salmone crudo",
+        "availability": true,
+        "restaurant_id": 18
+    },
+    {
+        "id": 169,
+        "name": "Original Recipe Chicken",
+        "price": 5.99,
+        "image": "https://example.com/images/original_recipe_chicken.jpg",
+        "ingredients": "pollo marinato, spezie, panatura croccante",
+        "availability": true,
+        "restaurant_id": 19
+    },
+    {
+        "id": 170,
+        "name": "Crispy Colonel Sandwich",
+        "price": 6.99,
+        "image": "https://example.com/images/crispy_colonel_sandwich.jpg",
+        "ingredients": "pollo croccante, pane, lattuga, maionese",
+        "availability": true,
+        "restaurant_id": 19
+    },
+    {
+        "id": 171,
+        "name": "Extra Crispy Tenders",
+        "price": 7.99,
+        "image": "https://example.com/images/extra_crispy_tenders.jpg",
+        "ingredients": "strisce di pollo croccante, panatura",
+        "availability": true,
+        "restaurant_id": 19
+    },
+    {
+        "id": 172,
+        "name": "Famous Bowl",
+        "price": 8.99,
+        "image": "https://example.com/images/famous_bowl.jpg",
+        "ingredients": "pollo croccante, purè di patate, salsa, formaggio grattugiato",
+        "availability": true,
+        "restaurant_id": 19
+    },
+    {
+        "id": 173,
+        "name": "Popcorn Chicken",
+        "price": 4.99,
+        "image": "https://example.com/images/popcorn_chicken.jpg",
+        "ingredients": "pollo fritto in piccoli pezzi",
+        "availability": true,
+        "restaurant_id": 19
+    },
+    {
+        "id": 174,
+        "name": "Zinger Burger",
+        "price": 7.49,
+        "image": "https://example.com/images/zinger_burger.jpg",
+        "ingredients": "petto di pollo piccante, pane, lattuga, maionese",
+        "availability": true,
+        "restaurant_id": 19
+    },
+    {
+        "id": 175,
+        "name": "Mashed Potatoes",
+        "price": 2.99,
+        "image": "https://example.com/images/mashed_potatoes.jpg",
+        "ingredients": "patate schiacciate, salsa gravy",
+        "availability": true,
+        "restaurant_id": 19
+    },
+    {
+        "id": 176,
+        "name": "Mac & Cheese",
+        "price": 3.99,
+        "image": "https://example.com/images/mac_and_cheese.jpg",
+        "ingredients": "pasta, formaggio, latte",
+        "availability": true,
+        "restaurant_id": 19
+    },
+    {
+        "id": 177,
+        "name": "Coleslaw",
+        "price": 2.49,
+        "image": "https://example.com/images/coleslaw.jpg",
+        "ingredients": "cavolo, carote, salsa cremosa",
+        "availability": true,
+        "restaurant_id": 19
+    },
+    {
+        "id": 178,
+        "name": "Torta al Cioccolato Fondente",
+        "price": 24.99,
+        "image": "https://example.com/images/torta_cioccolato.jpg",
+        "ingredients": "cioccolato fondente, farina, uova, burro, zucchero",
+        "availability": true,
+        "restaurant_id": 20
+    },
+    {
+        "id": 179,
+        "name": "Cupcake alla Vaniglia",
+        "price": 3.99,
+        "image": "https://example.com/images/cupcake_vaniglia.jpg",
+        "ingredients": "farina, zucchero, burro, uova, vaniglia",
+        "availability": true,
+        "restaurant_id": 20
+    },
+    {
+        "id": 180,
+        "name": "Croissant alla Crema",
+        "price": 2.49,
+        "image": "https://example.com/images/croissant_crema.jpg",
+        "ingredients": "pasta sfoglia, crema pasticcera",
+        "availability": true,
+        "restaurant_id": 20
+    },
+    {
+        "id": 181,
+        "name": "Torta Red Velvet",
+        "price": 29.99,
+        "image": "https://example.com/images/red_velvet_cake.jpg",
+        "ingredients": "farina, cacao, zucchero, uova, buttermilk, colorante rosso, vaniglia, aceto, bicarbonato di sodio, crema di formaggio",
+        "availability": true,
+        "restaurant_id": 20
+    },
+    {
+        "id": 182,
+        "name": "Muffin alle Mele",
+        "price": 4.49,
+        "image": "https://example.com/images/muffin_mele.jpg",
+        "ingredients": "farina, mele, zucchero, uova, burro",
+        "availability": true,
+        "restaurant_id": 20
+    },
+    {
+        "id": 183,
+        "name": "Cheesecake al Limone",
+        "price": 7.99,
+        "image": "https://example.com/images/cheesecake_limone.jpg",
+        "ingredients": "biscotti sbriciolati, formaggio cremoso, limone, zucchero",
+        "availability": true,
+        "restaurant_id": 20
+    },
+    {
+        "id": 184,
+        "name": "Sfogliatella Riccia",
+        "price": 4.99,
+        "image": "https://example.com/images/sfogliatella_riccia.jpg",
+        "ingredients": "sfoglia, ricotta, canditi, zucchero a velo",
+        "availability": true,
+        "restaurant_id": 20
+    },
+    {
+        "id": 185,
+        "name": "Crostatina alla Frutta",
+        "price": 6.99,
+        "image": "https://example.com/images/crostata_frutta.jpg",
+        "ingredients": "pasta frolla, frutta fresca, gelatina",
+        "availability": true,
+        "restaurant_id": 20
+    },
+    {
+        "id": 186,
+        "name": "Biscotti al Cioccolato e Noci",
+        "price": 3.99,
+        "image": "https://example.com/images/biscotti_cioccolato_noci.jpg",
+        "ingredients": "farina, cioccolato fondente, noci, burro, zucchero",
+        "availability": true,
+        "restaurant_id": 20
+    },
+    {
+        "id": 187,
+        "name": "Pad Thai",
+        "price": 12.99,
+        "image": "https://example.com/images/pad_thai.jpg",
+        "ingredients": "tagliolini di riso, gamberi, uova, arachidi, lime",
+        "availability": true,
+        "restaurant_id": 21
+    },
+    {
+        "id": 188,
+        "name": "Tom Yum Soup",
+        "price": 9.99,
+        "image": "https://example.com/images/tom_yum_soup.jpg",
+        "ingredients": "brodo di gamberi, limone, erba cipollina, peperoncino, funghi",
+        "availability": true,
+        "restaurant_id": 21
+    },
+    {
+        "id": 189,
+        "name": "Green Curry",
+        "price": 14.99,
+        "image": "https://example.com/images/green_curry.jpg",
+        "ingredients": "pollo, latte di cocco, melanzane, peperoni, basilico",
+        "availability": true,
+        "restaurant_id": 21
+    },
+    {
+        "id": 190,
+        "name": "Pad Krapow Gai",
+        "price": 13.99,
+        "image": "https://example.com/images/pad_krapow_gai.jpg",
+        "ingredients": "pollo, basilico, peperoncino, aglio, salsa di soia",
+        "availability": true,
+        "restaurant_id": 21
+    },
+    {
+        "id": 191,
+        "name": "Massaman Curry di Manzo",
+        "price": 16.99,
+        "image": "https://example.com/images/massaman_curry.jpg",
+        "ingredients": "manzo, patate, arachidi, spezie",
+        "availability": true,
+        "restaurant_id": 21
+    },
+    {
+        "id": 192,
+        "name": "Som Tam",
+        "price": 11.99,
+        "image": "https://example.com/images/som_tum.jpg",
+        "ingredients": "papaya verde, pomodoro ciliegino, fagioli lunghi, arachidi, lime",
+        "availability": true,
+        "restaurant_id": 21
+    },
+    {
+        "id": 193,
+        "name": "Tom Kha Gai",
+        "price": 10.99,
+        "image": "https://example.com/images/tom_kha_gai.jpg",
+        "ingredients": "brodo di pollo, latte di cocco, galanga, limone, peperoncino",
+        "availability": true,
+        "restaurant_id": 21
+    },
+    {
+        "id": 194,
+        "name": "Khao Pad Gai",
+        "price": 15.99,
+        "image": "https://example.com/images/khao_pad_gai.jpg",
+        "ingredients": "riso saltato, pollo, uova, cipolla, salsa di soia",
+        "availability": true,
+        "restaurant_id": 21
+    },
+    {
+        "id": 195,
+        "name": "Classic Cheeseburger",
+        "price": 9.99,
+        "image": "https://example.com/images/classic_cheeseburger.jpg",
+        "ingredients": "hamburger di manzo, formaggio cheddar, lattuga, pomodoro",
+        "availability": true,
+        "restaurant_id": 22
+    },
+    {
+        "id": 196,
+        "name": "BBQ Bacon Burger",
+        "price": 11.99,
+        "image": "https://example.com/images/bbq_bacon_burger.jpg",
+        "ingredients": "hamburger di manzo, bacon affumicato, formaggio, cipolla caramellata, salsa barbecue",
+        "availability": true,
+        "restaurant_id": 22
+    },
+    {
+        "id": 197,
+        "name": "Mushroom Swiss Burger",
+        "price": 10.99,
+        "image": "https://example.com/images/mushroom_swiss_burger.jpg",
+        "ingredients": "hamburger di manzo, funghi, formaggio svizzero, lattuga, maionese",
+        "availability": true,
+        "restaurant_id": 22
+    },
+    {
+        "id": 198,
+        "name": "Spicy Chicken Sandwich",
+        "price": 8.99,
+        "image": "https://example.com/images/spicy_chicken_sandwich.jpg",
+        "ingredients": "petto di pollo marinato, lattuga, pomodoro, salsa piccante",
+        "availability": true,
+        "restaurant_id": 22
+    },
+    {
+        "id": 199,
+        "name": "Veggie Burger",
+        "price": 9.49,
+        "image": "https://example.com/images/veggie_burger.jpg",
+        "ingredients": "polpetta di verdure, lattuga, pomodoro, cetriolo, maionese",
+        "availability": true,
+        "restaurant_id": 22
+    },
+    {
+        "id": 200,
+        "name": "Truffle Fries",
+        "price": 5.99,
+        "image": "https://example.com/images/truffle_fries.jpg",
+        "ingredients": "patatine fritte, olio di tartufo, prezzemolo, sale",
+        "availability": true,
+        "restaurant_id": 22
+    },
+    {
+        "id": 201,
+        "name": "Onion Rings",
+        "price": 4.99,
+        "image": "https://example.com/images/onion_rings.jpg",
+        "ingredients": "anelli di cipolla, panatura croccante",
+        "availability": true,
+        "restaurant_id": 22
+    },
+    {
+        "id": 202,
+        "name": "Milkshake alla Vaniglia",
+        "price": 6.99,
+        "image": "https://example.com/images/vanilla_milkshake.jpg",
+        "ingredients": "gelato alla vaniglia, latte, panna montata",
+        "availability": true,
+        "restaurant_id": 22
+    },
+    {
+        "id": 203,
+        "name": "Kebab di Pollo",
+        "price": 8.99,
+        "image": "https://example.com/images/kebab_pollo.jpg",
+        "ingredients": "pollo marinato, verdure grigliate, pane pita",
+        "availability": true,
+        "restaurant_id": 23
+    },
+    {
+        "id": 204,
+        "name": "Kebab di Agnello",
+        "price": 10.99,
+        "image": "https://example.com/images/kebab_agnello.jpg",
+        "ingredients": "agnello marinato, cipolla, pomodoro, salsa tzatziki",
+        "availability": true,
+        "restaurant_id": 23
+    },
+    {
+        "id": 205,
+        "name": "Falafel Wrap",
+        "price": 7.99,
+        "image": "https://example.com/images/falafel_wrap.jpg",
+        "ingredients": "falafel, lattuga, pomodoro, hummus, pane pita",
+        "availability": true,
+        "restaurant_id": 23
+    },
+    {
+        "id": 206,
+        "name": "Shawarma di Manzo",
+        "price": 9.99,
+        "image": "https://example.com/images/shawarma_manzo.jpg",
+        "ingredients": "manzo marinato, insalata, salsa tahini, pane pita",
+        "availability": true,
+        "restaurant_id": 23
+    },
+    {
+        "id": 207,
+        "name": "Baba Ganoush",
+        "price": 6.99,
+        "image": "https://example.com/images/baba_ganoush.jpg",
+        "ingredients": "melanzane arrostite, tahini, aglio, limone",
+        "availability": true,
+        "restaurant_id": 23
+    },
+    {
+        "id": 208,
+        "name": "Tabbouleh",
+        "price": 5.99,
+        "image": "https://example.com/images/tabbouleh.jpg",
+        "ingredients": "prezzemolo, pomodoro, menta, bulgur, limone",
+        "availability": true,
+        "restaurant_id": 23
+    },
+    {
+        "id": 209,
+        "name": "Hummus",
+        "price": 4.99,
+        "image": "https://example.com/images/hummus.jpg",
+        "ingredients": "ceci, tahini, aglio, limone, olio d'oliva",
+        "availability": true,
+        "restaurant_id": 23
+    },
+    {
+        "id": 210,
+        "name": "Baklava",
+        "price": 8.49,
+        "image": "https://example.com/images/baklava.jpg",
+        "ingredients": "noci, mandorle, pistacchi, pasta fillo, miele",
+        "availability": true,
+        "restaurant_id": 23
+    },
+    {
+        "id": 211,
+        "name": "Caffè Americano",
+        "price": 2.49,
+        "image": "https://example.com/images/caffe_americano.jpg",
+        "ingredients": "espresso",
+        "availability": true,
+        "restaurant_id": 24
+    },
+    {
+        "id": 212,
+        "name": "Cappuccino",
+        "price": 3.99,
+        "image": "https://example.com/images/cappuccino.jpg",
+        "ingredients": "espresso, schiuma di latte",
+        "availability": true,
+        "restaurant_id": 24
+    },
+    {
+        "id": 213,
+        "name": "Latte Macchiato",
+        "price": 4.49,
+        "image": "https://example.com/images/latte_macchiato.jpg",
+        "ingredients": "espresso, schiuma di latte",
+        "availability": true,
+        "restaurant_id": 24
+    },
+    {
+        "id": 214,
+        "name": "Mocha",
+        "price": 4.99,
+        "image": "https://example.com/images/mocha.jpg",
+        "ingredients": "espresso, latte caldo, sciroppo di cioccolato, panna montata",
+        "availability": true,
+        "restaurant_id": 24
+    },
+    {
+        "id": 215,
+        "name": "Frappuccino al Caramello",
+        "price": 5.49,
+        "image": "https://example.com/images/frappuccino_caramello.jpg",
+        "ingredients": "caffè, latte, ghiaccio, sciroppo al caramello, panna montata",
+        "availability": true,
+        "restaurant_id": 24
+    },
+    {
+        "id": 216,
+        "name": "Teavana Shaken Iced Tea",
+        "price": 3.79,
+        "image": "https://example.com/images/iced_tea.jpg",
+        "ingredients": "tè, ghiaccio, sciroppo (opzionale)",
+        "availability": true,
+        "restaurant_id": 24
+    },
+    {
+        "id": 217,
+        "name": "Croissant al Burro",
+        "price": 2.99,
+        "image": "https://example.com/images/croissant.jpg",
+        "ingredients": "farina, burro, lievito, zucchero",
+        "availability": true,
+        "restaurant_id": 24
+    },
+    {
+        "id": 218,
+        "name": "Muffin ai Mirtilli",
+        "price": 3.49,
+        "image": "https://example.com/images/muffin_mirtilli.jpg",
+        "ingredients": "farina, mirtilli, zucchero, burro, uova",
+        "availability": true,
+        "restaurant_id": 24
+    },
+    {
+        "id": 219,
+        "name": "Cake Pops al Cioccolato",
+        "price": 2.29,
+        "image": "https://example.com/images/cake_pops_cioccolato.jpg",
+        "ingredients": "cioccolato, crema, biscotti sbriciolati",
+        "availability": true,
+        "restaurant_id": 24
+    },
+    {
+        "id": 220,
+        "name": "Bagel al Salmone Affumicato",
+        "price": 7.49,
+        "image": "https://example.com/images/bagel_salmone.jpg",
+        "ingredients": "bagel, salmone affumicato, formaggio cremoso, cipolla rossa, cetriolo",
+        "availability": true,
+        "restaurant_id": 24
     }
-
-
-
-  ]
-
+]

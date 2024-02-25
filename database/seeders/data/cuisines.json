@@ -1,58 +1,62 @@
-
 [
-      {
+    {
         "id": 1,
         "name": "Cucina italiana",
         "image": "https://example.com/images/cuisine_italian.jpg"
-      },
-      {
+    },
+    {
         "id": 2,
-        "name": "Giapponese",
-        "image": "https://example.com/images/cuisine_japanese.jpg"
-      },
-      {
+        "name": "Sushi",
+        "image": "https://example.com/images/cuisine_sushi.jpg"
+    },
+    {
         "id": 3,
         "name": "Messicano",
         "image": "https://example.com/images/cuisine_mexican.jpg"
-      },
-      {
+    },
+    {
         "id": 4,
-        "name": "Americano",
+        "name": "Fast Food",
         "image": "https://example.com/images/cuisine_american.jpg"
-      },
-      {
+    },
+    {
         "id": 5,
         "name": "Thailandese",
         "image": "https://example.com/images/cuisine_thai.jpg"
-      },
-      {
+    },
+    {
         "id": 6,
-        "name": "Pasta",
-        "image": "https://example.com/images/cuisine_pasta.jpg"
-      },
-      {
+        "name": "Panini",
+        "image": "https://example.com/images/cuisine_panini.jpg"
+    },
+    {
         "id": 7,
-        "name": "Burger",
-        "image": "https://example.com/images/cuisine_burger.jpg"
-      },
-      {
+        "name": "Kebab",
+        "image": "https://example.com/images/cuisine_kebab.jpg"
+    },
+    {
         "id": 8,
         "name": "Pizza",
         "image": "https://example.com/images/cuisine_pizza.jpg"
-      },
-      {
+    },
+    {
         "id": 9,
         "name": "Dolci",
         "image": "https://example.com/images/cuisine_dolci.jpg"
-      },
-      {
+    },
+    {
         "id": 10,
         "name": "Vegetariano",
         "image": "https://example.com/images/cuisine_vegetariano.jpg"
-      },
-      {
+    },
+    {
         "id": 11,
-        "name": "Gourmet",
-        "image": "https://example.com/images/cuisine_gourmet.jpg"
-      }
-    ]
+        "name": "Indiano",
+        "image": "https://example.com/images/cuisine_indian.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Bevande",
+        "image": "https://example.com/images/cuisine_bevande.jpg"
+    }
+]
