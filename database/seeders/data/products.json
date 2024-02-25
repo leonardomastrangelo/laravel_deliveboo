@@ -568,7 +568,7 @@
     },
     {
         "id": 64,
-        "name": "Whopper Jr.",
+        "name": "Whopper Jr",
         "price": 3.99,
         "image": "https://example.com/images/whopper_jr.jpg",
         "ingredients": "pane, hamburger di manzo alla griglia, insalata, pomodoro, cipolla, ketchup, maionese",
@@ -766,7 +766,7 @@
     },
     {
         "id": 86,
-        "name": "Cannoli Siciliani",
+        "name": "Cannoli",
         "price": 3.49,
         "image": "https://example.com/images/cannoli_siciliani.jpg",
         "ingredients": "cannoli shell, ricotta, cioccolato, canditi",
@@ -1027,7 +1027,7 @@
     },
     {
         "id": 115,
-        "name": "Margherita",
+        "name": "La Margherita",
         "price": 9.99,
         "image": "https://example.com/images/margherita.jpg",
         "ingredients": "pomodoro, mozzarella, basilico",
@@ -1063,7 +1063,7 @@
     },
     {
         "id": 119,
-        "name": "Vegetariana",
+        "name": "La Vegetariana",
         "price": 12.99,
         "image": "https://example.com/images/vegetariana.jpg",
         "ingredients": "pomodoro, mozzarella, peperoni, funghi, cipolla, olive nere",
@@ -1072,7 +1072,7 @@
     },
     {
         "id": 120,
-        "name": "Quattro Formaggi",
+        "name": "La Quattro Formaggi",
         "price": 12.99,
         "image": "https://example.com/images/quattro_formaggi.jpg",
         "ingredients": "pomodoro, mozzarella, gorgonzola, fontina, parmigiano",
@@ -1081,7 +1081,7 @@
     },
     {
         "id": 121,
-        "name": "Bufalina",
+        "name": "La Bufalina",
         "price": 11.99,
         "image": "https://example.com/images/bufalina.jpg",
         "ingredients": "pomodoro, mozzarella di bufala, pomodorini, basilico",
@@ -1090,7 +1090,7 @@
     },
     {
         "id": 122,
-        "name": "Capricciosa",
+        "name": "La Capricciosa",
         "price": 12.99,
         "image": "https://example.com/images/capricciosa.jpg",
         "ingredients": "pomodoro, mozzarella, prosciutto cotto, funghi, carciofi, olive nere",
@@ -1450,7 +1450,7 @@
     },
     {
         "id": 162,
-        "name": "Maki Rolls",
+        "name": "Maki-Rolls",
         "price": 16.99,
         "image": "https://example.com/images/maki_rolls.jpg",
         "ingredients": "riso, alga nori, pesce o verdure",
@@ -1468,7 +1468,7 @@
     },
     {
         "id": 164,
-        "name": "Rainbow Roll",
+        "name": "Rainbow-Roll",
         "price": 21.99,
         "image": "https://example.com/images/rainbow_roll.jpg",
         "ingredients": "riso, avocado, salmone, tonno, gamberetti",
@@ -1477,7 +1477,7 @@
     },
     {
         "id": 165,
-        "name": "Dragon Roll",
+        "name": "Dragon-Roll",
         "price": 23.99,
         "image": "https://example.com/images/dragon_roll.jpg",
         "ingredients": "riso, salmone, avocado, gamberetti, maionese",
@@ -1486,7 +1486,7 @@
     },
     {
         "id": 166,
-        "name": "California Roll",
+        "name": "California-Roll",
         "price": 17.99,
         "image": "https://example.com/images/california_roll.jpg",
         "ingredients": "riso, granchio, avocado, cetriolo",
@@ -1495,7 +1495,7 @@
     },
     {
         "id": 167,
-        "name": "Spicy Tuna Roll",
+        "name": "Spicy Tuna-Roll",
         "price": 20.99,
         "image": "https://example.com/images/spicy_tuna_roll.jpg",
         "ingredients": "riso, tonno piccante, avocado, maionese piccante",
@@ -1657,7 +1657,7 @@
     },
     {
         "id": 185,
-        "name": "Crostatina alla Frutta",
+        "name": "Crostatine alla Frutta",
         "price": 6.99,
         "image": "https://example.com/images/crostata_frutta.jpg",
         "ingredients": "pasta frolla, frutta fresca, gelatina",
@@ -1675,7 +1675,7 @@
     },
     {
         "id": 187,
-        "name": "Pad Thai",
+        "name": "Pad-Thai",
         "price": 12.99,
         "image": "https://example.com/images/pad_thai.jpg",
         "ingredients": "tagliolini di riso, gamberi, uova, arachidi, lime",
@@ -1684,7 +1684,7 @@
     },
     {
         "id": 188,
-        "name": "Tom Yum Soup",
+        "name": "Tom-Yum Soup",
         "price": 9.99,
         "image": "https://example.com/images/tom_yum_soup.jpg",
         "ingredients": "brodo di gamberi, limone, erba cipollina, peperoncino, funghi",
@@ -1711,7 +1711,7 @@
     },
     {
         "id": 191,
-        "name": "Massaman Curry di Manzo",
+        "name": "Massaman-Curry di Manzo",
         "price": 16.99,
         "image": "https://example.com/images/massaman_curry.jpg",
         "ingredients": "manzo, patate, arachidi, spezie",
@@ -1783,7 +1783,7 @@
     },
     {
         "id": 199,
-        "name": "Veggie Burger",
+        "name": "Veg-Burger",
         "price": 9.49,
         "image": "https://example.com/images/veggie_burger.jpg",
         "ingredients": "polpetta di verdure, lattuga, pomodoro, cetriolo, maionese",
@@ -1801,7 +1801,7 @@
     },
     {
         "id": 201,
-        "name": "Onion Rings",
+        "name": "Spicy Onion Rings",
         "price": 4.99,
         "image": "https://example.com/images/onion_rings.jpg",
         "ingredients": "anelli di cipolla, panatura croccante",
@@ -1819,7 +1819,7 @@
     },
     {
         "id": 203,
-        "name": "Kebab di Pollo",
+        "name": "Kebab di Pollo al Limone",
         "price": 8.99,
         "image": "https://example.com/images/kebab_pollo.jpg",
         "ingredients": "pollo marinato, verdure grigliate, pane pita",
@@ -1828,7 +1828,7 @@
     },
     {
         "id": 204,
-        "name": "Kebab di Agnello",
+        "name": "Kebab di Agnello al Curry",
         "price": 10.99,
         "image": "https://example.com/images/kebab_agnello.jpg",
         "ingredients": "agnello marinato, cipolla, pomodoro, salsa tzatziki",
@@ -1837,7 +1837,7 @@
     },
     {
         "id": 205,
-        "name": "Falafel Wrap",
+        "name": "Falafel-Wrap",
         "price": 7.99,
         "image": "https://example.com/images/falafel_wrap.jpg",
         "ingredients": "falafel, lattuga, pomodoro, hummus, pane pita",
@@ -1864,7 +1864,7 @@
     },
     {
         "id": 208,
-        "name": "Tabbouleh",
+        "name": "Tabbouleh con Quinoa",
         "price": 5.99,
         "image": "https://example.com/images/tabbouleh.jpg",
         "ingredients": "prezzemolo, pomodoro, menta, bulgur, limone",
@@ -1873,7 +1873,7 @@
     },
     {
         "id": 209,
-        "name": "Hummus",
+        "name": "Hummus di ceci",
         "price": 4.99,
         "image": "https://example.com/images/hummus.jpg",
         "ingredients": "ceci, tahini, aglio, limone, olio d'oliva",
@@ -1882,7 +1882,7 @@
     },
     {
         "id": 210,
-        "name": "Baklava",
+        "name": "Baklava al Pistacchio",
         "price": 8.49,
         "image": "https://example.com/images/baklava.jpg",
         "ingredients": "noci, mandorle, pistacchi, pasta fillo, miele",
