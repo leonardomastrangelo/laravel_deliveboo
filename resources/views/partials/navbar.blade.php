@@ -27,6 +27,10 @@
         </ul>
 
     <ul class=" d-flex align-items-center justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" href="http://localhost:5174">{{ __('Vai al sito') }}</a>
+        </li>
+
         <!-- Authentication Links -->
         @guest
             <li class="nav-item">
