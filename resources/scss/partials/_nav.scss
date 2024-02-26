@@ -12,10 +12,26 @@ $sidebar-width: 250px;
     // top: 5px;
     // left: 5px;
   }
+  .active-link {
+     background-color: #00CCBC;
+     i,a{
+        color: #244956;
+    }
+  }
   ul {
     list-style: none;
     padding: 0 20px;
     margin: 0;
+    li {
+      padding: 0 10px;
+      i {
+        color: #00CCBC;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
   }
 }
 
@@ -36,7 +52,7 @@ $sidebar-width: 250px;
     margin: 0;
     text-align: center;
     li {
-      padding: 20px;
+      padding: 10px;
       width: 100%;
       .anchor-container {
         display: flex;
@@ -45,7 +61,7 @@ $sidebar-width: 250px;
         flex-direction: column;
       }
       i {
-        font-size: 1.7em;
+        font-size: 1.3em;
         color: #00CCBC;
       }
 
@@ -54,7 +70,7 @@ $sidebar-width: 250px;
   a {
     color: white;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1em;
   }
   button {
     border: none !important;

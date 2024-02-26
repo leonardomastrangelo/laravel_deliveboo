@@ -3,6 +3,29 @@
         <img id="logo" src="{{ Vite::asset('resources/img/logo-deliveboo.png') }}" alt="logo">
     </a>
 
+    <ul class="d-flex d-lg-none">
+            <li @if (Request::url() == route('home')) class="active-link" @endif>
+                <a class="anchor-container" href="{{ route('home') }}">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="d-none d-md-inline-block tex">Home</span>
+                </a>
+            </li>
+            <li @if (Request::url() == route('admin.dashboard')) class="active-link" @endif>
+                <a class="anchor-container" href="{{ route('admin.dashboard') }}">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span class="d-none d-md-inline-block">Dasboard</span>
+                </a>
+            </li>
+            @auth
+                <li @if (Request::url() == route('admin.orders')) class="active-link" @endif>
+                    <a class="anchor-container" href="{{ route('admin.orders') }}">
+                        <i class="fa-brands fa-jedi-order"></i>
+                        <span class="d-none d-md-inline-block">Orders</span>
+                    </a>
+                </li>
+            @endauth
+        </ul>
+
     <ul class=" d-flex align-items-center justify-content-center">
         <!-- Authentication Links -->
         @guest
