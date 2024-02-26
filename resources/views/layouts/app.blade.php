@@ -22,16 +22,14 @@
 <body>
     <div id="app" class="w-100 overflow-hidden">
         @include('partials.navbar')
-        <main id="main-content" class="row flex-nowrap">
-            @include('partials/sidebar')
-
-            <div class="col p-0 position-relative overflow-y-auto">
-
-                @yield('content')
-
-            </div>
-
-        </main>
+        <div class="container-fluid">
+            <main id="main-content" class="row flex-nowrap">
+                @include('partials/sidebar')
+                <div id="lol" class="col position-relative overflow-y-auto">
+                    @yield('content')
+                </div>
+            </main>
+        </div>
     </div>
 </body>
 

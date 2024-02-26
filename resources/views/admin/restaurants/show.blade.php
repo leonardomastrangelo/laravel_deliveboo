@@ -78,7 +78,7 @@
             </div>
         </div>
 
-        <ul>
+        <ul class="ps-0">
             <div class="row px-3">
                 @foreach ($products as $product)
                     <div class="col-md-6 my-3 col-lg-4">
