@@ -7,13 +7,12 @@
     align-items: center;
     margin-bottom: -60px;
 .card{
-
+    height:70vh;
     top: 0;
     border:3px solid white;
     box-shadow: 5px 5px 20px  rgb(0, 0, 0);
     background-color: $lightgreen;
     overflow: hidden;
-    animation: mybackground1 1.5s linear;
 }
 .card-header{
     font-size: 3em;
@@ -66,24 +65,50 @@
     }
 
     .image-login{
+        display: block;
         img{
              object-fit: cover;
              height: 100%;
+             width: 100%;
+             filter: drop-shadow(0px 0px 15px $darkgreen);
+             animation: bounce 5s infinite;
         }
       ;
     }
+}
 
-@keyframes mybackground1 {
-
+@keyframes bounce {
     0% {
-        transform: scale(0);
-        border-radius: 50% ;}
+        transform: translateY(-100px);
+    }
     50% {
-        transform: scale(0.5);
-        border-radius: 75% 25% 79% 21% / 21% 79% 25% 75% ;}
+        transform: translateY(-80px);
+    }
     100% {
-        transform: scale(1);
-        border-radius:100% 0% 100% 0% / 0% 100% 0% 100%  ;}
+        transform: translateY(-100px);
+    }
+}
+
+@media screen  and (max-width:1200px) {
+.card{
+    .inner-card{
+        overflow-y: scroll;
+    }
+
+  .image-login{
+    display: none;
   }
 }
+}
+
+@media screen  and (max-width:768px) {
+    #login{
+        .row{
+            justify-content: start;
+        }
+    }
+    .card{
+     height: 70vh;
+    }
+    }
 }
