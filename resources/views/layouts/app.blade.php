@@ -29,17 +29,6 @@
 
                 @yield('content')
 
-            {{-- nuvolette --}}
-
-            <div class="mycenter">
-                <div id = "cloud"></div>
-            </div>
-            <div class="mycenter2">
-                <div id = "cloud"></div>
-            </div>
-            <div class="mycenter3">
-                <div id = "cloud"></div>
-            </div>
             </div>
 
         </main>

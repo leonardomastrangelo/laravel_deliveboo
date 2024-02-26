@@ -1,4 +1,4 @@
-<div id="sidebar" class="col-3 col-md-2 col-xxl-1">
+<div id="sidebar" class="col-3 col-md-2 col-xxl-1 d-none d-lg-block">
     <div class="d-flex flex-column justify-content-center align-items-center align-content-center px-3 pt-2 min-vh-100">
         <ul>
             <li @if (Request::url() == route('home')) class="active-link" @endif>

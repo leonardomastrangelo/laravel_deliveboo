@@ -1,13 +1,13 @@
 @extends('layouts.app')
 @section('content')
-    <div class="wrap">
+    <div class="wrap d-flex align-items-center">
 	<div class="cube">
 		<div class="core"><h1>Deliveboo</h1></div>
 		<div class="back">
             <img class="w-100 d-block" src="{{asset('storage/restaurants/burgerking.jpg')}}" alt="">
         </div>
 		<div class="top">
-            <img class="w-100 d-block" src="{{asset('storage/restaurants/alìbabà.jpg')}}" alt="">
+            <img class="w-100 d-block" src="{{asset('storage/restaurants/thaispice.jpg')}}" alt="">
         </div>
 		<div class="bottom">
             <img class="w-100 d-block" src="{{asset('storage/restaurants/starbucks.jpg')}}" alt="">
