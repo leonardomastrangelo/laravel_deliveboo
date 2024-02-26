@@ -1,7 +1,23 @@
 @extends('layouts.app')
 @section('content')
-    <section class="container-fluid">
-        <h1>Section title</h1>
-        <p>section content</p>
-    </section>
+    <div class="wrap">
+	<div class="cube">
+		<div class="core"><h1>Deliveboo</h1></div>
+		<div class="back">
+            <img class="w-100 d-block" src="{{asset('storage/restaurants/burgerking.jpg')}}" alt="">
+        </div>
+		<div class="top">
+            <img class="w-100 d-block" src="{{asset('storage/restaurants/alìbabà.jpg')}}" alt="">
+        </div>
+		<div class="bottom">
+            <img class="w-100 d-block" src="{{asset('storage/restaurants/starbucks.jpg')}}" alt="">
+        </div>
+		<div class="left">
+            <img class="w-100 d-block" src="{{asset('storage/restaurants/tacobell.jpg')}}" alt="">
+        </div>
+		<div class="right">
+            <img class="w-100 d-block" src="{{asset('storage/restaurants/pizzahut.jpg')}}" alt="">
+        </div>
+	</div>
+</div>
 @endsection
