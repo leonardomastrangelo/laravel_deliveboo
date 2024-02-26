@@ -10,14 +10,14 @@
             <li @if (Request::url() == route('admin.dashboard')) class="active-link" @endif>
                 <a class="anchor-container" href="{{ route('admin.dashboard') }}">
                     <i class="fa-solid fa-chart-line"></i>
-                    <span class="d-none d-md-inline-block">Dasboard</span>
+                    <span class="d-none d-md-inline-block">Dashboard</span>
                 </a>
             </li>
             @auth
                 <li @if (Request::url() == route('admin.orders')) class="active-link" @endif>
                     <a class="anchor-container" href="{{ route('admin.orders') }}">
-                        <i class="fa-brands fa-jedi-order"></i>
-                        <span class="d-none d-md-inline-block">Orders</span>
+                        <i class="fa-solid fa-utensils"></i>
+                        <span class="d-none d-md-inline-block">Ordini</span>
                     </a>
                 </li>
             @endauth

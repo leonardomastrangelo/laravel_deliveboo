@@ -23,7 +23,7 @@ class SummaryOrder extends Mailable
 
     public function build()
     {
-        return $this->subject('Riepilogo Ordine')
+        return $this->subject('Ordine Accettato')
             ->view('mails.summary-order');
     }
 }

@@ -23,7 +23,7 @@ class OrderConfirmed extends Mailable
 
     public function build()
     {
-        return $this->subject('Ordine Accettato')
+        return $this->subject('Riepilogo Ordine')
             ->view('mails.accepted-order');
     }
 }

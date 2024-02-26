@@ -34,7 +34,7 @@
                                 class="my-3">
                                 @csrf
                                 @method('DELETE')
-                                <button class="btn btn-danger" type="submit">
+                                <button class="btn btn-danger" type="submit" data-item-title='{{ $product->name }}'id="button_deletep">
                                     <i class="fa-solid fa-trash"></i> Elimina
                                 </button>
                             </form>

@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-    <div id="order">
-        <div class="container-fluid py-4">
+    <div id="order" class="h-100">
+        <div class="container-fluid py-4 h-100 ">
             @if (session()->has('message'))
                 <div class="alert alert-success">
                     {{ session()->get('message') }}
                 </div>
             @endif
 
-            <div class="container">
+            <div class="container h-100">
                 @forelse ($ordersByMonth as $month => $orders)
                     <h2 class="display-3 fw-bold text-center py-2">Ordini
                         <span class="fs-2 text-decoration-underline">{{ \Carbon\Carbon::createFromFormat('m', $month)->format('m/Y') }}</span>
@@ -53,10 +53,15 @@
                         </div>
 
                         @empty
-                        <div class="alert alert-danger text-center w-25 mx-auto">
-                            Nessun ordine trovato
+                        <div class="d-flex justify-content-center align-items-center">
+
+                            <div class="alert alert-danger text-center  w-25 mx-auto">
+                                Nessun ordine trovato
+                            </div>
+
                         </div>
-                            
+
+
                         @endforelse
             </div>
 
