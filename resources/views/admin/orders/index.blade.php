@@ -3,62 +3,64 @@
 @section('content')
     <div id="order">
         <div class="container-fluid py-4">
-            <h2 class="display-3 fw-bold text-center py-2">
-                {{ __('I tuoi ordini') }}
-            </h2>
             @if (session()->has('message'))
                 <div class="alert alert-success">
                     {{ session()->get('message') }}
                 </div>
             @endif
 
-        @foreach ($orders as $month => $ordersByMonth)
-            <h3 class="text-light text-center m-4">Ordini di
-                <span class="fs-1 text-decoration-underline">{{ \Carbon\Carbon::createFromFormat('m', $month)->formatLocalized('%B') }}</span>
-            </h3>
-            <div class="row justify-content-center gy-5">
-                @foreach ($ordersByMonth as $order)
-                    <div class="col-3 bg-light mx-4 p-3 rounded-3 d-flex flex-column justify-content-between ">
-                        <h1 class="text-center fs-3">Ordine</h1>
-                        <div>
-                            <span>Nome e Cognome:</span>
-                            <ul>
-                                <li> {{ $order->name }} {{ $order->surname }}</li>
-                            </ul>
-                            </div>
-                            <div>
-                                <span>Contatti:</span>
-                                <ul>
-                                    <li> {{ $order->email }}</li>
-                                    <li> {{ $order->phone_number }}</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <span>Indirizzo di spedizione:</span>
-                                <ul>
-                                    <li>{{ $order->address }}</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <span>Prodotti:</span>
-                                <ul>
-                                    @foreach ($order->products as $product)
-                                        <li class="d-flex justify-content-between ">
-                                            <span>{{ $product->name }}</span>
-                                            <span>{{ $product->price }}€</span>
-                                        </li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                            <div>
-                                <h5 class="fw-bold fs-3">Totale: {{ $order->amount }}€</h5>
-                            </div>
+            <div class="container">
+                @forelse ($ordersByMonth as $month => $orders)
+                    <h2 class="display-3 fw-bold text-center py-2">Ordini
+                        <span class="fs-2 text-decoration-underline">{{ \Carbon\Carbon::createFromFormat('m', $month)->format('m/Y') }}</span>
+                    </h2>
+                    <form class="w-50 mx-auto py-4 text-center" action="{{route('admin.orders')}}" method="get">
+                        <label class="form-label text-dark" for="address">
+                            Cerca per indirizzo
+                        </label>
+                        <div class="w-50 mx-auto">
+                            <input value="{{old('address', $address)}}" type="text" name="address" id="address" class="form-control">
+                            <button type="submit" class="btn btn-primary mt-2">
+                                Cerca
+                            </button>
                         </div>
-                    @endforeach
-                </div>
-            @endforeach
+                    </form>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">Nome e Cognome</th>
+                                    <th scope="col">Numero di telefono</th>
+                                    <th scope="col">Indirizzo di spedizione</th>
+                                    <th scope="col">Totale</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($orders as $order)
+                                    <tr>
+                                        <td>
+                                            <a href="{{ route('admin.orders.show', $order->id) }}">
+                                                {{ $order->name }} {{ $order->surname }}
+                                            </a>
+                                        </td>
+                                        <td>{{ $order->phone_number }}</td>
+                                        <td>{{ $order->address }}</td>
+                                        <td>{{ $order->amount }}€</td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
 
-            @if ($orders->isEmpty())
+                        @empty
+                        <div class="alert alert-danger text-center w-25 mx-auto">
+                            Nessun ordine trovato
+                        </div>
+                            
+                        @endforelse
+            </div>
+
+            @if (!$ordersByMonth)
                 <div class="alert alert-danger text-center w-25 mx-auto">
                     Non ci sono ordini
                 </div>

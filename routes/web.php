@@ -27,6 +27,7 @@ Route::middleware(['auth', 'verified'])->name('admin.')->prefix('admin')->group(
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('restaurants/{slug}', [RestaurantController::class, 'show'])->name('restaurants.show');
     Route::get('/orders', [OrderController::class, 'index'])->name('orders');
+    Route::get('/orders/{id}', [OrderController::class, 'show'])->name('orders.show');
     Route::resource('products', ProductController::class)->except(['index']);
 
 });
